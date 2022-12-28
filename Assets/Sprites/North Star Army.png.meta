@@ -122,10 +122,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -135,8 +137,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -164,6 +166,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -952,9 +955,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      North Star Army_14: 306476995428933261
+      North Star Army_12: 594966627785370405
+      North Star Army_32: 1763152725117547875
+      North Star Army_3: 913980153147096441
+      North Star Army_22: -1442742051576757688
+      North Star Army_34: -8862498621304340518
+      North Star Army_33: -8425637861237120864
+      North Star Army_10: 7712942075707102570
+      North Star Army_28: 5576566084913750783
+      North Star Army_15: 4952650936990886140
+      North Star Army_23: -2508610644075695554
+      North Star Army_11: -1317981544003949769
+      North Star Army_18: 307875583672630547
+      North Star Army_30: -8471204650521239561
+      North Star Army_5: 2003189739365631061
+      North Star Army_27: 8802966659837624888
+      North Star Army_1: -6121172213935808066
+      North Star Army_25: 6179718172221975354
+      North Star Army_7: -7931758876049124002
+      North Star Army_20: -3146763447530509879
+      North Star Army_16: 6979218657254060865
+      North Star Army_8: 7869404827616419327
+      North Star Army_13: -180240585548652288
+      North Star Army_9: 6450870943407177617
+      North Star Army_6: -2371860587232142224
+      North Star Army_35: -5737418426893491150
+      North Star Army_2: 357819843754762806
+      North Star Army_29: -4032544577816592317
+      North Star Army_31: -7679679327918401276
+      North Star Army_21: -6753633389230144137
+      North Star Army_0: 1542154150039866149
+      North Star Army_17: -3605412429960353154
+      North Star Army_24: -832979423150354949
+      North Star Army_4: -2040878477202561726
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

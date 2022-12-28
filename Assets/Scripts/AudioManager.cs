@@ -11,9 +11,9 @@ public class AudioManager : MonoBehaviour
     }
 
     //Sound Effects
-    public AudioClip jump, run, attack, points,
-        shootAR, shootHandgun, shootSniper, hurt, dead, respawn, throwing, explosion, enemyHit,
-        health, ammo, life, switchWeapon, bossHit, bossDamage, win, generalAttack, generalHurt, generalDead;
+    public AudioClip jump, run, points,
+        shootAR, shootHandgun, shootSniper, throwing, explosion, enemyHit,
+        health, ammo, life, switchWeapon, bossHit, bossDamage;
     //Music
     public AudioClip music;
 
@@ -45,15 +45,6 @@ public class AudioManager : MonoBehaviour
             case "shootSniper":
                 SoundObjectCreation(shootSniper);
                 break;
-            case "Attack":
-                SoundObjectCreation(attack);
-                break;
-            case "hurt":
-                SoundObjectCreation(hurt);
-                break;
-            case "dead":
-                SoundObjectCreation(dead);
-                break;
             case "explosion":
                 SoundObjectCreation(explosion);
                 break;
@@ -77,21 +68,6 @@ public class AudioManager : MonoBehaviour
                 break;
             case "weaponSwitch":
                 SoundObjectCreation(switchWeapon);
-                break;
-            case "Respawn":
-                SoundObjectCreation(respawn);
-                break;
-            case "Win":
-                SoundObjectCreation(win);
-                break;
-            case "GeneralHurt":
-                SoundObjectCreation(generalHurt);
-                break;
-            case "GeneralAttack":
-                SoundObjectCreation(generalHurt);
-                break;
-            case "GeneralDeath":
-                SoundObjectCreation(generalDead);
                 break;
             default:
                 break;

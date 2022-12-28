@@ -511,7 +511,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.625, y: 3.1875}
+  m_Size: {x: 1.9375, y: 3.375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -586,6 +586,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawn: {fileID: 0}
+  attack1: {fileID: 8300000, guid: d043868d102514144b609409ebac576e, type: 3}
+  attack2: {fileID: 8300000, guid: 186f814a4750d734b8427582d59bcb0c, type: 3}
+  win: {fileID: 8300000, guid: 2011434c85d977540bc5497547b79bd6, type: 3}
+  dead: {fileID: 8300000, guid: fc45d8753e2b8464ba557007271518af, type: 3}
+  hurt: {fileID: 8300000, guid: 17b226a85396b2d47aef2bea69a65313, type: 3}
+  revive: {fileID: 8300000, guid: 2f2c3b131f44b7b45b0d9cd848374ee0, type: 3}
+  specialWeaponPicked: {fileID: 8300000, guid: 5691662d948bf60499716d44dc95084a, type: 3}
+  usingSpecialWeapon: {fileID: 8300000, guid: 57c739d26c9a7544e9010371887eace0, type: 3}
+  healthItemPicked: {fileID: 8300000, guid: 980c0e9cdfef207408e28eb7d477feb3, type: 3}
+  itemPicked: {fileID: 8300000, guid: 872ea2940c46d254c9f876303fa4f07c, type: 3}
+  soundObject: {fileID: 4079872877276035122, guid: 3e983b404fe68ab48aa22e45f0b5a643, type: 3}
   speed: 3
   jumpPower: 15
   isRunning: 0

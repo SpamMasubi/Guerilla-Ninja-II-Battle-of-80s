@@ -104,10 +104,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -117,8 +119,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -146,6 +148,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -745,9 +748,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Explosion 2: 8520962061329194029
+      Explosion 4: 7531185038704739620
+      Explosion 12: -309246981684997735
+      Explosion 8: -7812164757090330643
+      Explosion 22: -6285210309135104960
+      Explosion 17: -8452631587522593173
+      Explosion 3: 6872589187498950530
+      Explosion 10: 5291446102702262479
+      Explosion 1: -2248912592290493345
+      Explosion 6: 8342595001926158833
+      Explosion 23: 7888245606422984638
+      Explosion 21: 1559898675066337619
+      Explosion 14: 2141802288191008646
+      Explosion 20: -7508613351886440231
+      Explosion 13: -4475631172858758721
+      Explosion 25: 4740933900709083242
+      Explosion 15: -7674052370459139387
+      Explosion 18: 413988118738641890
+      Explosion 7: 822814264407944337
+      Explosion 9: 6244337189773472543
+      Explosion 11: 3265035949842233608
+      Explosion 19: -3134026434166393883
+      Explosion 5: -4575088550864508270
+      Explosion 16: -2368956133429376194
+      Explosion 24: -4131458904000126669
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

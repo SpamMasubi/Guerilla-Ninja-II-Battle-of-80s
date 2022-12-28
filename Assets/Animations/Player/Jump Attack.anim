@@ -57,11 +57,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 8890610865795787750, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
+      value: {fileID: 597098352782341223, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
     - time: 0.1
-      value: {fileID: 597098352782341223, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
+      value: {fileID: 2724711583171158538, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
     - time: 0.3
-      value: {fileID: 597098352782341223, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
+      value: {fileID: 2724711583171158538, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -88,9 +88,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 8890610865795787750, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
     - {fileID: 597098352782341223, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
-    - {fileID: 597098352782341223, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
+    - {fileID: 2724711583171158538, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
+    - {fileID: 2724711583171158538, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -153,6 +153,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0
+    functionName: SoundObjectCreation
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 186f814a4750d734b8427582d59bcb0c, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.31666666
     functionName: ResetAttack
     data: 

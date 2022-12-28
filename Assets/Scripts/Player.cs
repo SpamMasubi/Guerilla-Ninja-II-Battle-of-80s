@@ -5,8 +5,14 @@ using System;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance;
     public static event Action HasLanded;
     public Transform respawn;
+
+    //Sound Effects
+    public AudioClip attack1, attack2, win, dead, hurt, revive, specialWeaponPicked, usingSpecialWeapon, healthItemPicked, itemPicked;
+    //Sound Object
+    public GameObject soundObject;
 
     public float speed = 1; //player speed
     public float jumpPower = 150;
@@ -229,10 +235,6 @@ public class Player : MonoBehaviour
         {
             xVal *= runSpeedModifier;
         }
-        else if (BossVehicle.isDead || FinalBoss.isDead)
-        {
-            xVal = 0;
-        }
         //Create Vector2 for velocity 
         Vector2 targetVelocity = new Vector2(xVal, rb2d.velocity.y);
         //Set the velocity of the player
@@ -293,7 +295,7 @@ public class Player : MonoBehaviour
                 isHurt = true;
                 StartCoroutine(InvincibilityFlash());
                 //Play Sound and animation
-                AudioManager.instance.PlaySFX("hurt");
+                SoundObjectCreation(hurt);
                 animator.SetTrigger("Hurt");
                 FindObjectOfType<Healthbar>().LoseHealth(2);
             }
@@ -313,7 +315,7 @@ public class Player : MonoBehaviour
                 isHurt = true;
                 StartCoroutine(InvincibilityFlash());
                 //Play Sound and animation
-                AudioManager.instance.PlaySFX("hurt");
+                SoundObjectCreation(hurt);
                 animator.SetTrigger("Hurt");
             }
         }
@@ -333,7 +335,7 @@ public class Player : MonoBehaviour
     public void Die()
     {
         isRunning = false;
-        AudioManager.instance.PlaySFX("dead");
+        SoundObjectCreation(dead);
         isDead = true;
         animator.SetTrigger("isDead");
         FindObjectOfType<LifeCounter>().LoseLife();
@@ -354,7 +356,7 @@ public class Player : MonoBehaviour
             {
                 transform.position = new Vector2(respawn.transform.position.x,respawn.transform.position.y);
             }
-            AudioManager.instance.PlaySFX("Respawn");
+            SoundObjectCreation(revive);
         }
         else
         {
@@ -377,7 +379,7 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector2(respawn.transform.position.x, respawn.transform.position.y);
         }
-        AudioManager.instance.PlaySFX("Respawn");
+        SoundObjectCreation(revive);
     }
 
     public void ResetPlayer()
@@ -385,5 +387,15 @@ public class Player : MonoBehaviour
         horizontalValue = 0;
         isHurt = false;
         ShootingOrAttack.isAttack = false;
+    }
+
+    void SoundObjectCreation(AudioClip clip)
+    {
+        //Create SoundObject gameobject
+        GameObject newObject = Instantiate(soundObject, transform);
+        //Assign aduioclip to its audiosource
+        newObject.GetComponent<AudioSource>().clip = clip;
+        //Play the audio
+        newObject.GetComponent<AudioSource>().Play();
     }
 }
