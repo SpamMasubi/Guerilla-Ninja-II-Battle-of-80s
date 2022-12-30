@@ -302,14 +302,32 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
+        if (Item.canGetItem)
+        {
+            if (collision.gameObject.tag == "Items")
+            {
+                SoundObjectCreation(healthItemPicked);
+                Item.canGetItem = false;
+            }
+            else if (collision.gameObject.tag == "Ammunitions")
+            {
+                SoundObjectCreation(itemPicked);
+                Item.canGetItem = false;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {   
         if (!isInvincible && !isDead && !ShootingOrAttack.isAttack)
         {
             //if player collides with trap or enemyProjectiles
             if (collision.tag == "Trap" || collision.tag == "enemyProjectile")
             {
-                if(collision.tag == "Trap"){
+                if (collision.tag == "Trap")
+                {
                     FindObjectOfType<Healthbar>().LoseHealth(5);
                 }
                 isHurt = true;

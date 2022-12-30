@@ -24,9 +24,9 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -3026930764542012468, guid: efbaadbb18df1a94eb3f181d7a400096, type: 3}
     - m_Name: Guerilla Ninja 2 Misc(Transparency)_16
       m_Hash: 757837190
-      m_Sprite: {fileID: 260311946995324409, guid: efbaadbb18df1a94eb3f181d7a400096, type: 3}
+      m_Sprite: {fileID: -614582849731204501, guid: efbaadbb18df1a94eb3f181d7a400096, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 260311946995324409, guid: efbaadbb18df1a94eb3f181d7a400096, type: 3}
+      m_SpriteOverride: {fileID: -614582849731204501, guid: efbaadbb18df1a94eb3f181d7a400096, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 2
   m_PrimaryLibraryGUID: 

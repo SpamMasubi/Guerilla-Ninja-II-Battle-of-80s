@@ -10,20 +10,28 @@ public class Item : MonoBehaviour
     [Header("Attributes")]
     public ItemType item;
     public int points, healthRestore, ammo, life;
-    Rigidbody2D rb;
 
-    private void Start()
-    {
-        if(gameObject.tag == "Ammunitions")
-        {
-            rb = GetComponent<Rigidbody2D>();
-        }
-    }
+    public bool isLootItem;
+
+    [SerializeField] Transform groundChecker;
+    [SerializeField] LayerMask groundLayer;
+    const float groundCheckRadius = 0.2f;
+
+    bool isGrounded; //ground checker
+    public static bool canGetItem;
 
     void Reset() //reset function
     {
         GetComponent<Collider2D>().isTrigger = true;
         gameObject.layer = 7;
+    }
+
+    void FixedUpdate()
+    {
+        if (isLootItem)
+        {
+            GroundCheck();
+        }
     }
 
     public void itemTypes() //interaction of items
@@ -81,12 +89,44 @@ public class Item : MonoBehaviour
 
     }
 
+    void GroundCheck() //Check if Groundcheck is colliding with Ground Layered object
+    {
+        bool wasGrounded = isGrounded;
+        isGrounded = false;
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundChecker.position, groundCheckRadius, groundLayer);
+        if (colliders.Length > 0)
+        {
+            isGrounded = true;
+            GetComponent<Collider2D>().isTrigger = false;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (!isLootItem)
         {
-            itemTypes();
-            Destroy(gameObject);
+            if (collision.gameObject.tag == "Player")
+            {
+                itemTypes();
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (isLootItem)
+        {
+            if (collision.gameObject.tag == "Player" && isGrounded)
+            {
+                itemTypes();
+                canGetItem = true;
+                Destroy(gameObject);
+            }
         }
     }
 }

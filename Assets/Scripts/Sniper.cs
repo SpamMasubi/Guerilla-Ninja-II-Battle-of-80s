@@ -24,7 +24,8 @@ public class Sniper : MonoBehaviour
 
     public Transform launchPoint;
 
-    float fireRate = 3f;
+    public float fireRate = 3f;
+    public float maxDistToAttack = 15;
     float nextShot;
     private float distToPlayer;
     public static bool isDead = false; //check if player is Dead
@@ -61,7 +62,7 @@ public class Sniper : MonoBehaviour
             //agro player
             isAgros = true;
 
-            if (distToPlayer <= 15)
+            if (distToPlayer <= maxDistToAttack)
             {
                 isAttacking = true;
             }
@@ -116,6 +117,7 @@ public class Sniper : MonoBehaviour
     {
         isAgros = false;
         isAttacking = false;
+        nextShot = 0;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -145,7 +147,10 @@ public class Sniper : MonoBehaviour
     {
         if (Time.time > nextShot)
         {
-            AudioManager.instance.PlaySFX("shootSniper");
+            if (enemyShootSFX != null)
+            {
+                AudioManager.instance.PlaySFX(enemyShootSFX);
+            }
             GameObject projectile = Instantiate(enemyBullet, launchPoint.position, launchPoint.rotation);
             nextShot = Time.time + fireRate;
             projectile.GetComponent<EnemyBullet>().direction = -1;

@@ -37,17 +37,18 @@ public class HomingMissile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && !Player.isInvincible && !ShootingOrAttack.isAttack)
+        if (collision.tag == "playerProjectiles" || collision.tag == "playerAttack")
+        {
+            Instantiate(explosionEffect, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+        else if (collision.tag == "Player" && !Player.isInvincible && !ShootingOrAttack.isAttack)
         {
             Instantiate(explosionEffect, transform.position, transform.rotation);
             FindObjectOfType<Healthbar>().LoseHealth(damage);
             Instantiate(explosionEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
-        else if (collision.tag == "playerProjectiles" || collision.tag == "playerAttack")
-        {
-            Instantiate(explosionEffect, transform.position, transform.rotation);
-            Destroy(gameObject);
-        }
+
     }
 }

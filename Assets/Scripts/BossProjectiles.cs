@@ -25,13 +25,14 @@ public class BossProjectiles : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && !Player.isInvincible && !ShootingOrAttack.isAttack)
+        
+        if(collision.tag == "playerProjectiles" || collision.tag == "playerAttack")
         {
-            FindObjectOfType<Healthbar>().LoseHealth(damage);
             Destroy(gameObject);
         }
-        else if(collision.tag == "playerProjectiles" || collision.tag == "playerAttack")
+        else if (collision.tag == "Player" && !Player.isInvincible && !ShootingOrAttack.isAttack)
         {
+            FindObjectOfType<Healthbar>().LoseHealth(damage);
             Destroy(gameObject);
         }
     }

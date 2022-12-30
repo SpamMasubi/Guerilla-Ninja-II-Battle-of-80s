@@ -235,6 +235,7 @@ public class EnemyShoot : MonoBehaviour
         isShooting = false;
         currentSpeed = maxSpeed;
         anim.SetBool("Shoot", false);
+        nextShot = 0;
     }
 
     void shootPlayer()

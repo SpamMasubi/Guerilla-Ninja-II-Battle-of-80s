@@ -57,8 +57,13 @@ public class EnemyBullet : MonoBehaviour
         {
             return;
         }
+
         //Destroy
-        if (collision.tag == "Player")
+        if(collision.tag == "playerProjectiles" || collision.tag == "playerAttack")
+        {
+            Destroy(gameObject);
+        }
+        else if (collision.tag == "Player")
         {
             if (!Player.isInvincible && !ShootingOrAttack.isAttack)
             {
@@ -66,9 +71,6 @@ public class EnemyBullet : MonoBehaviour
             }
             Destroy(gameObject);
         }
-        else if(collision.tag == "playerProjectiles" || collision.tag == "playerAttack")
-        {
-            Destroy(gameObject);
-        }
+        
     }
 }

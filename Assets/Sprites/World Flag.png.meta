@@ -1,0 +1,4449 @@
+fileFormatVersion: 2
+guid: 72b7cc1db9f9f154fbe92fe502889984
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: World Flag_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba1e9d2920b5b34b8b26c7d1e3305c7
+      internalID: 1297139934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_1
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5719cd52e2cf7740a7b14e90f3a8569
+      internalID: -546715837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_2
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab77a7d87986ee84c9d4df26458f0046
+      internalID: 1157331021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_3
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f37a95eec719b4b9875ac4bf0f2321
+      internalID: 1147214654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_4
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfadfe8611bd4e43bc1990c619cf7ef
+      internalID: -270859496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_5
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc7fd775ac740d47b9849cac46da735
+      internalID: 261953425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_6
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0d1795893700e43bc2199d3d82ab44
+      internalID: 1307306949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_7
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcc006c8d1fa7041b08eff4807ac03b
+      internalID: 1221919428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_8
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668d5cd3fb67bbe4e88327868a3591c4
+      internalID: -1794716897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_9
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3d9a50bb1bdcb4eb7695bd3bf04c23
+      internalID: 562390658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_10
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c3fc2c2f7bf7b4b85521b6275bea3e
+      internalID: -1097964223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_11
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1af1d641971b194c88ac15656b3680d
+      internalID: 1501331252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_12
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f5d403fece8b449b70b5eecff2dd06
+      internalID: -1761561801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_13
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97386c7e127d224ea07ed83b78428a1
+      internalID: -1927127136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_14
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 2669
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4f6ac5b9356f942b3bb794b05f9116
+      internalID: -2106945118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_15
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5338654f0bfabec498693f030f78b11a
+      internalID: -1484276924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_16
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d19077d62717464aab6710520bd2979
+      internalID: -1832203767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_17
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea5ad53c2f8c4a4188eda7aad0201a7
+      internalID: -1651583227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_18
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cdf443ac647f542a088457a496d72a
+      internalID: 481319785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_19
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2cd32bcb8e95d49b2e856823a602a4
+      internalID: 346413067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_20
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c020d2b949f76c5499ed6de55c9c9e96
+      internalID: 1713088376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_21
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f12891ae49351b48994f51956747f7a
+      internalID: -1199578660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_22
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091dd8aef791104418209a8810e2e173
+      internalID: -583358213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_23
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100260d8370ca6746851516734dda1cc
+      internalID: -1075624285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_24
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1cc58aba8f8c3458bc58cbd843a047
+      internalID: 543643145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_25
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992945096587873438767b7407ee498d
+      internalID: 1338301204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_26
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71c70183e6ba904e8defc99f9a99e04
+      internalID: 712898259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_27
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e80fd2c05f624c42ae322714cbf2acb
+      internalID: 235774614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_28
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0ff881e0f4ac04fab61bfc04cfb995
+      internalID: 666297457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_29
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 2449
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a69b67d967edf4085f67d9da62b4dd
+      internalID: 268119875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_30
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9425052b7ab984192a66578a3354b5
+      internalID: -1248368744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_31
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b523c5967abead4c8032641d6ec9d03
+      internalID: -722350419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_32
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60126dd9d54fa314d9e339ffb2df3a89
+      internalID: 1078125257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_33
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f6508b0ee5c2c4eaeb32121fab42ea
+      internalID: 1100556225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_34
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd7f2f4f8e209e49b618a4ce7fd0fca
+      internalID: -1353096734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_35
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6dee26542f4b2439c9157e57bb22d2
+      internalID: -1726216681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_36
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd8036b458d20442adb26ff2b04ec2a
+      internalID: -1699818664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_37
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83df326c49fe45f4bb629e79831bb913
+      internalID: 1426597763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_38
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1b8ee0670b0e1489d3c2e34486a5ab
+      internalID: 845651655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_39
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897ef10e5182ac548b883723163f3594
+      internalID: -1179204388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_40
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9103d76aed7754db67c44342c24e2c
+      internalID: 1555762556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_41
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c0edf7a1d4aad4f9d177c54bc7483a
+      internalID: -1349320966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_42
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8344b7ec8246d429f90caf6589af58
+      internalID: 121834924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_43
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ff6d866c36ebe40a5ca60d25f61ea4
+      internalID: -40729405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_44
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 2229
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ba1b32e19dd514a88a5d4aa8d16115
+      internalID: -1029064419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_45
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea1296ecfe69b64bb7ab3512dea3cab
+      internalID: 600458342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_46
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255e0265354d3904e9f2ed9b8a6d4abb
+      internalID: 2089262551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_47
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad37c335c8a89243843325e529bd7aa
+      internalID: -1484048925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_48
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919a4107790ddb740a8917ded892bc63
+      internalID: 2022636943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_49
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8998477e10c0346be953b2d2b6376d
+      internalID: 1328356407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_50
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ada3bfb6809d004cb4546f5076ea1fa
+      internalID: 2082885742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_51
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb3079614eff2846bfa3707c3164095
+      internalID: -85418535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_52
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb8a72051bbdb94a850da11b6a617e7
+      internalID: 1238683952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_53
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213538207ddd64343a18cfdfd28c00ba
+      internalID: -1781976609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_54
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2b9fa0d88353e4c9927eed242f567b
+      internalID: -126392509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_55
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa65e3a9b92333419f2c77287a453e1
+      internalID: -1977701725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_56
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b927e8a49b251341a78750a859210b3
+      internalID: -1571208285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_57
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336cb5868a019e34587d707c1c323bf7
+      internalID: 1840155647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_58
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bed8b514a4d7144a2999e3867c64b1
+      internalID: 707243112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_59
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 2009
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682de940c44af524aa318c35800c5df4
+      internalID: 1962600312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_60
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878cdbb53ef667f4d8c5180b0d10757e
+      internalID: -31006758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_61
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bd9e81ec9c98347ae3a487e1c55109
+      internalID: 385344849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_62
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea92a9b3d3b20914a8d466bda484501f
+      internalID: -66824341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_63
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956137dce4163304986a8e47231b42ac
+      internalID: -2131998916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_64
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedd0659090ddb84dbcffb71fc58f82a
+      internalID: -59044200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_65
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91aacceac0b0104194cf3ed95eef029
+      internalID: 43702295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_66
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e0c7caea40c6c43886968c37cc09d6
+      internalID: -426416400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_67
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfe13a2ea6f6084cb79f31d7be36a20
+      internalID: -1842249160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_68
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5960f6c47d5d2ea47a3f13e41ddc2055
+      internalID: -2144785468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_69
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d342e8defc9258b4b90c95ce1c6df096
+      internalID: -374320320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_70
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be5b35008f5f1c44a4203da37064572
+      internalID: -1889792649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_71
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0248e43484f5a4e9bb5e56b87fb6f3
+      internalID: 431618921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_72
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b1f177d00e0444a8d44c55e6581768
+      internalID: -1093614212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_73
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a29324c095778418da328fcd62f183
+      internalID: -1864452585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_74
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 1789
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737e20c2a5a656d488d7228a53e33fd2
+      internalID: 471005540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_75
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f731ec01b8b07604aac2356f2977f046
+      internalID: 1430787480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_76
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3e95670a374604f9669ac7e77b2eae
+      internalID: 168570213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_77
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354948a332cd91747be1f46642dd8194
+      internalID: 982215475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_78
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b778a1d515bdac488535b5a1da213e6
+      internalID: 1302726852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_79
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c132eb5cb8be943b0396e808e62d26
+      internalID: 1344342341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_80
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6038aa572476434db072dc7bd5f787d
+      internalID: -436343862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_81
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd69e752dd507b646a46332e39fc70c0
+      internalID: -1041174631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_82
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54dfaa3250f2c364e866c7ef9236ea41
+      internalID: -1540164517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_83
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25751e926d786d346a3213fe35bc073f
+      internalID: 2120624945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_84
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d22617822b1da42bd3888f34b1d3d7
+      internalID: -2037033218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_85
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4d63fa2ba850c4e8fc029bbf39888e
+      internalID: -997138602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_86
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bb8d592c92d2041a09f1a16ccac7ec
+      internalID: 567440558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_87
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82f357d1b27cfa469830393cfdb0cfa
+      internalID: 982104853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_88
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8675fa9d1c4d641a72e5ec39b087a4
+      internalID: 610005638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_89
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 1569
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb6dbd17958f51449c266c650ecabc9
+      internalID: 1293597813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_90
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55203c52a9fb474b9f9a69d9ecf8b1c
+      internalID: 1327635590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_91
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a0513f715a6b14eb0ac682c3b2fc20
+      internalID: 1193942247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_92
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e9ad4a7fc5b034ba9292fece04a06f
+      internalID: -1609882464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_93
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf9c0b92d127534aae1c222f3e22525
+      internalID: -853507479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_94
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe53eaacfc31dcc45aabdc225ff1d09e
+      internalID: 1954678384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_95
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3024ebea0e6234294bc962caee20f8
+      internalID: 902597941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_96
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cdc4ded3353d4409b31ee4dd8a39f0
+      internalID: -1717715121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_97
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f59019468234c043a05826c50db6030
+      internalID: 300328804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_98
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4151f5ed207b2cd489bdd8e53cadf70d
+      internalID: -409263075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_99
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189cd46e659d3da4c87e181e0201dba0
+      internalID: -947772969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_100
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82209132b62cfcb4590617cb8debd45d
+      internalID: -161639374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_101
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda3370a374341347b4e7f6627ca1b01
+      internalID: 1585432125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_102
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6996d9964814c3e45a10761f644c3c1c
+      internalID: -1735805875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_103
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89640b83ae1943429e68b3b92bb6b13
+      internalID: -2050479623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_104
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 1349
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74ad913b0a97534aadc40cb2145ac6a
+      internalID: 294793764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_105
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1ad5d3d82dc644aae752a8919229d9
+      internalID: 89660221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_106
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7e025b7b24e904f87df317bdf235af
+      internalID: -1479639617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_107
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235fef821e7e1f24ea1ca8e2afc94f51
+      internalID: 2142392119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_108
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578c4189e61e7c242a98d9d55c8075c3
+      internalID: 580897720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_109
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844f61fa29904fd488a241187182c543
+      internalID: -466902491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_110
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8b1b5a01abb844286ddf78f8ce736b
+      internalID: 1583774632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_111
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0837f9b70afd424abafe3c5cb18408b
+      internalID: -1521508477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_112
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50547f41eeca9d740b7acabcb867e4f0
+      internalID: 1309313340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_113
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9819ce97f86c3da41aa0889b9097160e
+      internalID: 1526671486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_114
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272550bbf57828d4a9dad6052d73aab2
+      internalID: 377730909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_115
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b746f56f7c800d4ca1703cc9ec4fe49
+      internalID: 125668810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_116
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76360f09939544442bb5cc5feff710bd
+      internalID: -1330641162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_117
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9e621a96be08a449c84805e49e769d
+      internalID: 667347320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_118
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8ce5379305e8044a2deab9df16963f
+      internalID: 139702146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_119
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 1129
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e467281ff116144a4969e3e20b6f79
+      internalID: -12090137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_120
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac48611c697214242bfbc04a2f3111ca
+      internalID: 536081420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_121
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83e243b440a7b8419c23227787b3492
+      internalID: -1670431848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_122
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333cc6a0a84d2c642a7fdad19c0862a9
+      internalID: -306961066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_123
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 909
+        width: 136
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5acebb0c0e26ee49b030b19c529aebb
+      internalID: 1428077236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_124
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387f531a8461ccc419ba7fc04272a422
+      internalID: -2079815634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_125
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242ecd4b8d63bc54fad491cfe41f3461
+      internalID: 875087231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_126
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2816f3477d0802418ab00c04ec933b1
+      internalID: -1923930977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_127
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f0f54c4bd0ea44ebcca4eef05f205e
+      internalID: -1435360757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_128
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ca3673f4c133c4dbd702bdf42684f8
+      internalID: 2026207594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_129
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87d86709805b2e4d8aa3c10cedb4f40
+      internalID: 502576374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_130
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff3da48f655b0f47ae5ab4e80cf0dbc
+      internalID: -1137508090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_131
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0bac90059b4904da2c09463c873106
+      internalID: -88231279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_132
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d746ca6452e3e4797ec4b96cfebb60
+      internalID: -1931615431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_133
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dae194dda9401941ad1d3264fb4a98b
+      internalID: -550583508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_134
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 909
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defde3eed530fe34f9d063073e0eecad
+      internalID: -2052512260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_135
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211fddae7c37ba543b23c2f001eb53ac
+      internalID: 1303311650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_136
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fe7b8a463363146902d19a7c9ffae7
+      internalID: 1138880460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_137
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc685daa9b5d3694fa475fc316b377b3
+      internalID: 691038204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_138
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc124b362ae21444a8f0ba5037fe1857
+      internalID: -1603529464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_139
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401503f420d00714aabc175587acfc0c
+      internalID: -1089252484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_140
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264150c1794c04d4b9042d0123e9286f
+      internalID: -1156321192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_141
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0658ba8692e14dd4babcfed8792092e9
+      internalID: 273487121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_142
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e3e80b9ae62a84c851d8cd300f7570
+      internalID: -1503450600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_143
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97946b9a8602c9c47b4d231f879744b3
+      internalID: -1272238146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_144
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4ff432b29ede54882e45f023adbd50
+      internalID: 17477447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_145
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f76217f04139cd44a845dee732cd4e0
+      internalID: 1931942963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_146
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a260c55afd7aa49b9ec83d22a3fcfb
+      internalID: 1036883145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_147
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc26e5a42fbb064fae3fd1628c5d626
+      internalID: -1085419842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_148
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1083c94b7a38c4980af23ea6c0b5c1
+      internalID: -1894616099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_149
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 689
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ae363bfd44e2c4eab2738106b4d1ea
+      internalID: 613549015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_150
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f972f2b7129f4d94d89535c105631657
+      internalID: -1787460597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_151
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577e636af0a7e1a4ca18aa92518f80d5
+      internalID: 460084567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_152
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec8f5f38e7ac9a4f88d530ecf6e4367
+      internalID: 1677641331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_153
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062192c6f0b58344c901dd985202b81d
+      internalID: -160175978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_154
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b735c0033e63c394baa68bc04b8e12aa
+      internalID: 1087960431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_155
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2925b9118274d1d4f988a1469a4000a4
+      internalID: -39596504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_156
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30d7562e0d093b4a9baabd566e11845
+      internalID: -1085465544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_157
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6effe6432ba8b14985dbdd5d68a8943
+      internalID: 948136984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_158
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bd78a47d86768459f0f34c3ce4aefe
+      internalID: 266475812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_159
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cabc7a72bbb8a40bc3fd5ce9f2c16b
+      internalID: -308990763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_160
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3456b5a270c10b468590cdfe39ceea7
+      internalID: -1790707983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_161
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c8724c283f6ca4db0f8c0ca3a41268
+      internalID: -1339320910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_162
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3995cf376ef38745a034310355fd6b5
+      internalID: 748700852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_163
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38f90148f86cab47aabafc3d6de253a
+      internalID: -1163827807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_164
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 469
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e362794f90d7a4181fb034d626a8b0
+      internalID: -1181840966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_165
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b00e677cda424458fb26e9dad7d1ec
+      internalID: -1049837944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_166
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a178b3e7942276a4d8e7d0d6ad893782
+      internalID: 21602288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_167
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099fa9f5ed9661b43af5d70bba139993
+      internalID: 1764976826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_168
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 249
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1bd0cd85d7fca45abb096cb6c1698a
+      internalID: 1636846308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_169
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4540089fb2782324fbac9e745a86a33a
+      internalID: 2145718345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_170
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056609c1390940044af29bda0add86f9
+      internalID: -1521686393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_171
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbdce857e78f1544a52e74406bf98f8
+      internalID: -1544270394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_172
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ef33e58e57bd74c91284346d4281c3
+      internalID: -1124624730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_173
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4713668dc7e1b4497d60b5a5b34923
+      internalID: -264886263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_174
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a3c505c19d3614b981f32be31507a4
+      internalID: -666438152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_175
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff0520755ef8c044b213ee11b01a961
+      internalID: 2068205642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_176
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bb5d497ab88d1468badf31edc151f5
+      internalID: -1960571393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_177
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7338efb3530d5d847aee40e95c9caa18
+      internalID: -1268006520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_178
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2423ceb7ace2f92459e053f6a5839ec8
+      internalID: -1699424037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_179
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 249
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7928d3575edb47f4e86413c15f77feab
+      internalID: 947883373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_180
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b81e3e5f31da734bb0f32f2d86760da
+      internalID: -1089541852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_181
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb630873f3ccb64bb9dd2ab167cab5b
+      internalID: 928409739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_182
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8045671c9f9084aa9e8e174ddb0581
+      internalID: -1525776698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_183
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae6c706955fb1443a518e1c8ffb5740
+      internalID: 560850426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_184
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed785c50fe0335a499bd8fdb2d7c5616
+      internalID: -1421373234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_185
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec060ebb393bf840a49f6524b2392a1
+      internalID: 1204223496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_186
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025bbc614e2368c41abeb555e1ff41a0
+      internalID: 1502989135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_187
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d50d4f23db2f514b82b07922c8f4904
+      internalID: 1098269087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_188
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8388095c8f278b34cb5a9c37da73bc1a
+      internalID: 280724673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_189
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 29
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54dfe95a54070d4a966a70665e921bc
+      internalID: -1977714571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_190
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c19d770195dfaa4a9065e50a814ccf8
+      internalID: -892170415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_191
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c538494fb372541a40e996b7c822d0
+      internalID: -440819181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_192
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296771937d547c74eae88f6c0ff1fbe0
+      internalID: 395910203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_193
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eebf4af38eb17a49ac5d33cd22b1fe5
+      internalID: -1588931791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: World Flag_194
+      rect:
+        serializedVersion: 2
+        x: 4452
+        y: 29
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9f0fe956496e3419e444ea018f0155
+      internalID: -1189403312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      World Flag_173: -264886263
+      World Flag_192: 395910203
+      World Flag_73: -1864452585
+      World Flag_159: -308990763
+      World Flag_68: -2144785468
+      World Flag_115: 125668810
+      World Flag_52: 1238683952
+      World Flag_48: 2022636943
+      World Flag_142: -1503450600
+      World Flag_101: 1585432125
+      World Flag_63: -2131998916
+      World Flag_172: -1124624730
+      World Flag_6: 1307306949
+      World Flag_89: 1293597813
+      World Flag_79: 1344342341
+      World Flag_182: -1525776698
+      World Flag_19: 346413067
+      World Flag_0: 1297139934
+      World Flag_74: 471005540
+      World Flag_140: -1156321192
+      World Flag_135: 1303311650
+      World Flag_3: 1147214654
+      World Flag_85: -997138602
+      World Flag_156: -1085465544
+      World Flag_176: -1960571393
+      World Flag_27: 235774614
+      World Flag_189: -1977714571
+      World Flag_161: -1339320910
+      World Flag_105: 89660221
+      World Flag_13: -1927127136
+      World Flag_128: 2026207594
+      World Flag_119: -12090137
+      World Flag_53: -1781976609
+      World Flag_39: -1179204388
+      World Flag_1: -546715837
+      World Flag_184: -1421373234
+      World Flag_107: 2142392119
+      World Flag_178: -1699424037
+      World Flag_77: 982215475
+      World Flag_127: -1435360757
+      World Flag_112: 1309313340
+      World Flag_21: -1199578660
+      World Flag_153: -160175978
+      World Flag_138: -1603529464
+      World Flag_9: 562390658
+      World Flag_100: -161639374
+      World Flag_5: 261953425
+      World Flag_30: -1248368744
+      World Flag_97: 300328804
+      World Flag_190: -892170415
+      World Flag_124: -2079815634
+      World Flag_29: 268119875
+      World Flag_65: 43702295
+      World Flag_125: 875087231
+      World Flag_95: 902597941
+      World Flag_191: -440819181
+      World Flag_144: 17477447
+      World Flag_177: -1268006520
+      World Flag_99: -947772969
+      World Flag_16: -1832203767
+      World Flag_168: 1636846308
+      World Flag_55: -1977701725
+      World Flag_118: 139702146
+      World Flag_82: -1540164517
+      World Flag_110: 1583774632
+      World Flag_102: -1735805875
+      World Flag_126: -1923930977
+      World Flag_38: 845651655
+      World Flag_61: 385344849
+      World Flag_86: 567440558
+      World Flag_194: -1189403312
+      World Flag_136: 1138880460
+      World Flag_60: -31006758
+      World Flag_98: -409263075
+      World Flag_71: 431618921
+      World Flag_26: 712898259
+      World Flag_146: 1036883145
+      World Flag_7: 1221919428
+      World Flag_111: -1521508477
+      World Flag_179: 947883373
+      World Flag_104: 294793764
+      World Flag_137: 691038204
+      World Flag_188: 280724673
+      World Flag_76: 168570213
+      World Flag_75: 1430787480
+      World Flag_187: 1098269087
+      World Flag_64: -59044200
+      World Flag_40: 1555762556
+      World Flag_50: 2082885742
+      World Flag_193: -1588931791
+      World Flag_37: 1426597763
+      World Flag_44: -1029064419
+      World Flag_103: -2050479623
+      World Flag_122: -306961066
+      World Flag_151: 460084567
+      World Flag_134: -2052512260
+      World Flag_174: -666438152
+      World Flag_34: -1353096734
+      World Flag_93: -853507479
+      World Flag_2: 1157331021
+      World Flag_24: 543643145
+      World Flag_66: -426416400
+      World Flag_87: 982104853
+      World Flag_129: 502576374
+      World Flag_83: 2120624945
+      World Flag_152: 1677641331
+      World Flag_94: 1954678384
+      World Flag_10: -1097964223
+      World Flag_58: 707243112
+      World Flag_23: -1075624285
+      World Flag_141: 273487121
+      World Flag_72: -1093614212
+      World Flag_90: 1327635590
+      World Flag_36: -1699818664
+      World Flag_175: 2068205642
+      World Flag_185: 1204223496
+      World Flag_171: -1544270394
+      World Flag_78: 1302726852
+      World Flag_123: 1428077236
+      World Flag_169: 2145718345
+      World Flag_92: -1609882464
+      World Flag_41: -1349320966
+      World Flag_59: 1962600312
+      World Flag_116: -1330641162
+      World Flag_132: -1931615431
+      World Flag_8: -1794716897
+      World Flag_12: -1761561801
+      World Flag_14: -2106945118
+      World Flag_106: -1479639617
+      World Flag_91: 1193942247
+      World Flag_33: 1100556225
+      World Flag_143: -1272238146
+      World Flag_35: -1726216681
+      World Flag_69: -374320320
+      World Flag_150: -1787460597
+      World Flag_167: 1764976826
+      World Flag_186: 1502989135
+      World Flag_20: 1713088376
+      World Flag_155: -39596504
+      World Flag_145: 1931942963
+      World Flag_84: -2037033218
+      World Flag_96: -1717715121
+      World Flag_162: 748700852
+      World Flag_160: -1790707983
+      World Flag_67: -1842249160
+      World Flag_154: 1087960431
+      World Flag_43: -40729405
+      World Flag_131: -88231279
+      World Flag_18: 481319785
+      World Flag_80: -436343862
+      World Flag_157: 948136984
+      World Flag_180: -1089541852
+      World Flag_170: -1521686393
+      World Flag_130: -1137508090
+      World Flag_149: 613549015
+      World Flag_47: -1484048925
+      World Flag_120: 536081420
+      World Flag_165: -1049837944
+      World Flag_163: -1163827807
+      World Flag_15: -1484276924
+      World Flag_183: 560850426
+      World Flag_49: 1328356407
+      World Flag_114: 377730909
+      World Flag_22: -583358213
+      World Flag_117: 667347320
+      World Flag_17: -1651583227
+      World Flag_158: 266475812
+      World Flag_181: 928409739
+      World Flag_56: -1571208285
+      World Flag_147: -1085419842
+      World Flag_45: 600458342
+      World Flag_31: -722350419
+      World Flag_70: -1889792649
+      World Flag_11: 1501331252
+      World Flag_109: -466902491
+      World Flag_28: 666297457
+      World Flag_121: -1670431848
+      World Flag_108: 580897720
+      World Flag_133: -550583508
+      World Flag_139: -1089252484
+      World Flag_42: 121834924
+      World Flag_148: -1894616099
+      World Flag_32: 1078125257
+      World Flag_46: 2089262551
+      World Flag_54: -126392509
+      World Flag_62: -66824341
+      World Flag_88: 610005638
+      World Flag_166: 21602288
+      World Flag_51: -85418535
+      World Flag_113: 1526671486
+      World Flag_4: -270859496
+      World Flag_25: 1338301204
+      World Flag_164: -1181840966
+      World Flag_81: -1041174631
+      World Flag_57: 1840155647
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
