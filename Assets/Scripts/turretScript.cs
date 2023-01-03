@@ -8,6 +8,7 @@ public class turretScript : MonoBehaviour
 
     public float Range;
     public Transform Target;
+    public Vector3 offset;
     bool Detected = false;
     Vector2 Direction;
     public GameObject gun;
@@ -37,9 +38,9 @@ public class turretScript : MonoBehaviour
     {
         if (BossStart.startBoss && (untilDisabled != 0 || !BossVehicle.isDead))
         {
-            Vector2 targetPos = Target.position;
-            Direction = targetPos - (Vector2)transform.position;
-            RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, Direction, Range, whatIsPlayer); //rayInfo will be true only if hit the player.
+            Vector3 targetPos = Target.position;
+            Direction = targetPos - (Vector3)transform.position;
+            RaycastHit2D rayInfo = Physics2D.Raycast(transform.position + offset, Direction, Range, whatIsPlayer); //rayInfo will be true only if hit the player.
             if (rayInfo)
             {
                 if (rayInfo.collider.gameObject.tag == "Player")
@@ -146,7 +147,7 @@ public class turretScript : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position, Range);
+        Gizmos.DrawWireSphere(transform.position + offset, Range);
     }
 
 }

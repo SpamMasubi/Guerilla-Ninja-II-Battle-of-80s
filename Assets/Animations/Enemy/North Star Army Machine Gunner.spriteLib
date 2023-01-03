@@ -19,10 +19,10 @@ MonoBehaviour:
     m_OverrideEntries:
     - m_Name: North Star Army_28
       m_Hash: 71925353
-      m_Sprite: {fileID: -4032544577816592317, guid: bc9ec8a984391674197641f441523b70, type: 3}
-      m_FromMain: 0
+      m_Sprite: {fileID: 5576566084913750783, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: -4032544577816592317, guid: bc9ec8a984391674197641f441523b70, type: 3}
-    m_FromMain: 0
+    m_FromMain: 1
     m_EntryOverrideCount: 1
   - m_Name: Dead
     m_Hash: 219670042
@@ -30,11 +30,9 @@ MonoBehaviour:
     m_OverrideEntries:
     - m_Name: North Star Army_18
       m_Hash: 795094442
-      m_Sprite: {fileID: 6179718172221975354, guid: bc9ec8a984391674197641f441523b70, type: 3}
-      m_FromMain: 0
+      m_Sprite: {fileID: 307875583672630547, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
       m_SpriteOverride: {fileID: 6179718172221975354, guid: bc9ec8a984391674197641f441523b70, type: 3}
-    m_FromMain: 0
+    m_FromMain: 1
     m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 8288f4ab8260c6c4bb214dc8ad42f1d8
-  m_ModificationHash: 0
-  m_Version: 1

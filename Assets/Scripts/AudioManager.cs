@@ -74,7 +74,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void SoundObjectCreation(AudioClip clip)
+    public void SoundObjectCreation(AudioClip clip)
     {
         //Create SoundObject gameobject
         GameObject newObject = Instantiate(soundObject, transform);

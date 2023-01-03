@@ -8,6 +8,8 @@ public class BossStart : MonoBehaviour
 
     public GameObject exitClosed;
 
+    public AudioClip startBossSFX;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
@@ -36,6 +38,7 @@ public class BossStart : MonoBehaviour
             exitClosed.SetActive(true);
             FindObjectOfType<Canvas>().gameObject.transform.GetChild(4).gameObject.SetActive(true);
             FindObjectOfType<PlayMusic>().PlaySong(FindObjectOfType<PlayMusic>().bossSong);
+            AudioManager.instance.SoundObjectCreation(startBossSFX);
             Destroy(gameObject,1f);
         }
     }

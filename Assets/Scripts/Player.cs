@@ -235,6 +235,10 @@ public class Player : MonoBehaviour
         {
             xVal *= runSpeedModifier;
         }
+        else if (BossVehicle.isDead || FinalBoss.isDead)
+        {
+            xVal = 0;
+        }
         //Create Vector2 for velocity 
         Vector2 targetVelocity = new Vector2(xVal, rb2d.velocity.y);
         //Set the velocity of the player

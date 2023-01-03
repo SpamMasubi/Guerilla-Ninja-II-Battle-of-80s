@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PolygonCollider2D))]
 public class BossVehicle : MonoBehaviour
 {
     //Reference to waypoints
@@ -15,9 +14,17 @@ public class BossVehicle : MonoBehaviour
     public float speed = 5;
     public string bossName;
     public float bossHealth = 0f;
+    public AudioClip startPhase2, deadsfx;
+    public GameObject hitBox;
+    public float hitBoxAppearTime = 0f;
+    float hitBoxAppearTimer = 0f;
+    bool hitBoxAppear = true;
+    float maxHealth;
 
     public static bool isDead = false; //check if player is Dead
     public static bool stageClear = false;
+    bool beginPhase2;
+    bool beginMoving;
 
     Animator anim;
 
@@ -35,6 +42,7 @@ public class BossVehicle : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         bossSprite = GetComponent<SpriteRenderer>();
+        maxHealth = bossHealth;
     }
 
     private void Reset()
@@ -44,8 +52,6 @@ public class BossVehicle : MonoBehaviour
 
     void Init()
     {
-        //Make boxCollider trigger
-        GetComponent<PolygonCollider2D>().isTrigger = true;
 
         GameObject root = new GameObject(name + "_Root");
         //Reset Position of Root to this Boss
@@ -75,9 +81,34 @@ public class BossVehicle : MonoBehaviour
 
     private void Update()
     {
-        if (BossStart.startBoss)
+        if (BossStart.startBoss && beginMoving)
         {
             MoveToNextPoint();
+        }
+
+        if (!isDead && bossHealth <= (maxHealth / 2) && !beginPhase2)
+        {
+            isInvincible = true;
+            beginPhase2 = true;
+            AudioManager.instance.SoundObjectCreation(startPhase2);
+            anim.SetBool("Second Phase", true);
+        }
+
+        //Special attack for boss
+        if (beginPhase2 && hitBox != null && !hitBoxAppear)
+        {
+            if (hitBoxAppearTimer <= 0f)
+            {
+                hitBoxAppearTimer = hitBoxAppearTime;
+            }
+            if (hitBoxAppearTimer > 0f)
+            {
+                hitBoxAppearTimer -= Time.deltaTime;
+                if (hitBoxAppearTimer <= 0f)
+                {
+                    anim.SetTrigger("enableHitBox");
+                }
+            }
         }
     }
 
@@ -122,38 +153,24 @@ public class BossVehicle : MonoBehaviour
         isInvincible = false;
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!isDead)
         {
             if (collision.tag == "playerProjectiles" || collision.tag == "playerAttack")
             {
-                if (!isInvincible && collision.tag == "playerProjectiles")
-                {
-                    if (SwitchWeapons.shuriken)
-                    {
-                        StartCoroutine(InvincibilityFlash());
-                        FindObjectOfType<BossHealthBar>().LoseHealth(1);
-                        AudioManager.instance.PlaySFX("bossDamage");
-                    }
-                    else if (SwitchWeapons.handgun)
-                    {
-                        StartCoroutine(InvincibilityFlash());
-                        FindObjectOfType<BossHealthBar>().LoseHealth(2);
-                        AudioManager.instance.PlaySFX("bossDamage");
-                    }
-                    else if (SwitchWeapons.AR)
-                    {
-                        StartCoroutine(InvincibilityFlash());
-                        FindObjectOfType<BossHealthBar>().LoseHealth(3);
-                        AudioManager.instance.PlaySFX("bossDamage");
-                    }
-                }
-                else if(!isInvincible && collision.tag == "playerAttack")
+                if (!isInvincible && hitBoxAppear && collision.tag == "playerProjectiles")
                 {
                     StartCoroutine(InvincibilityFlash());
-                    FindObjectOfType<BossHealthBar>().LoseHealth(1);
                     AudioManager.instance.PlaySFX("bossDamage");
+                    anim.SetTrigger("Hurt");
+                }
+                else if (!isInvincible && hitBoxAppear && collision.tag == "playerAttack")
+                {
+                    StartCoroutine(InvincibilityFlash());
+                    FindObjectOfType<BossHealthBar>().LoseHealth(2);
+                    AudioManager.instance.PlaySFX("bossDamage");
+                    anim.SetTrigger("Hurt");
                 }
                 else
                 {
@@ -161,6 +178,23 @@ public class BossVehicle : MonoBehaviour
                 }
             }
         }
+    }
+
+    void startPhaseTwo()
+    {
+        isInvincible = false;
+        FindObjectOfType<BossVehicle>().GetComponentInChildren<turretScript>().enabled = true;
+        FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = false;
+        beginMoving = true;
+        hitBoxAppear = false;
+    }
+
+    public void enableHitBox()
+    {
+        hitBoxAppear = true;
+        FindObjectOfType<BossVehicle>().GetComponentInChildren<turretScript>().enabled = false;
+        FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = true;
+        beginMoving = false;
     }
 
     public void BossDead()
@@ -174,9 +208,12 @@ public class BossVehicle : MonoBehaviour
         isDead = true;
         ExplosionEffect();
         Destroy(FindObjectOfType<PlayMusic>().gameObject);
+        AudioManager.instance.SoundObjectCreation(deadsfx);
         GetComponent<BossVehicle>().enabled = false;
         FindObjectOfType<BossVehicle>().GetComponentInChildren<BossSpecial>().enabled = false;
+        FindObjectOfType<BossVehicle>().GetComponentInChildren<turretScript>().enabled = false;
         anim.SetTrigger("Defeated");
+        anim.SetBool("Second Phase", false);
     }
 
     //Function to instantiate explosion
@@ -187,6 +224,11 @@ public class BossVehicle : MonoBehaviour
 
         //set explosion position
         explode.transform.position = transform.position;
+    }
+
+    public void damageEnemySFX(AudioClip sfx)
+    {
+        AudioManager.instance.SoundObjectCreation(sfx);
     }
 
     public void StageClear()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShootingItem : MonoBehaviour
 {
+    public static ShootingItem instance;
     public float maxSpeed;
     private float currentSpeed;
     public int damage;
@@ -30,6 +31,10 @@ public class ShootingItem : MonoBehaviour
         //Destroy
         if (collision.tag == "Enemy" || collision.tag == "Boss")
         {
+            if (BossStart.startBoss)
+            {
+                FindObjectOfType<BossHealthBar>().LoseHealth(damage);
+            }
             Destroy(gameObject);
         }
     }

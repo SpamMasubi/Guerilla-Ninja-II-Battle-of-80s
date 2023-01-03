@@ -273,6 +273,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: First Boss(North Star-captured North Korean Tank)_0
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1
+        width: 118
+        height: 12
+      alignment: 9
+      pivot: {x: 0.95, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70a4ebcdd418f647bd5ab427bd5eff3
+      internalID: 1219900629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -287,6 +308,7 @@ TextureImporter:
       Boss 3_4: 2069709776719835521
       Boss 3_2: 5455840153183571612
       Boss 3_0: -2903058983992507192
+      First Boss(North Star-captured North Korean Tank)_0: 1219900629
       Boss 3_1: -2535972484497873357
       Boss 3_5: -6683041924530389328
       Boss 3_3: 4549140737271382785

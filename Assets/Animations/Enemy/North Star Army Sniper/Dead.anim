@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Dead
-  serializedVersion: 7
+  serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -350,25 +350,6 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0.000006632164
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_SpriteHash
-    path: 
-    classID: 114
-    script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -543,7 +524,6 @@ AnimationClip:
       typeID: 212
       customType: 26
       isPPtrCurve: 0
-      isIntCurve: 0
     - serializedVersion: 2
       path: 2857787619
       attribute: 3305885265
@@ -551,7 +531,6 @@ AnimationClip:
       typeID: 212
       customType: 0
       isPPtrCurve: 0
-      isIntCurve: 0
     - serializedVersion: 2
       path: 0
       attribute: 3305885265
@@ -559,15 +538,6 @@ AnimationClip:
       typeID: 114
       customType: 24
       isPPtrCurve: 0
-      isIntCurve: 0
-    - serializedVersion: 2
-      path: 0
-      attribute: 3843704414
-      script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-      typeID: 114
-      customType: 0
-      isPPtrCurve: 0
-      isIntCurve: 1
     - serializedVersion: 2
       path: 0
       attribute: 3305885265
@@ -575,7 +545,6 @@ AnimationClip:
       typeID: 212
       customType: 0
       isPPtrCurve: 0
-      isIntCurve: 0
     - serializedVersion: 2
       path: 2857787619
       attribute: 0
@@ -583,7 +552,6 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
-      isIntCurve: 0
     - serializedVersion: 2
       path: 2857787619
       attribute: 1
@@ -591,7 +559,6 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
-      isIntCurve: 0
     - serializedVersion: 2
       path: 0
       attribute: 3198222400
@@ -599,7 +566,6 @@ AnimationClip:
       typeID: 114
       customType: 0
       isPPtrCurve: 0
-      isIntCurve: 0
     - serializedVersion: 2
       path: 0
       attribute: 1456615024
@@ -607,7 +573,6 @@ AnimationClip:
       typeID: 114
       customType: 0
       isPPtrCurve: 0
-      isIntCurve: 0
     - serializedVersion: 2
       path: 0
       attribute: 1181594048
@@ -615,7 +580,6 @@ AnimationClip:
       typeID: 114
       customType: 0
       isPPtrCurve: 0
-      isIntCurve: 0
     pptrCurveMapping:
     - {fileID: -8862498621304340518, guid: bc9ec8a984391674197641f441523b70, type: 3}
     - {fileID: -8862498621304340518, guid: bc9ec8a984391674197641f441523b70, type: 3}
@@ -1127,25 +1091,6 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0.000006632164
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_SpriteHash
-    path: 
-    classID: 114
-    script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136

@@ -22,6 +22,7 @@ public class BossAttack : MonoBehaviour
     public SpriteRenderer bossSprite;
 
     public float fireRate;
+    public string attackSFX;
     float nextFire;
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,7 @@ public class BossAttack : MonoBehaviour
     {
         if(Time.time > nextFire && (transform.position.x > player.transform.position.x))
         {
+            AudioManager.instance.PlaySFX(attackSFX);
             Instantiate(bullet, bulletLauncher.position, bulletLauncher.rotation);
             nextFire = Time.time + fireRate;
         }
