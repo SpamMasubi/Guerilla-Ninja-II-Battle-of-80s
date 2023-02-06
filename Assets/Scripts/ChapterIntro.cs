@@ -23,7 +23,7 @@ public class ChapterIntro : MonoBehaviour
         {
             case 1:
                 chapterIntro.text = "Mission 1";
-                chapterText.text = "Soldier of Ninjutsu";
+                chapterText.text = "Return of the Ninja of Fortune" + "\n\n" +"-MacArthur Base, Korean Peninsula DMZ-";
                 break;
             case 2:
                 chapterIntro.text = "Mission 2";

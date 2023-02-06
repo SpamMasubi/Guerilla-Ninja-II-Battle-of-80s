@@ -5,8 +5,27 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
-    public Text scores, shurikenCounter, HACounter, ARACounter;
+    public Text scores, shurikenCounter, SpACounter;
+    public Image mugshot;
+    public Sprite[] ninjaCharMugshots;
 
+    private void Start()
+    {
+        switch (MainMenu.characterNum)
+        {
+            case 1:
+                mugshot.sprite = ninjaCharMugshots[0];
+                break;
+            case 2:
+                mugshot.sprite = ninjaCharMugshots[1];
+                break;
+            case 3:
+                mugshot.sprite = ninjaCharMugshots[2];
+                break;
+            default:
+                break;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -17,7 +36,6 @@ public class PlayerStats : MonoBehaviour
     {
         scores.text = "Score: " + FindObjectOfType<GameManager>().scores.ToString("0000000");
         shurikenCounter.text = "x" + FindObjectOfType<GameManager>().shurikenCount.ToString("00");
-        HACounter.text = "x" + FindObjectOfType<GameManager>().handgunAmmo.ToString("00");
-        ARACounter.text = "x" + FindObjectOfType<GameManager>().assaultRifleAmmo.ToString("00");
+        SpACounter.text = "x" + FindObjectOfType<GameManager>().SpecialAmmo.ToString("00");
     }
 }

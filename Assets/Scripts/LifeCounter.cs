@@ -6,6 +6,25 @@ using UnityEngine.UI;
 public class LifeCounter : MonoBehaviour
 {
     public Text lives;
+    public Image lifeImage;
+    public Sprite[] ninjaCharLife;
+    public void Start()
+    {
+        switch (MainMenu.characterNum)
+        {
+            case 1:
+                lifeImage.sprite = ninjaCharLife[0];
+                break;
+            case 2:
+                lifeImage.sprite = ninjaCharLife[1];
+                break;
+            case 3:
+                lifeImage.sprite = ninjaCharLife[2];
+                break;
+            default:
+                break;
+        }
+    }
 
     private void Update()
     {

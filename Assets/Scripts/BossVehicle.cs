@@ -37,6 +37,8 @@ public class BossVehicle : MonoBehaviour
     public int numberOfFlashes;
     public static bool isInvincible;
     public SpriteRenderer bossSprite;
+    public AudioClip[] ninjaCharVictory;
+    private AudioClip victorySFX;
 
     void Start()
     {
@@ -180,6 +182,12 @@ public class BossVehicle : MonoBehaviour
         }
     }
 
+    void cantHit()
+    {
+        hitBoxAppear = false;
+        isInvincible = true;
+    }
+
     void startPhaseTwo()
     {
         isInvincible = false;
@@ -211,7 +219,7 @@ public class BossVehicle : MonoBehaviour
         AudioManager.instance.SoundObjectCreation(deadsfx);
         GetComponent<BossVehicle>().enabled = false;
         FindObjectOfType<BossVehicle>().GetComponentInChildren<BossSpecial>().enabled = false;
-        FindObjectOfType<BossVehicle>().GetComponentInChildren<turretScript>().enabled = false;
+        Destroy(FindObjectOfType<BossVehicle>().GetComponentInChildren<turretScript>());
         anim.SetTrigger("Defeated");
         anim.SetBool("Second Phase", false);
     }
@@ -235,6 +243,18 @@ public class BossVehicle : MonoBehaviour
     {
         ChapterIntro.chapters += 1;
         stageClear = true;
-        AudioManager.instance.PlaySFX("Win");
+        switch (MainMenu.characterNum)
+        {
+            case 1:
+                victorySFX = ninjaCharVictory[0];
+                break;
+            case 2:
+                victorySFX = ninjaCharVictory[1];
+                break;
+            case 3:
+                victorySFX = ninjaCharVictory[2];
+                break;
+        }
+        AudioManager.instance.SoundObjectCreation(victorySFX);
     }
 }

@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public Transform respawn;
 
     //Sound Effects
-    public AudioClip attack1, attack2, win, dead, hurt, revive, specialWeaponPicked, usingSpecialWeapon, healthItemPicked, itemPicked;
+    public AudioClip win, dead, hurt, revive, specialWeaponPicked, healthItemPicked, itemPicked;
     //Sound Object
     public GameObject soundObject;
 
@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
     int availableJumps; //how many jumps left
 
-    bool facingRight = true; //facing right
+    public static bool facingRight = true; //facing right
     [HideInInspector]
     public bool isRunning; //player isn't running
 
@@ -62,6 +62,8 @@ public class Player : MonoBehaviour
         availableJumps = totalJumps;
         isInvincible = false;
         isHurt = false;
+
+        respawn = FindObjectOfType<Respawn>().transform;
 
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -294,7 +296,7 @@ public class Player : MonoBehaviour
         if (!isInvincible && !isDead && !ShootingOrAttack.isAttack && !EnemyAI.isDead && !EnemyShoot.isDead && !Sniper.isDead)
         {
             //if player collides with enemy
-            if (collision.tag == "Enemy" || collision.tag == "Spikes" || collision.tag == "Boss")
+            if (collision.tag == "Enemy" || collision.tag == "Spikes")
             {
                 isHurt = true;
                 StartCoroutine(InvincibilityFlash());

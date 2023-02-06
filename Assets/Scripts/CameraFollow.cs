@@ -23,13 +23,10 @@ public class CameraFollow : MonoBehaviour
     [HideInInspector]
     public SetupState ss = SetupState.NONE;
     float nextTimeToSearch = 0;
-    Vector3 lastTargetPosition;
 
     void Start()
     {
         FindPlayer();
-        //target = FindObjectOfType<Player>().transform;
-        lastTargetPosition = target.position;
         if (followFloor)
         {
             goalAltitude = target.position.y;

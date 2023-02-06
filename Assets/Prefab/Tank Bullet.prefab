@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5524473102908649616}
   - component: {fileID: 8740957254880172959}
   - component: {fileID: 3471137306152904831}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tank Bullet
   m_TagString: enemyProjectile
   m_Icon: {fileID: 0}
@@ -141,7 +141,6 @@ PolygonCollider2D:
       - {x: -0.46875, y: -0.25}
       - {x: 0.53125, y: -0.25}
       - {x: 0.53125, y: 0.25}
-  m_UseDelaunayMesh: 0
 --- !u!114 &5524473102908649616
 MonoBehaviour:
   m_ObjectHideFlags: 0

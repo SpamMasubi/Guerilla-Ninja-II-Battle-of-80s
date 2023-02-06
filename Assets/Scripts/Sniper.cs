@@ -18,7 +18,6 @@ public class Sniper : MonoBehaviour
     private bool isAgros;
     private bool isAttacking;
     float nextTimeToSearch = 0;
-    Vector3 lastTargetPosition;
 
     public GameObject enemyBullet;
 
@@ -35,10 +34,9 @@ public class Sniper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = FindObjectOfType<Player>().transform;
+        FindPlayer();
         nextShot = Time.time;
         anim = GetComponent<Animator>();
-        lastTargetPosition = player.position;
         isDead = false;
     }
 

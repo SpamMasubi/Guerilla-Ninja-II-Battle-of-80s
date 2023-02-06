@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
     [Header("Attributes")]
     public ItemType item;
     public int points, healthRestore, ammo, life;
+    public Sprite[] ninjaCharLife, specialAmmo;
 
     public bool isLootItem;
 
@@ -19,6 +20,33 @@ public class Item : MonoBehaviour
 
     bool isGrounded; //ground checker
     public static bool canGetItem;
+
+    private void Start()
+    {
+        if (item == ItemType.LIFE) {
+            switch (MainMenu.characterNum)
+            {
+                case 1:
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = ninjaCharLife[0];
+                    break;
+                case 2:
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = ninjaCharLife[1];
+                    break;
+                case 3:
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = ninjaCharLife[2];
+                    break;
+            }
+        }
+        if(item == ItemType.AMMUNITIONS && gameObject.name == "Special Ammo")
+        {
+            switch (MainMenu.characterNum)
+            {
+                case 3:
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = specialAmmo[0];
+                    break;
+            }
+        }
+    }
 
     void Reset() //reset function
     {
@@ -54,18 +82,13 @@ public class Item : MonoBehaviour
                 if (gameObject.name == "AR Ammo" || gameObject.name == "AR Ammo(Clone)")
                 {
                     AudioManager.instance.PlaySFX("TakeAmmo");
-                    FindObjectOfType<GameManager>().assaultRifleAmmo += ammo;
+                    FindObjectOfType<GameManager>().SpecialAmmo += ammo;
                 }
                 else if (gameObject.name == "Shuriken Ammo" || gameObject.name == "Shuriken Ammo(Clone)")
                 {
                     AudioManager.instance.PlaySFX("TakeAmmo");
                     FindObjectOfType<GameManager>().shurikenCount += ammo;
 
-                }
-                else
-                {
-                    AudioManager.instance.PlaySFX("TakeAmmo");
-                    FindObjectOfType<GameManager>().handgunAmmo += ammo;
                 }
                 break;
             case ItemType.HEALTH:

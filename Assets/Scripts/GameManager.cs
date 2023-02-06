@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public int lives = 4;
     public float health = 100;
 
-    [HideInInspector]public int scores = 0, shurikenCount = 3, handgunAmmo = 8, assaultRifleAmmo = 20;
+    [HideInInspector]public int scores = 0, shurikenCount = 3, SpecialAmmo = 30;
 
     private void Awake()
     {

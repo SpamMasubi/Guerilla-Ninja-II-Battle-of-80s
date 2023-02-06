@@ -898,7 +898,7 @@ TextureImporter:
         width: 29
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -919,7 +919,7 @@ TextureImporter:
         width: 26
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -940,7 +940,7 @@ TextureImporter:
         width: 39
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -961,7 +961,7 @@ TextureImporter:
         width: 31
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -982,7 +982,7 @@ TextureImporter:
         width: 24
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1003,7 +1003,7 @@ TextureImporter:
         width: 69
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1024,7 +1024,7 @@ TextureImporter:
         width: 69
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1032,6 +1032,111 @@ TextureImporter:
       bones: []
       spriteID: 4c6e1680b74eeba4f82c27ec357bf625
       internalID: -206683505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerilla Ninja 2 Misc(Transparency)_39
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 710
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71b3c3a324e37540a150d3854196e9a
+      internalID: -241428583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerilla Ninja 2 Misc(Transparency)_40
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 590
+        width: 336
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382b383ab87ce5544a4e3618f681555e
+      internalID: 1913384279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerilla Ninja 2 Misc(Transparency)_41
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 476
+        width: 336
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5918e86eee28d4d8fa6541cb6dcb94
+      internalID: -447831975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerilla Ninja 2 Misc(Transparency)_42
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 355
+        width: 336
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dad380f3328b74b8dc111cd31f906e
+      internalID: -859338146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerilla Ninja 2 Misc(Transparency)_43
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 241
+        width: 336
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c5eb68e522cc343bdb22b0a2e46e4a
+      internalID: -47914104
       vertices: []
       indices: 
       edges: []
@@ -1047,33 +1152,39 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guerilla Ninja 2 Misc(Transparency)_6: -7318409814115170129
       Guerilla Ninja 2 Misc(Transparency)_18: -614582849731204501
       Guerilla Ninja 2 Misc(Transparency)_1: 280686621688946561
       Guerilla Ninja 2 Misc(Transparency)_13: 3762910426379174223
       Guerilla Ninja 2 Misc(Transparency)_20: -4184086651585050345
-      Guerilla Ninja 2 Misc(Transparency)_34: 1038259782
       Guerilla Ninja 2 Misc(Transparency)_4: -5122132922885282768
-      Guerilla Ninja 2 Misc(Transparency)_37: 288125147
-      Guerilla Ninja 2 Misc(Transparency)_17: -6952553665520802791
-      Guerilla Ninja 2 Misc(Transparency)_25: 8943117063762144010
-      Guerilla Ninja 2 Misc(Transparency)_7: 4668978411095339165
-      Guerilla Ninja 2 Misc(Transparency)_16: 260311946995324409
+      Guerilla Ninja 2 Misc(Transparency)_43: -47914104
       Guerilla Ninja 2 Misc(Transparency)_29: 3965734792194173536
-      Guerilla Ninja 2 Misc(Transparency)_12: -5394346628573323173
-      Guerilla Ninja 2 Misc(Transparency)_9: 312836742029363894
+      Guerilla Ninja 2 Misc(Transparency)_7: 4668978411095339165
       Guerilla Ninja 2 Misc(Transparency)_33: -793188046
+      Guerilla Ninja 2 Misc(Transparency)_9: 312836742029363894
       Guerilla Ninja 2 Misc(Transparency)_28: -4459653035286337040
-      Guerilla Ninja 2 Misc(Transparency)_22: -7490024306303935422
-      Guerilla Ninja 2 Misc(Transparency)_30: -1268730293
       Guerilla Ninja 2 Misc(Transparency)_8: -3026930764542012468
-      Guerilla Ninja 2 Misc(Transparency)_27: 1721700439725589471
-      Guerilla Ninja 2 Misc(Transparency)_2: 5617356812025739822
       Guerilla Ninja 2 Misc(Transparency)_15: -983553192674341990
       Guerilla Ninja 2 Misc(Transparency)_11: 2916867996603169546
       Guerilla Ninja 2 Misc(Transparency)_21: 7495895011243100122
-      Guerilla Ninja 2 Misc(Transparency)_35: 897351804
       Guerilla Ninja 2 Misc(Transparency)_31: -1198426388
+      Guerilla Ninja 2 Misc(Transparency)_10: 7472826699395424295
+      Guerilla Ninja 2 Misc(Transparency)_24: 2044555249294377467
+      Guerilla Ninja 2 Misc(Transparency)_6: -7318409814115170129
+      Guerilla Ninja 2 Misc(Transparency)_34: 1038259782
+      Guerilla Ninja 2 Misc(Transparency)_37: 288125147
+      Guerilla Ninja 2 Misc(Transparency)_40: 1913384279
+      Guerilla Ninja 2 Misc(Transparency)_17: -6952553665520802791
+      Guerilla Ninja 2 Misc(Transparency)_25: 8943117063762144010
+      Guerilla Ninja 2 Misc(Transparency)_16: 260311946995324409
+      Guerilla Ninja 2 Misc(Transparency)_12: -5394346628573323173
+      Guerilla Ninja 2 Misc(Transparency)_41: -447831975
+      Guerilla Ninja 2 Misc(Transparency)_22: -7490024306303935422
+      Guerilla Ninja 2 Misc(Transparency)_30: -1268730293
+      Guerilla Ninja 2 Misc(Transparency)_42: -859338146
+      Guerilla Ninja 2 Misc(Transparency)_27: 1721700439725589471
+      Guerilla Ninja 2 Misc(Transparency)_2: 5617356812025739822
+      Guerilla Ninja 2 Misc(Transparency)_35: 897351804
       Guerilla Ninja 2 Misc(Transparency)_36: 708694386
       Guerilla Ninja 2 Misc(Transparency)_3: -312096615846082063
       Guerilla Ninja 2 Misc(Transparency)_0: 9089204209795195668
@@ -1081,10 +1192,9 @@ TextureImporter:
       Guerilla Ninja 2 Misc(Transparency)_38: -206683505
       Guerilla Ninja 2 Misc(Transparency)_14: -5411002733125014909
       Guerilla Ninja 2 Misc(Transparency)_23: 6099155098362203845
-      Guerilla Ninja 2 Misc(Transparency)_10: 7472826699395424295
       Guerilla Ninja 2 Misc(Transparency)_5: -5149352009297966589
       Guerilla Ninja 2 Misc(Transparency)_32: 757223638
-      Guerilla Ninja 2 Misc(Transparency)_24: 2044555249294377467
+      Guerilla Ninja 2 Misc(Transparency)_39: -241428583
       Guerilla Ninja 2 Misc(Transparency)_26: -8555401646883766810
   spritePackingTag: 
   pSDRemoveMatte: 0

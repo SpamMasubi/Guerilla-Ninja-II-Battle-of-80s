@@ -276,7 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemsDrop:
   - item: {fileID: 6510106988011041521, guid: 3882ba68cca978948bc8ee99490fc3b6, type: 3}
-    spawnRate: 80
+    spawnRate: 50
     minSpawnProb: 0
     maxSpawnProb: 0
   - item: {fileID: 5480217077680903461, guid: e541c2bfa17c61f4d8925ee9ee591b82, type: 3}
@@ -284,11 +284,15 @@ MonoBehaviour:
     minSpawnProb: 0
     maxSpawnProb: 0
   - item: {fileID: 5459668181577879437, guid: e5b0b6c30bb5b664286c58e313c0467c, type: 3}
-    spawnRate: 2
+    spawnRate: 5
     minSpawnProb: 0
     maxSpawnProb: 0
   - item: {fileID: 2884357962655425272, guid: fd7bbd4d06936f048b0a3b87b31b707c, type: 3}
     spawnRate: 80
+    minSpawnProb: 0
+    maxSpawnProb: 0
+  - item: {fileID: 4804127678734873861, guid: c1c608aabd3544a44bdd891c014110e8, type: 3}
+    spawnRate: 3
     minSpawnProb: 0
     maxSpawnProb: 0
   dropPoint: {fileID: 6674174978738003917}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7994372709112408964}
   - component: {fileID: -7080610570167671525}
   - component: {fileID: 8963079040368867266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shuriken
   m_TagString: playerProjectiles
   m_Icon: {fileID: 0}

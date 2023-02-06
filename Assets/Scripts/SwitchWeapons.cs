@@ -6,24 +6,35 @@ using UnityEngine.UI;
 public class SwitchWeapons : MonoBehaviour
 {
     public Image[] playerWeapons;
+    public Sprite[] weaponsBasedOnChar;
 
-    public static bool shuriken = true, handgun, AR;
+    public static bool shuriken = true, special;
 
     private float rgb = 0.3301887f;
 
     private void Start()
     {
+        switch (MainMenu.characterNum)
+        {
+            case 1:
+                playerWeapons[0].sprite = weaponsBasedOnChar[0];
+                playerWeapons[1].sprite = weaponsBasedOnChar[1];
+                break;
+            case 2:
+                playerWeapons[0].sprite = weaponsBasedOnChar[2];
+                playerWeapons[1].sprite = weaponsBasedOnChar[3];
+                break;
+            default:
+                break;
+        }
+
         if (shuriken)
         {
             shurikenSelect();
         }
-        else if (handgun)
-        {
-            handGunSelect();
-        }
         else
         {
-            assaultRifleSelected();
+            specialSelected();
         }
     }
 
@@ -38,11 +49,7 @@ public class SwitchWeapons : MonoBehaviour
                 AudioManager.instance.PlaySFX("weaponSwitch");
                 if (shuriken)
                 {
-                    handGunSelect();
-                }
-                else if (handgun)
-                {
-                    assaultRifleSelected();
+                    specialSelected();
                 }
                 else
                 {
@@ -52,17 +59,13 @@ public class SwitchWeapons : MonoBehaviour
             else if (Input.GetButtonDown("Debug Previous"))
             {
                 AudioManager.instance.PlaySFX("weaponSwitch");
-                if (AR)
-                {
-                    handGunSelect();
-                }
-                else if (handgun)
+                if (special)
                 {
                     shurikenSelect();
                 }
                 else
                 {
-                    assaultRifleSelected();
+                    specialSelected();
                 }
             }
 
@@ -75,12 +78,7 @@ public class SwitchWeapons : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 AudioManager.instance.PlaySFX("weaponSwitch");
-                handGunSelect();
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                AudioManager.instance.PlaySFX("weaponSwitch");
-                assaultRifleSelected();
+                specialSelected();
             }
         }
     }
@@ -90,31 +88,16 @@ public class SwitchWeapons : MonoBehaviour
         shuriken = true;
         playerWeapons[0].color = new Color(1, 1, 1);
 
-        AR = false;
-        handgun = false;
+        special = false;
         playerWeapons[1].color = new Color(rgb, rgb, rgb);
-        playerWeapons[2].color = new Color(rgb, rgb, rgb);
     }
 
-    void handGunSelect()
+    void specialSelected()
     {
+        special = true;
         playerWeapons[1].color = new Color(1, 1, 1);
-        handgun = true;
 
         shuriken = false;
-        AR = false;
-        playerWeapons[0].color = new Color(rgb, rgb, rgb);
-        playerWeapons[2].color = new Color(rgb, rgb, rgb);
-    }
-
-    void assaultRifleSelected()
-    {
-        AR = true;
-        playerWeapons[2].color = new Color(1, 1, 1);
-
-        handgun = false;
-        shuriken = false;
-        playerWeapons[1].color = new Color(rgb, rgb, rgb);
         playerWeapons[0].color = new Color(rgb, rgb, rgb);
     }
 }

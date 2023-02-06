@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4543954394666286725
 SpriteRenderer:
@@ -129,6 +129,10 @@ MonoBehaviour:
   healthRestore: 0
   ammo: 0
   life: 1
+  ninjaCharLife:
+  - {fileID: 2568169014844549000, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
+  - {fileID: 743235984, guid: 0cff264d7cadd28409e3f1a5de4944fa, type: 3}
+  - {fileID: 0}
   isLootItem: 0
   groundChecker: {fileID: 0}
   groundLayer:

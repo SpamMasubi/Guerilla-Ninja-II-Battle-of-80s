@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3764419417629260097}
   - component: {fileID: -1296795227457083092}
   - component: {fileID: 2787465362760295687}
-  m_Layer: 12
+  m_Layer: 8
   m_Name: Enemy AR bullet
   m_TagString: enemyProjectile
   m_Icon: {fileID: 0}

@@ -6,13 +6,16 @@ using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
-    private AudioSource playGame;
+    public AudioSource playGame, titleSong;
     private bool hasStarted;
-    public GameObject StoryMenu, mainMenu, WebGLStoryMenu;
+    public static int characterNum = 0;
+    public AudioClip[] ninjaStartVoice;
+    public GameObject[] ninjas;
+    public GameObject characterSelection, mainMenu, WebGLCharacterSelection;
     public GameObject WebGLMenu, StandAloneMenu; //StandAlone and WebGLMenu
 
-    public GameObject startGameButton, storyBackButton, storyCloseButton;
-    public GameObject WebGLstartGameButton, WebGLstoryBackButton, WebGLstoryCloseButton; //WebGL
+    public GameObject startGameButton, firstCharacterButton, characterSelectionMenuButton;
+    public GameObject WebGLstartGameButton, WebGLCharacterSelectionBackButton, WebGLstoryCloseButton; //WebGL
 
     void Start()
     {
@@ -23,30 +26,49 @@ public class MainMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(WebGLstartGameButton);
-        playGame = GetComponentInChildren<AudioSource>();
 
 #endif
 
 #if UNITY_STANDALONE
 
-        playGame = GetComponentInChildren<AudioSource>();
-
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
-        EventSystem.current.SetSelectedGameObject(startGameButton);
+        EventSystem.current.SetSelectedGameObject(characterSelectionMenuButton);
 
 #endif
 
     }
 
-    public void PlayGame()
+    public void PlayGame(string ninjaCharacterName)
     {
+        characterSelection.SetActive(false);
         if (!hasStarted)
         {
+            switch (ninjaCharacterName)
+            {
+                case "Guerilla Ninja":
+                    characterNum = 1;
+                    ninjas[0].GetComponent<Animator>().SetTrigger("Start Game");
+                    GetComponent<AudioSource>().PlayOneShot(ninjaStartVoice[0]);
+                    break;
+                case "Shinobi":
+                    characterNum = 2;
+                    ninjas[1].GetComponent<Animator>().SetTrigger("Start Game");
+                    GetComponent<AudioSource>().PlayOneShot(ninjaStartVoice[1]);
+                    break;
+                case "Kunoichi":
+                    characterNum = 3;
+                    ninjas[3].GetComponent<Animator>().SetTrigger("Start Game");
+                    GetComponent<AudioSource>().PlayOneShot(ninjaStartVoice[2]);
+                    break;
+                default:
+                    break;
+            }
             hasStarted = true;
             playGame.Play();
-            Invoke("LoadScene", 3f);
+            titleSong.Stop();
+            Invoke("LoadScene", 7.5f);
         }
     }
 
@@ -61,7 +83,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void storyOpen()
+    public void characterSelectionOpen()
     {
 #if UNITY_WEBGL
         WebGLStoryMenu.SetActive(true);
@@ -74,17 +96,17 @@ public class MainMenu : MonoBehaviour
 #endif
 
 #if UNITY_STANDALONE
-        StoryMenu.SetActive(true);
+        characterSelection.SetActive(true);
         mainMenu.SetActive(false);
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
-        EventSystem.current.SetSelectedGameObject(storyBackButton);
+        EventSystem.current.SetSelectedGameObject(firstCharacterButton);
 #endif
 
     }
 
-    public void storyClose()
+    public void characterSelectionClose()
     {
 #if UNITY_WEBGL
         WebGLStoryMenu.SetActive(false);
@@ -96,12 +118,12 @@ public class MainMenu : MonoBehaviour
 #endif
 
 #if UNITY_STANDALONE
-        StoryMenu.SetActive(false);
+        characterSelection.SetActive(false);
         mainMenu.SetActive(true);
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
-        EventSystem.current.SetSelectedGameObject(storyCloseButton);
+        EventSystem.current.SetSelectedGameObject(characterSelectionMenuButton);
 #endif
     }
 }

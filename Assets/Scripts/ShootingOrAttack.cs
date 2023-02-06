@@ -9,6 +9,7 @@ public class ShootingOrAttack : MonoBehaviour
     private bool canshoot = true;
     public static bool isAttack;
     public static int attackPoint = 2;
+    public string shootSpecialSFX; 
 
     private void Update()
     {
@@ -23,23 +24,16 @@ public class ShootingOrAttack : MonoBehaviour
                     AudioManager.instance.PlaySFX("throwing");
                     Shoot(0);
                 }
-                else if (SwitchWeapons.handgun && FindObjectOfType<GameManager>().handgunAmmo > 0)
+                else if (SwitchWeapons.special && FindObjectOfType<GameManager>().SpecialAmmo > 0)
                 {
-                    FindObjectOfType<GameManager>().handgunAmmo--;
-                    GetComponent<Animator>().SetTrigger("ShootHG");
-                    AudioManager.instance.PlaySFX("shootHandgun");
-                    Shoot(1);
-                }
-                else if (SwitchWeapons.AR && FindObjectOfType<GameManager>().assaultRifleAmmo > 0)
-                {
-                    FindObjectOfType<GameManager>().assaultRifleAmmo -= 3;
-                    if (FindObjectOfType<GameManager>().assaultRifleAmmo <= 0)
+                    FindObjectOfType<GameManager>().SpecialAmmo -= 3;
+                    if (FindObjectOfType<GameManager>().SpecialAmmo <= 0)
                     {
-                        FindObjectOfType<GameManager>().assaultRifleAmmo = 0;
+                        FindObjectOfType<GameManager>().SpecialAmmo = 0;
                     }
-                    GetComponent<Animator>().SetTrigger("ShootAR");
-                    AudioManager.instance.PlaySFX("shootAssaultRifle");
-                    Shoot(2);
+                    GetComponent<Animator>().SetTrigger("ShootSpecial");
+                    AudioManager.instance.PlaySFX(shootSpecialSFX);
+                    Shoot(1);
                 }
             }
 
@@ -59,7 +53,7 @@ public class ShootingOrAttack : MonoBehaviour
             return;
         }
 
-        GameObject si = Instantiate(shootingItem[value], shootingPoint);
+        GameObject si = Instantiate(shootingItem[value], shootingPoint.position, shootingPoint.rotation);
         si.transform.parent = null;
     }
 

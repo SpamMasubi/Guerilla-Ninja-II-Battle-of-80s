@@ -159,13 +159,7 @@ public class FinalBoss : MonoBehaviour
                         FindObjectOfType<BossHealthBar>().LoseHealth(2);
                         AudioManager.instance.PlaySFX("GeneralHurt");
                     }
-                    else if (SwitchWeapons.handgun)
-                    {
-                        StartCoroutine(InvincibilityFlash());
-                        FindObjectOfType<BossHealthBar>().LoseHealth(2);
-                        AudioManager.instance.PlaySFX("GeneralHurt");
-                    }
-                    else if (SwitchWeapons.AR)
+                    else if (SwitchWeapons.special)
                     {
                         StartCoroutine(InvincibilityFlash());
                         FindObjectOfType<BossHealthBar>().LoseHealth(3);
