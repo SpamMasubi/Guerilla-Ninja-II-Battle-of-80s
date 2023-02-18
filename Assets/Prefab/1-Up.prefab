@@ -132,7 +132,8 @@ MonoBehaviour:
   ninjaCharLife:
   - {fileID: 2568169014844549000, guid: 5b34fccf98e357142a289bc999988ebe, type: 3}
   - {fileID: 743235984, guid: 0cff264d7cadd28409e3f1a5de4944fa, type: 3}
-  - {fileID: 0}
+  - {fileID: 994224945, guid: cf11be1dc3dd33b44942f4969750340e, type: 3}
+  specialAmmo: []
   isLootItem: 0
   groundChecker: {fileID: 0}
   groundLayer:

@@ -41,7 +41,6 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -85,7 +84,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -297,6 +295,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Vehicles and misc_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 255
+        width: 65
+        height: 35
+      alignment: 9
+      pivot: {x: 0.505, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ccb60f3371b2549954581d9479b6df
+      internalID: 1996435467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vehicles and misc_8
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 255
+        width: 65
+        height: 51
+      alignment: 9
+      pivot: {x: 0.505, y: 0.405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd079dd4f2e5f7943b21d9fe5455bc68
+      internalID: -1867656286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -310,13 +350,16 @@ TextureImporter:
     nameFileIdTable:
       Vehicles and misc_1: 1109498820846321645
       Vehicles and misc_6: -301854149161406571
+      Vehicles and misc_8: -1867656286
       Vehicles and misc_3: 5145099819919173384
       Vehicles and misc_4: -8375689243282173893
       Vehicles and misc_0: -3264080329720040365
       Vehicles and misc_2: -6417538018933891071
       Vehicles and misc_5: 7852749483547350695
+      Vehicles and misc_7: 1996435467
   spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

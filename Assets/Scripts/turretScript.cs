@@ -39,8 +39,9 @@ public class turretScript : MonoBehaviour
         if (BossStart.startBoss && (untilDisabled != 0 || !BossVehicle.isDead))
         {
             Vector3 targetPos = Target.position;
-            Direction = targetPos - (Vector3)transform.position;
-            RaycastHit2D rayInfo = Physics2D.Raycast(transform.position + offset, Direction, Range, whatIsPlayer); //rayInfo will be true only if hit the player.
+            Vector3 pos = transform.position + offset;
+            Direction = targetPos - pos;
+            RaycastHit2D rayInfo = Physics2D.Raycast(pos, Direction, Range, whatIsPlayer); //rayInfo will be true only if hit the player.
             if (rayInfo)
             {
                 if (rayInfo.collider.gameObject.tag == "Player")
@@ -59,13 +60,26 @@ public class turretScript : MonoBehaviour
                 }
             }
 
+            Debug.Log("TargetPos: " + targetPos);
+            Debug.Log("TurretPos: " + pos);
+
             if (Detected == true)
             {
                 if (FindObjectOfType<BossVehicle>() != null)
                 {
                     if (FindObjectOfType<BossVehicle>().name == "North Star Army Tank (Boss)")
                     {
-                        gun.transform.right = -Direction;
+                        /*
+                        if (pos.x > targetPos.x && pos.y < targetPos.y)
+                        {
+                            gun.transform.right += ((Vector3)Direction * -1);
+                        }
+                        else
+                        {
+                            gun.transform.right += (Vector3)Direction;
+                        }
+                        */
+                        gun.transform.right += (Vector3)Direction;
                     }
                     else
                     {
@@ -147,7 +161,8 @@ public class turretScript : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position + offset, Range);
+        Vector3 pos = transform.position + offset;
+        Gizmos.DrawWireSphere(pos, Range);
     }
 
 }

@@ -122,7 +122,6 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -166,7 +165,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -945,6 +943,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: North Star Army_19
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 218
+        width: 54
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 1.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499d01616fa5669438c178ef1936871b
+      internalID: -1624105308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Star Army_26
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 250
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81829e3a0fcccd348918abcf69c33276
+      internalID: -2093451674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Star Army_36
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 196
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca20e82d68cfe9744a17368785d88ba9
+      internalID: 1464510470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -959,12 +1020,14 @@ TextureImporter:
       North Star Army_14: 306476995428933261
       North Star Army_12: 594966627785370405
       North Star Army_32: 1763152725117547875
+      North Star Army_19: -1624105308
       North Star Army_3: 913980153147096441
       North Star Army_22: -1442742051576757688
       North Star Army_34: -8862498621304340518
       North Star Army_33: -8425637861237120864
       North Star Army_10: 7712942075707102570
       North Star Army_28: 5576566084913750783
+      North Star Army_26: -2093451674
       North Star Army_15: 4952650936990886140
       North Star Army_23: -2508610644075695554
       North Star Army_11: -1317981544003949769
@@ -974,6 +1037,7 @@ TextureImporter:
       North Star Army_27: 8802966659837624888
       North Star Army_1: -6121172213935808066
       North Star Army_25: 6179718172221975354
+      North Star Army_36: 1464510470
       North Star Army_7: -7931758876049124002
       North Star Army_20: -3146763447530509879
       North Star Army_16: 6979218657254060865
@@ -992,6 +1056,7 @@ TextureImporter:
       North Star Army_4: -2040878477202561726
   spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

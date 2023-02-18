@@ -10,7 +10,7 @@ public class GameOverUI : MonoBehaviour
     public static bool retry;
     public GameObject retryButton;
 
-    private int delayEnable = 5;
+    private int delayEnable = 8;
 
     private void Start()
     {

@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Hurt
-  serializedVersion: 7
+  serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -29,9 +29,9 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: -3605412429960353154, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      value: {fileID: 1464510470, guid: bc9ec8a984391674197641f441523b70, type: 3}
     - time: 0.5
-      value: {fileID: -3605412429960353154, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      value: {fileID: 1464510470, guid: bc9ec8a984391674197641f441523b70, type: 3}
     attribute: m_Sprite
     path: North Star Army Tank Driver
     classID: 212
@@ -50,7 +50,6 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
-      isIntCurve: 0
     - serializedVersion: 2
       path: 785523852
       attribute: 0
@@ -58,12 +57,11 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
-      isIntCurve: 0
     pptrCurveMapping:
     - {fileID: -3605412429960353154, guid: bc9ec8a984391674197641f441523b70, type: 3}
     - {fileID: -3605412429960353154, guid: bc9ec8a984391674197641f441523b70, type: 3}
-    - {fileID: -3605412429960353154, guid: bc9ec8a984391674197641f441523b70, type: 3}
-    - {fileID: -3605412429960353154, guid: bc9ec8a984391674197641f441523b70, type: 3}
+    - {fileID: 1464510470, guid: bc9ec8a984391674197641f441523b70, type: 3}
+    - {fileID: 1464510470, guid: bc9ec8a984391674197641f441523b70, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

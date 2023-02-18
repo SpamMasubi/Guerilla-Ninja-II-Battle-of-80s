@@ -47,4 +47,4 @@ MonoBehaviour:
   players:
   - {fileID: 3052202704881821485, guid: e8b4718daf1c536458f6dbc76eae914e, type: 3}
   - {fileID: 3052202704881821485, guid: 53204458a95263947bced84c9d3d9bc0, type: 3}
-  - {fileID: 0}
+  - {fileID: 3052202704881821485, guid: 297b6e75d6ab6704eb5777a54d78231e, type: 3}

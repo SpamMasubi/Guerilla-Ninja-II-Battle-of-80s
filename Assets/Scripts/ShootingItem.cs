@@ -47,7 +47,7 @@ public class ShootingItem : MonoBehaviour
         //Destroy
         if (collision.tag == "Enemy" || collision.tag == "Boss")
         {
-            if (BossStart.startBoss && !BossVehicle.isInvincible)
+            if (BossStart.startBoss && BossVehicle.hitBoxAppear && !BossVehicle.isInvincible)
             {
                 FindObjectOfType<BossHealthBar>().LoseHealth(damage);
             }

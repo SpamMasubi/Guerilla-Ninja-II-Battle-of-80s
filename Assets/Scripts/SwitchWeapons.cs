@@ -24,6 +24,10 @@ public class SwitchWeapons : MonoBehaviour
                 playerWeapons[0].sprite = weaponsBasedOnChar[2];
                 playerWeapons[1].sprite = weaponsBasedOnChar[3];
                 break;
+            case 3:
+                playerWeapons[0].sprite = weaponsBasedOnChar[4];
+                playerWeapons[1].sprite = weaponsBasedOnChar[5];
+                break;
             default:
                 break;
         }

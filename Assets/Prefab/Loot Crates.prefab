@@ -45,6 +45,8 @@ GameObject:
   - component: {fileID: 6674174979938054256}
   - component: {fileID: 6674174979938054270}
   - component: {fileID: 6674174979938054257}
+  - component: {fileID: 2893249929795655630}
+  - component: {fileID: -1342500248224140646}
   m_Layer: 0
   m_Name: Loot Crates
   m_TagString: Untagged
@@ -107,7 +109,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1386501047
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -8375689243282173893, guid: 5ae76eca823aac34ab68c7d9b0691714, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -275,24 +277,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsDrop:
-  - item: {fileID: 6510106988011041521, guid: 3882ba68cca978948bc8ee99490fc3b6, type: 3}
-    spawnRate: 50
-    minSpawnProb: 0
-    maxSpawnProb: 0
   - item: {fileID: 5480217077680903461, guid: e541c2bfa17c61f4d8925ee9ee591b82, type: 3}
     spawnRate: 2
     minSpawnProb: 0
     maxSpawnProb: 0
   - item: {fileID: 5459668181577879437, guid: e5b0b6c30bb5b664286c58e313c0467c, type: 3}
-    spawnRate: 5
+    spawnRate: 8
     minSpawnProb: 0
     maxSpawnProb: 0
   - item: {fileID: 2884357962655425272, guid: fd7bbd4d06936f048b0a3b87b31b707c, type: 3}
-    spawnRate: 80
-    minSpawnProb: 0
-    maxSpawnProb: 0
-  - item: {fileID: 4804127678734873861, guid: c1c608aabd3544a44bdd891c014110e8, type: 3}
-    spawnRate: 3
+    spawnRate: 90
     minSpawnProb: 0
     maxSpawnProb: 0
   dropPoint: {fileID: 6674174978738003917}
+--- !u!114 &2893249929795655630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674174979938054260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: d7fa50f24eb7401419baea328a4dc843, type: 3}
+--- !u!114 &-1342500248224140646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674174979938054260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 0
+  m_labelHash: 0
+  m_SpriteKey: 4.599524e-31

@@ -594,11 +594,12 @@ MonoBehaviour:
   respawn: {fileID: 0}
   win: {fileID: 8300000, guid: 2e7710c274ab9494aa6ce6aca72bcc79, type: 3}
   dead: {fileID: 8300000, guid: d9f37b2e7222ccb4a89a0bd2298060ff, type: 3}
+  gameOverSfx: {fileID: 8300000, guid: 44573e8359e12494c9c2ea969d27db07, type: 3}
   hurt: {fileID: 8300000, guid: ed3b1bd46e83be24c88b3659b4dbf31c, type: 3}
   revive: {fileID: 8300000, guid: 3b75f43cc6792ca4e9339c36b691d037, type: 3}
-  specialWeaponPicked: {fileID: 8300000, guid: a22573bf7fbd26f4298be9bff89d9611, type: 3}
   healthItemPicked: {fileID: 8300000, guid: 33bf9a85f554c1a44b6cf0810aa02395, type: 3}
   itemPicked: {fileID: 8300000, guid: c9acb3eec4561f94c897899b391e7261, type: 3}
+  playerDeadSong: {fileID: 8300000, guid: 57db0ae8910395a4eaa3ab9c55e8ee3f, type: 3}
   soundObject: {fileID: 4079872877276035122, guid: 3e983b404fe68ab48aa22e45f0b5a643, type: 3}
   speed: 3
   jumpPower: 15

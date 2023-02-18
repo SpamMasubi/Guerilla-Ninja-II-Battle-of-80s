@@ -62,11 +62,11 @@ TagManager:
   - name: Platforms
     uniqueID: 622610017
     locked: 0
-  - name: Vehicle(BG)
-    uniqueID: 2024985621
-    locked: 0
   - name: Loot Crates
     uniqueID: 2908466249
+    locked: 0
+  - name: Vehicle(BG)
+    uniqueID: 2024985621
     locked: 0
   - name: Player
     uniqueID: 321853825

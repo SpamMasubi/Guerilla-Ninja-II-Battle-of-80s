@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Idle
+    m_Hash: 1008081451
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Vehicles and misc_4
+      m_Hash: 650364696
+      m_Sprite: {fileID: -8375689243282173893, guid: 5ae76eca823aac34ab68c7d9b0691714, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8375689243282173893, guid: 5ae76eca823aac34ab68c7d9b0691714, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: Open
+    m_Hash: 71445658
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Vehicles and misc_4
+      m_Hash: 650364696
+      m_Sprite: {fileID: -8375689243282173893, guid: 5ae76eca823aac34ab68c7d9b0691714, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8375689243282173893, guid: 5ae76eca823aac34ab68c7d9b0691714, type: 3}
+    - m_Name: Vehicles and misc_5
+      m_Hash: 298121102
+      m_Sprite: {fileID: 7852749483547350695, guid: 5ae76eca823aac34ab68c7d9b0691714, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7852749483547350695, guid: 5ae76eca823aac34ab68c7d9b0691714, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  m_PrimaryLibraryGUID: 

@@ -59,7 +59,7 @@ public class MainMenu : MonoBehaviour
                     break;
                 case "Kunoichi":
                     characterNum = 3;
-                    ninjas[3].GetComponent<Animator>().SetTrigger("Start Game");
+                    ninjas[2].GetComponent<Animator>().SetTrigger("Start Game");
                     GetComponent<AudioSource>().PlayOneShot(ninjaStartVoice[2]);
                     break;
                 default:

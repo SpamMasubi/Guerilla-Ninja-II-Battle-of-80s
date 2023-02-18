@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public Transform respawn;
 
     //Sound Effects
-    public AudioClip win, dead, hurt, revive, specialWeaponPicked, healthItemPicked, itemPicked;
+    public AudioClip win, dead, gameOverSfx, hurt, revive, healthItemPicked, itemPicked, playerDeadSong;
     //Sound Object
     public GameObject soundObject;
 
@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
     public int fallBoundary = -5;
 
     public float playerHealth = 100;
-    int spawnDelay = 5;
+    int spawnDelay = 6;
 
     [Header("Invincibility Flash")]
     public Color flashColor;
@@ -359,10 +359,19 @@ public class Player : MonoBehaviour
     public void Die()
     {
         isRunning = false;
-        SoundObjectCreation(dead);
+        FindObjectOfType<PlayMusic>().StopSong();
         isDead = true;
         animator.SetTrigger("isDead");
-        FindObjectOfType<LifeCounter>().LoseLife();
+        FindObjectOfType<LifeCounter>().LoseLife();        
+        if (FindObjectOfType<GameManager>().lives > 0)
+        {
+            SoundObjectCreation(dead);
+            SoundObjectCreation(playerDeadSong);
+        }
+        else
+        {
+            SoundObjectCreation(gameOverSfx);
+        }
         StartCoroutine(Respawn());
     }
 
@@ -371,6 +380,7 @@ public class Player : MonoBehaviour
         if (FindObjectOfType<GameManager>().lives > 0)
         {
             yield return new WaitForSeconds(spawnDelay);
+            FindObjectOfType<PlayMusic>().ResumeMusic();
             ResetPlayer();
             isDead = false;
             FindObjectOfType<Healthbar>().UpdateHealth(playerHealth);
@@ -396,7 +406,7 @@ public class Player : MonoBehaviour
         ResetPlayer();
         isDead = false;
         FindObjectOfType<Healthbar>().UpdateHealth(playerHealth);
-        FindObjectOfType<GameManager>().lives = 4;
+        FindObjectOfType<GameManager>().lives = 3;
         GameOverUI.retry = false;
         animator.Rebind();
         if (!BossStart.startBoss)

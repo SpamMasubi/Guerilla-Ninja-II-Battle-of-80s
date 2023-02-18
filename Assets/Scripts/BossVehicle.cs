@@ -18,7 +18,7 @@ public class BossVehicle : MonoBehaviour
     public GameObject hitBox;
     public float hitBoxAppearTime = 0f;
     float hitBoxAppearTimer = 0f;
-    bool hitBoxAppear = true;
+    public static bool hitBoxAppear = true;
     float maxHealth;
 
     public static bool isDead = false; //check if player is Dead

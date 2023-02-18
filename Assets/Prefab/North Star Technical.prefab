@@ -246,9 +246,9 @@ GameObject:
   - component: {fileID: 3097507928546141792}
   - component: {fileID: 3097507928546141795}
   - component: {fileID: 3097507928546141794}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: North Star Army Machine Gunner
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -16,7 +16,6 @@ public class ChapterIntro : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         FindObjectOfType<GameManager>().health = 100;
         selection = GetComponent<AudioSource>();
         switch (chapters)
@@ -45,20 +44,12 @@ public class ChapterIntro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(canStart());
-        if(Input.GetButtonDown("Submit") && canStartGame)
+        if(Input.GetButtonDown("Submit") && startGame.activeInHierarchy && !canStartGame)
         {
             selection.Play();
-            canStartGame = false;
+            canStartGame = true;
             Invoke("LoadScene", 1f);
         }
-    }
-
-    private IEnumerator canStart()
-    {
-        yield return new WaitForSeconds(6);
-        startGame.SetActive(true);
-        canStartGame = true;
     }
 
     private void LoadScene()
@@ -80,6 +71,6 @@ public class ChapterIntro : MonoBehaviour
             default:
                 break;
         }
-        
+        canStartGame = false;
     }
 }
