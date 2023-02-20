@@ -37,7 +37,7 @@ public class Item : MonoBehaviour
                     break;
             }
         }
-        if(item == ItemType.AMMUNITIONS && gameObject.name == "Special Ammo")
+        if(item == ItemType.AMMUNITIONS && gameObject.name == "Special Ammo(Clone)")
         {
             switch (MainMenu.characterNum)
             {
@@ -79,7 +79,7 @@ public class Item : MonoBehaviour
                 }
                 break;
             case ItemType.AMMUNITIONS:
-                if (gameObject.name == "AR Ammo" || gameObject.name == "AR Ammo(Clone)")
+                if (gameObject.name == "Special Ammo" || gameObject.name == "Special Ammo(Clone)")
                 {
                     AudioManager.instance.PlaySFX("TakeAmmo");
                     FindObjectOfType<GameManager>().SpecialAmmo += ammo;

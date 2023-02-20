@@ -14,7 +14,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!BossVehicle.isDead)
+        if (!BossVehicle.isDead && !NPC.isDialogue)
         {
             if (Input.GetButtonDown("Enable Debug Button 1") || Input.GetKeyDown(KeyCode.P))
             {

@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PauseMenu.isPause)
+        if (!PauseMenu.isPause && !NPC.isDialogue)
         {
             if (transform.position.y <= fallBoundary)
             {
@@ -296,7 +296,7 @@ public class Player : MonoBehaviour
         if (!isInvincible && !isDead && !ShootingOrAttack.isAttack && !EnemyAI.isDead && !EnemyShoot.isDead && !Sniper.isDead)
         {
             //if player collides with enemy
-            if (collision.tag == "Enemy" || collision.tag == "Spikes")
+            if (collision.tag == "Enemy" || collision.tag == "Spikes" || collision.tag == "Boss")
             {
                 isHurt = true;
                 StartCoroutine(InvincibilityFlash());

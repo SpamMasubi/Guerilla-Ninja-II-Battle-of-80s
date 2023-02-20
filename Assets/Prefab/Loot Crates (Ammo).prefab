@@ -278,11 +278,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemsDrop:
   - item: {fileID: 6510106988011041521, guid: 3882ba68cca978948bc8ee99490fc3b6, type: 3}
-    spawnRate: 95
+    spawnRate: 90
     minSpawnProb: 0
     maxSpawnProb: 0
   - item: {fileID: 4804127678734873861, guid: c1c608aabd3544a44bdd891c014110e8, type: 3}
-    spawnRate: 5
+    spawnRate: 10
     minSpawnProb: 0
     maxSpawnProb: 0
   dropPoint: {fileID: 6674174978738003917}

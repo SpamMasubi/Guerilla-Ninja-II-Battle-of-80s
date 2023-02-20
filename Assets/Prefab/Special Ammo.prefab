@@ -150,7 +150,7 @@ MonoBehaviour:
   item: 1
   points: 0
   healthRestore: 0
-  ammo: 20
+  ammo: 10
   life: 0
   ninjaCharLife: []
   specialAmmo:

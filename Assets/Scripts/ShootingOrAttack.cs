@@ -13,7 +13,7 @@ public class ShootingOrAttack : MonoBehaviour
 
     private void Update()
     {
-        if (!PauseMenu.isPause)
+        if (!PauseMenu.isPause && !NPC.isDialogue)
         {
             if (Input.GetButtonDown("Fire2") && !Player.isDead && !BossVehicle.isDead && !FinalBoss.isDead)
             {
@@ -26,7 +26,7 @@ public class ShootingOrAttack : MonoBehaviour
                 }
                 else if (SwitchWeapons.special && FindObjectOfType<GameManager>().SpecialAmmo > 0)
                 {
-                    FindObjectOfType<GameManager>().SpecialAmmo -= 3;
+                    FindObjectOfType<GameManager>().SpecialAmmo -= 2;
                     if (FindObjectOfType<GameManager>().SpecialAmmo <= 0)
                     {
                         FindObjectOfType<GameManager>().SpecialAmmo = 0;

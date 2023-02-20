@@ -17,6 +17,8 @@ public class BossVehicle : MonoBehaviour
     public AudioClip startPhase2, deadsfx;
     public GameObject hitBox;
     public float hitBoxAppearTime = 0f;
+    public GameObject mainGun;
+
     float hitBoxAppearTimer = 0f;
     public static bool hitBoxAppear = true;
     float maxHealth;
@@ -170,7 +172,7 @@ public class BossVehicle : MonoBehaviour
                 else if (!isInvincible && hitBoxAppear && collision.tag == "playerAttack")
                 {
                     StartCoroutine(InvincibilityFlash());
-                    FindObjectOfType<BossHealthBar>().LoseHealth(2);
+                    FindObjectOfType<BossHealthBar>().LoseHealth(1);
                     AudioManager.instance.PlaySFX("bossDamage");
                     anim.SetTrigger("Hurt");
                 }
@@ -191,7 +193,7 @@ public class BossVehicle : MonoBehaviour
     void startPhaseTwo()
     {
         isInvincible = false;
-        FindObjectOfType<BossVehicle>().GetComponentInChildren<turretScript>().enabled = true;
+        GetComponent<turretScript>().enabled = true;
         FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = false;
         beginMoving = true;
         hitBoxAppear = false;
@@ -200,7 +202,7 @@ public class BossVehicle : MonoBehaviour
     public void enableHitBox()
     {
         hitBoxAppear = true;
-        FindObjectOfType<BossVehicle>().GetComponentInChildren<turretScript>().enabled = false;
+        GetComponent<turretScript>().enabled = false;
         FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = true;
         beginMoving = false;
     }
@@ -219,7 +221,10 @@ public class BossVehicle : MonoBehaviour
         AudioManager.instance.SoundObjectCreation(deadsfx);
         GetComponent<BossVehicle>().enabled = false;
         FindObjectOfType<BossVehicle>().GetComponentInChildren<BossSpecial>().enabled = false;
-        Destroy(FindObjectOfType<BossVehicle>().GetComponentInChildren<turretScript>());
+        if (mainGun != null)
+        {
+            Destroy(mainGun);
+        }
         anim.SetTrigger("Defeated");
         anim.SetBool("Second Phase", false);
     }
