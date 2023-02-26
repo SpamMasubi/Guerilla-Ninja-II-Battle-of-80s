@@ -7,7 +7,7 @@ public class LoadScene : MonoBehaviour
 {
     public string sceneName;
 
-    void OnEnable()
+    public void OnEnable()
     {
         if (FinalBoss.gameComplete)
         {

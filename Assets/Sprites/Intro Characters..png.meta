@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: 4e21c605b79f7ed4e8039b7b528d5038
+guid: 631fcfb8b22eb2d499594bcd676d762a
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3981471589832735460
-    second: Cutscenes_0
-  - first:
-      213: 1766875767320046125
-    second: Cutscenes_1
-  - first:
-      213: -4558835020104728522
-    second: Cutscenes_2
-  - first:
-      213: 992357180953250592
-    second: Cutscenes_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -90,10 +78,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,11 +89,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 512
+    buildTarget: Server
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,10 +102,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,10 +114,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -140,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cutscenes_0
+      name: Intro Characters._0
       rect:
         serializedVersion: 2
         x: 2
-        y: 280
-        width: 227
-        height: 130
+        y: 18
+        width: 142
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ea3a43f057014730800000000000000
-      internalID: 3981471589832735460
+      spriteID: fb70c41b9fb9a344dbabaa08aa7c8cb6
+      internalID: -95871527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscenes_1
+      name: Intro Characters._1
       rect:
         serializedVersion: 2
-        x: 238
-        y: 280
-        width: 227
-        height: 130
+        x: 149
+        y: 4
+        width: 110
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,92 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2a6b592624358810800000000000000
-      internalID: 1766875767320046125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cutscenes_2
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 142
-        width: 227
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6300c05f3b3cbb0c0800000000000000
-      internalID: -4558835020104728522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cutscenes_3
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 142
-        width: 227
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02bc60d299f85cd00800000000000000
-      internalID: 992357180953250592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cutscenes_4
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 2
-        width: 227
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 524eae6ef8f999842b8a9ef0b5b99cdc
-      internalID: -607744497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cutscenes_5
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 2
-        width: 227
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ff33d89b9c8d2d4c9047fdf27aa6ddf
-      internalID: 129808511
+      spriteID: 45387b589649ee3458a9904370863021
+      internalID: -1151368741
       vertices: []
       indices: 
       edges: []
@@ -276,12 +180,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cutscenes_2: -4558835020104728522
-      Cutscenes_1: 1766875767320046125
-      Cutscenes_3: 992357180953250592
-      Cutscenes_5: 129808511
-      Cutscenes_4: -607744497
-      Cutscenes_0: 3981471589832735460
+      Intro Characters._0: -95871527
+      Intro Characters._1: -1151368741
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
