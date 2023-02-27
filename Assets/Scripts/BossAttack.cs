@@ -27,7 +27,7 @@ public class BossAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nextFire = Time.time;
+        nextFire = 0;
         player = FindObjectOfType<Player>().gameObject;
         bossSprite = GetComponent<SpriteRenderer>();
     }

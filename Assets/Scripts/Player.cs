@@ -293,7 +293,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!isInvincible && !isDead && !ShootingOrAttack.isAttack && !EnemyAI.isDead && !EnemyShoot.isDead && !Sniper.isDead)
+        if (!isInvincible && !isDead && !ShootingOrAttack.isAttack && !EnemyAI.isDead && !EnemyShoot.isDead && !Sniper.isDead && !BossVehicle.isDead)
         {
             //if player collides with enemy
             if (collision.tag == "Enemy" || collision.tag == "Spikes" || collision.tag == "Boss")

@@ -47,7 +47,6 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -91,7 +90,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,11 +159,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 190
+        y: 278
         width: 180
         height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,11 +180,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 206
-        y: 165
+        y: 253
         width: 37
         height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,11 +201,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 251
-        y: 165
+        y: 253
         width: 37
         height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +221,12 @@ TextureImporter:
       name: Boss 2_3
       rect:
         serializedVersion: 2
-        x: 82
-        y: 156
-        width: 36
-        height: 23
-      alignment: 9
-      pivot: {x: 0.525, y: 0.5}
+        x: 12
+        y: 248
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +242,12 @@ TextureImporter:
       name: Boss 2_4
       rect:
         serializedVersion: 2
-        x: 148
-        y: 174
-        width: 14
-        height: 9
+        x: 82
+        y: 244
+        width: 36
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +263,12 @@ TextureImporter:
       name: Boss 2_5
       rect:
         serializedVersion: 2
-        x: 12
-        y: 160
-        width: 42
-        height: 12
+        x: 151
+        y: 240
+        width: 21
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +284,12 @@ TextureImporter:
       name: Boss 2_6
       rect:
         serializedVersion: 2
-        x: 153
-        y: 154
-        width: 4
-        height: 17
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 9
+        y: 162
+        width: 239
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +305,12 @@ TextureImporter:
       name: Boss 2_7
       rect:
         serializedVersion: 2
-        x: 1
-        y: 74
-        width: 247
-        height: 67
+        x: 254
+        y: 203
+        width: 31
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,12 +326,12 @@ TextureImporter:
       name: Boss 2_8
       rect:
         serializedVersion: 2
-        x: 13
-        y: 2
-        width: 191
-        height: 63
-      alignment: 9
-      pivot: {x: 0.597, y: 0.532}
+        x: 254
+        y: 164
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,6 +339,111 @@ TextureImporter:
       bones: []
       spriteID: 4e3bf09dff4051df0800000000000000
       internalID: -210256310698003484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 96
+        width: 167
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8954896cf8642ca43bac4e19a1a8d0a7
+      internalID: 1061000066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 108
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b6d64c1679726428e3fbde6b6f044e
+      internalID: 1026659315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 246
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9461e2c7f1adc44aa4d747170131db8
+      internalID: -1498283843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2_12
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 57
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb706977429cde4aa576023fafca82e
+      internalID: -2126741767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss 2_13
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90045c153e351204ab5b20161b75fdc3
+      internalID: 1722392805
       vertices: []
       indices: 
       edges: []
@@ -356,17 +459,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Boss 2_13: 1722392805
       Boss 2_1: 4779093752724759184
       Boss 2_0: 3221721577579406510
       Boss 2_3: 3516781034036657608
       Boss 2_2: 7479711165833636231
       Boss 2_8: -210256310698003484
+      Boss 2_10: 1026659315
+      Boss 2_9: 1061000066
       Boss 2_4: -5202286240332570098
       Boss 2_7: -7205654349577518678
       Boss 2_5: 6112888040477077909
+      Boss 2_11: -1498283843
       Boss 2_6: -5642012039069595315
+      Boss 2_12: -2126741767
   spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
