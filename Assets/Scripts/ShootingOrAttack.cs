@@ -13,7 +13,7 @@ public class ShootingOrAttack : MonoBehaviour
 
     private void Update()
     {
-        if (!PauseMenu.isPause && !NPC.isDialogue)
+        if (!PauseMenu.isPause && !DialogueBoxClose.started)
         {
             if (Input.GetButtonDown("Fire2") && !Player.isDead && !BossVehicle.isDead && !FinalBoss.isDead)
             {

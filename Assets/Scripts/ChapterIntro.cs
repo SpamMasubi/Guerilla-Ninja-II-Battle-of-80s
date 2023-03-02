@@ -11,7 +11,7 @@ public class ChapterIntro : MonoBehaviour
     public Text chapterText;
     private bool canStartGame;
     private AudioSource selection;
-    public static int chapters = 1;
+    public static int chapters = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class ChapterIntro : MonoBehaviour
                 break;
             case 2:
                 chapterIntro.text = "Mission 2";
-                chapterText.text = "No Ordinary War";
+                chapterText.text = "Desert Ninjas" + "\n\n" + "-Kandahar Province, Afghanistan-";
                 break;
             case 3:
                 chapterIntro.text = "Mission 3";

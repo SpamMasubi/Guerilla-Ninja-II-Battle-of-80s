@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PauseMenu.isPause && !NPC.isDialogue)
+        if (!PauseMenu.isPause && !DialogueBoxClose.started)
         {
             if (transform.position.y <= fallBoundary)
             {

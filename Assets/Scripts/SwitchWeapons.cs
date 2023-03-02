@@ -45,7 +45,7 @@ public class SwitchWeapons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PauseMenu.isPause && !BossVehicle.isDead && !FinalBoss.isDead)
+        if (!PauseMenu.isPause && !BossVehicle.isDead && !FinalBoss.isDead && !DialogueBoxClose.started)
         {
             //Controller
             if (Input.GetButtonDown("Debug Next"))

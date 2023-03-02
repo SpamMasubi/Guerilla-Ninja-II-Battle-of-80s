@@ -5,75 +5,25 @@ using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
-    public GameObject dialogueBox;
-    public Text dialogueText;
-    public string[] dialogue;
-    private int index;
-    public Animator DialogueAnimation;
-    public AudioSource dialogueSFX;
+    public DialogueBoxClose dialogueScript;
+    private bool playerDetected;
 
-    public float wordSpeed;
-    public static bool isDialogue;
-
-    void Start()
+    //Detect trigger with player
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        dialogueSFX = GetComponent<AudioSource>();
-        dialogueText.text = "";
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (isDialogue)
+        //If we triggerd the player enable playerdeteced and show indicator
+        if (collision.tag == "Player")
         {
-            if (!dialogueBox.activeInHierarchy)
-            {
-                dialogueBox.SetActive(true);
-                StartCoroutine(Typing());
-            }
-            else if (Input.GetButtonDown("Fire1") && dialogueText.text == dialogue[index])
-            {
-                NextLine();
-            }
+            playerDetected = true;
         }
     }
-
-    public void RemoveText()
+    //While detected if we interact start the dialogue
+    private void Update()
     {
-        dialogueText.text = "";
-        index = 0;
-        dialogueBox.SetActive(false);
-    }
-
-    IEnumerator Typing()
-    {
-        foreach (char letter in dialogue[index].ToCharArray())
+        if (playerDetected)
         {
-            dialogueText.text += letter;
-            dialogueSFX.Play();
-            yield return new WaitForSeconds(wordSpeed);
-        }
-    }
-
-    public void NextLine()
-    {
-        if (index < dialogue.Length - 1)
-        {
-            index++;
-            dialogueText.text = "";
-            StartCoroutine(Typing());
-        }
-        else
-        {
-            DialogueAnimation.SetTrigger("CloseDialogue");
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isDialogue = true;
+            dialogueScript.StartDialogue();
+            playerDetected = false;
             GetComponent<Collider2D>().enabled = false;
         }
     }

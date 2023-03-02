@@ -2,23 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Cutscene : MonoBehaviour
 {
+    
+    //Fields
+    //Text component
+    public TMP_Text dialogueText;
+    //Dialogues list
+    public List<string> dialogues;
+    //Writing speed
+    public float writingSpeed;
+    //Index on dialogue
+    private int index;
+    //Character index
+    private int charIndex;
+    //Started boolean
+    private bool started;
+    //Wait for next boolean
+    private bool waitForNext;
+    public AudioSource dialogueSFX;
     public GameObject[] cutsceneImage;
     public GameObject loadScene;
     public AudioClip lastCutscene;
-    public Text dialogueText;
-    public string[] dialogue;
-    private int index;
-    public AudioSource dialogueSFX;
 
-    public float wordSpeed;
     bool isDialogue = true;
     void Start()
     {
-        dialogueText.text = "";
-
+        StartDialogue();
         switch (ChapterIntro.chapters)
         {
             case 3:
@@ -42,47 +54,88 @@ public class Cutscene : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    //Start Dialogue
+    public void StartDialogue()
     {
-        if (isDialogue)
-        {
-            StartCoroutine(Typing());
-            isDialogue = false;
-        }
-        else if (Input.GetButtonDown("Fire1") && dialogueText.text == dialogue[index])
-        {
-            NextLine();
-        }
+        if (started)
+            return;
+
+        //Boolean to indicate that we have started
+        started = true;
+        //Start with first dialogue
+        GetDialogue(0);
     }
 
-    public void RemoveText()
+    private void GetDialogue(int i)
     {
-        dialogueText.text = "";
-        index = 0;
+        //start index at zero
+        index = i;
+        //Reset the character index
+        charIndex = 0;
+        //clear the dialogue component text
+        dialogueText.text = string.Empty;
+        //Start writing
+        StartCoroutine(Writing());
     }
 
-    IEnumerator Typing()
+    //End Dialogue
+    public void EndDialogue()
     {
-        foreach (char letter in dialogue[index].ToCharArray())
-        {
-            dialogueText.text += letter;
-            dialogueSFX.Play();
-            yield return new WaitForSeconds(wordSpeed);
-        }
+        //Stared is disabled
+        started = false;
+        //Disable wait for next as well
+        waitForNext = false;
+        //Stop all Ienumerators
+        StopAllCoroutines();
+        //Hide the window
+        loadScene.SetActive(true);
     }
-
-    public void NextLine()
+    //Writing logic
+    IEnumerator Writing()
     {
-        if (index < dialogue.Length - 1)
+        yield return new WaitForSeconds(writingSpeed);
+
+        string currentDialogue = dialogues[index];
+        //Write the character
+        dialogueText.text += currentDialogue[charIndex];
+        dialogueSFX.Play();
+        //increase the character index 
+        charIndex++;
+        //Make sure you have reached the end of the sentence
+        if (charIndex < currentDialogue.Length)
         {
-            index++;
-            dialogueText.text = "";
-            StartCoroutine(Typing());
+            //Wait x seconds 
+            yield return new WaitForSeconds(writingSpeed);
+            //Restart the same process
+            StartCoroutine(Writing());
         }
         else
         {
-            loadScene.SetActive(true); ;
+            //End this sentence and wait for the next one
+            waitForNext = true;
+        }
+    }
+
+    private void Update()
+    {
+        if (!started)
+            return;
+
+        if (waitForNext && Input.GetButton("Fire1"))
+        {
+            waitForNext = false;
+            index++;
+
+            //Check if we are in the scope fo dialogues List
+            if (index < dialogues.Count)
+            {
+                //If so fetch the next dialogue
+                GetDialogue(index);
+            }
+            else
+            {
+                EndDialogue();
+            }
         }
     }
 }

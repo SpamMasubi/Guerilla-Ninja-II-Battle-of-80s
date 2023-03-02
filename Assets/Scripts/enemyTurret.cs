@@ -9,6 +9,7 @@ public class enemyTurret : MonoBehaviour
 
     public float Range;
     public Transform Target;
+    public Vector3 offset;
     bool Detected = false;
     Vector2 Direction;
     public GameObject gun;
@@ -17,25 +18,31 @@ public class enemyTurret : MonoBehaviour
     float nextTimeToFire = 0;
     public Transform shootPoint;
     public GameObject Explosion;
+    float nextTimeToSearch = 0;
 
     private void Start()
     {
-        Target = FindObjectOfType<Player>().transform;
+        FindPlayer();
     }
 
     void Update()
     {
-        Vector2 targetPos = Target.position;
-        Direction = targetPos - (Vector2)transform.position;
-        RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, Direction, Range, whatIsPlayer); //rayInfo will be true only if hit the player.
-        if (rayInfo)
+        if (Target == null)
         {
-            if (rayInfo.collider.gameObject.tag == "Player")
+            FindPlayer();
+            return;
+        }
+        Vector3 targetPos = Target.position;
+        Direction = targetPos - (Vector3)transform.position;
+        Vector3 pos = transform.position;
+        pos += transform.right * -offset.x;
+        pos += transform.up * -offset.y;
+        Collider2D[] rayInfo = Physics2D.OverlapCircleAll(pos, Range, 1 << LayerMask.NameToLayer("Player")); //rayInfo will be true only if hit the player.
+        if (rayInfo.Length > 0)
+        {
+            if (Detected == false)
             {
-                if (Detected == false)
-                {
-                    Detected = true;
-                }
+                Detected = true;
             }
         }
         else
@@ -85,7 +92,18 @@ public class enemyTurret : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position, Range);
+        Gizmos.DrawWireSphere(transform.position - offset, Range);
+    }
+
+    void FindPlayer()
+    {
+        if (nextTimeToSearch <= Time.time)
+        {
+            GameObject searchPlayer = GameObject.FindGameObjectWithTag("Player");
+            if (searchPlayer != null)
+                Target = searchPlayer.transform;
+            nextTimeToSearch = Time.time + 0.2f;
+        }
     }
 
 }
