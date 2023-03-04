@@ -255,9 +255,9 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
-  Range: 3
+  Range: 5
   Target: {fileID: 0}
-  offset: {x: 0, y: 2.5, z: 0}
+  offset: {x: 0, y: 3, z: 0}
   gun: {fileID: 8583042072335949772}
   bullet: {fileID: 7442443214663513810, guid: 68d7dbbb26fb18d439a4da3aafdfb40c, type: 3}
   FireRate: 0.5
