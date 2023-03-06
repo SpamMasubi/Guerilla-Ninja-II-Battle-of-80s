@@ -55,7 +55,15 @@ public class enemyTurret : MonoBehaviour
 
         if (Detected == true)
         {
-            gun.transform.up = Direction;
+            if (gameObject.GetComponent<Transform>().localScale.y == 1)
+            {
+                gun.transform.up = Direction;
+            }
+            else
+            {
+                gun.transform.up = -Direction;
+            }
+
             if (Time.time > nextTimeToFire)
             {
                 nextTimeToFire = Time.time + 1 / FireRate;

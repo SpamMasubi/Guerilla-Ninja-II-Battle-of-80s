@@ -27,7 +27,6 @@ public class Cutscene : MonoBehaviour
     public GameObject loadScene;
     public AudioClip lastCutscene;
 
-    bool isDialogue = true;
     void Start()
     {
         StartDialogue();
