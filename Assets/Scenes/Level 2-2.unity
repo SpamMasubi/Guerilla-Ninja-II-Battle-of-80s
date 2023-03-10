@@ -479,7 +479,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85774693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2369986, y: -0.58, z: 0}
+  m_LocalPosition: {x: -2.12, y: -0.58, z: 0}
   m_LocalScale: {x: 0.55, y: 0.55, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67854,8 +67854,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841141456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.91, y: -0.94, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.126, y: -0.617, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1373022327}
@@ -67874,12 +67874,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e8a3aee7654b34b985d728cc24a400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 6
+  Range: 10
   Target: {fileID: 0}
-  offset: {x: 0.35, y: 7.37, z: 0}
+  offset: {x: 0, y: 11.5, z: 0}
   gun: {fileID: 841141456}
   bullet: {fileID: 7442443214663513810, guid: 68d7dbbb26fb18d439a4da3aafdfb40c, type: 3}
-  FireRate: 1
+  FireRate: 0.75
   shootPoint: {fileID: 1373022327}
 --- !u!212 &841141459
 SpriteRenderer:
@@ -70817,8 +70817,8 @@ GameObject:
   - component: {fileID: 1177831985}
   - component: {fileID: 1177831984}
   - component: {fileID: 1177831983}
-  - component: {fileID: 1177831982}
   - component: {fileID: 1177831981}
+  - component: {fileID: 1177831987}
   m_Layer: 10
   m_Name: North Star Army AH (Boss)
   m_TagString: Boss
@@ -70879,50 +70879,6 @@ MonoBehaviour:
   numberOfFlashes: 10
   bossSprite: {fileID: 0}
   ninjaCharVictory: []
---- !u!60 &1177831982
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177831979}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 15.375, y: 5.125}
-    newSize: {x: 15.4375, y: 4.1875}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -2.3512895, y: 0.11722451}
-      - {x: -2.2798052, y: -0.21316853}
-      - {x: -2.0669956, y: -0.41299376}
-      - {x: -2.1744943, y: -1.263439}
-      - {x: -2.342304, y: -1.3326828}
-      - {x: -2.3203788, y: -1.4467882}
-      - {x: -2.0276337, y: -1.4723045}
-      - {x: -1.8652464, y: -1.455503}
-      - {x: -1.5968342, y: -1.4737612}
-      - {x: -1.6058198, y: -1.2436514}
-      - {x: -1.7030082, y: -1.1258974}
-      - {x: -1.7670838, y: -0.7576272}
-      - {x: -1.7380084, y: -0.48111483}
-      - {x: -1.8349594, y: -0.3611735}
-      - {x: -1.6071084, y: -0.2973155}
-      - {x: -1.5418285, y: 0.1815193}
-      - {x: -1.744797, y: 0.37530553}
-      - {x: -2.0062442, y: 0.36684245}
-      - {x: -2.1699963, y: 0.3149038}
 --- !u!50 &1177831983
 Rigidbody2D:
   serializedVersion: 4
@@ -71112,6 +71068,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1177831987
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177831979}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.1315002, y: -0.6257122}
+  m_Size: {x: 0.7703654, y: 1.7424036}
+  m_Direction: 0
 --- !u!1 &1189165807
 GameObject:
   m_ObjectHideFlags: 0
@@ -73233,7 +73205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373022326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.1280007, z: 0}
+  m_LocalPosition: {x: -0, y: -1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
