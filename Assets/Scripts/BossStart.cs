@@ -16,15 +16,7 @@ public class BossStart : MonoBehaviour
         {
             if (FindObjectOfType<BossVehicle>() != null)
             {
-                if (FindObjectOfType<BossVehicle>().name == "North Star Army AH (Boss)")
-                {
-                    FindObjectOfType<BossVehicle>().GetComponent<AudioSource>().enabled = true;
-                    FindObjectOfType<BossVehicle>().GetComponent<Animator>().enabled = true;
-                }
-                else if (FindObjectOfType<BossVehicle>().name == "North Star Army Tank (Boss)")
-                {
-                    FindObjectOfType<BossVehicle>().GetComponent<Animator>().enabled = true;
-                }
+                FindObjectOfType<BossVehicle>().GetComponent<Animator>().enabled = true;
             }
             else if (FindObjectOfType<FinalBoss>() != null)
             {

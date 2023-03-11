@@ -47,6 +47,10 @@ public class BossVehicle : MonoBehaviour
         anim = GetComponent<Animator>();
         bossSprite = GetComponent<SpriteRenderer>();
         maxHealth = bossHealth;
+        if(name == "North Star Army AH (Boss)")
+        {
+
+        }
     }
 
     private void Reset()
@@ -192,6 +196,14 @@ public class BossVehicle : MonoBehaviour
 
     void startPhaseTwo()
     {
+        if (gameObject.name == "North Star Army AH (Boss)") { 
+            FindObjectOfType<BossVehicle>().GetComponentInChildren<BossSpecial>().enabled = true;
+            GetComponent<BossSpecial>().enabled = true;
+            GetComponent<AudioSource>().enabled = true;
+        } 
+        else { 
+
+        }
         isInvincible = false;
         GetComponent<turretScript>().enabled = true;
         FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = false;
@@ -201,9 +213,16 @@ public class BossVehicle : MonoBehaviour
 
     public void enableHitBox()
     {
+        if (gameObject.name == "North Star Army AH (Boss)")
+        {
+            GetComponent<BossSpecial>().enabled = false;
+        }
+        else
+        {
+            FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = true;
+        }
         hitBoxAppear = true;
         GetComponent<turretScript>().enabled = false;
-        FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = true;
         beginMoving = false;
     }
 

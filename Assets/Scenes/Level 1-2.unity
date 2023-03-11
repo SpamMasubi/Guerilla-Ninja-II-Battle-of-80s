@@ -55898,7 +55898,7 @@ GameObject:
   - component: {fileID: 3793961799234706444}
   - component: {fileID: 3793961799234706443}
   m_Layer: 0
-  m_Name: Loot Crates (3)
+  m_Name: Loot Crates (HEALTH 100%)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
