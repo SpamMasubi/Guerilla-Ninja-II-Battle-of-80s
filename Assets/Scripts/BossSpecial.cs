@@ -9,12 +9,6 @@ public class BossSpecial : MonoBehaviour
     float attackTimer = 0f;
     public float timeOfAttack;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        specialGun = this.gameObject.transform;
-    }
-
     // Update is called once per frame
     void Update()
     {

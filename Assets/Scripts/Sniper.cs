@@ -151,7 +151,10 @@ public class Sniper : MonoBehaviour
             }
             GameObject projectile = Instantiate(enemyBullet, launchPoint.position, launchPoint.rotation);
             nextShot = Time.time + fireRate;
-            projectile.GetComponent<EnemyBullet>().direction = -1;
+            if (agroRange > 0)
+            {
+                projectile.GetComponent<EnemyBullet>().direction = -1;
+            }
         }
     }
 

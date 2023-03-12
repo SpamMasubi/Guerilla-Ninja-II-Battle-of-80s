@@ -47,10 +47,6 @@ public class BossVehicle : MonoBehaviour
         anim = GetComponent<Animator>();
         bossSprite = GetComponent<SpriteRenderer>();
         maxHealth = bossHealth;
-        if(name == "North Star Army AH (Boss)")
-        {
-
-        }
     }
 
     private void Reset()
@@ -192,6 +188,10 @@ public class BossVehicle : MonoBehaviour
     {
         hitBoxAppear = false;
         isInvincible = true;
+        if (gameObject.name == "North Star Army AH (Boss)")
+        {
+            mainGun.SetActive(false);
+        }
     }
 
     void startPhaseTwo()
@@ -199,13 +199,14 @@ public class BossVehicle : MonoBehaviour
         if (gameObject.name == "North Star Army AH (Boss)") { 
             FindObjectOfType<BossVehicle>().GetComponentInChildren<BossSpecial>().enabled = true;
             GetComponent<BossSpecial>().enabled = true;
+            gameObject.transform.GetChild(3).GetComponent<BossSpecial>().enabled = true;
             GetComponent<AudioSource>().enabled = true;
         } 
-        else { 
-
+        else 
+        {
+            GetComponent<turretScript>().enabled = true;
         }
         isInvincible = false;
-        GetComponent<turretScript>().enabled = true;
         FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = false;
         beginMoving = true;
         hitBoxAppear = false;
@@ -215,14 +216,14 @@ public class BossVehicle : MonoBehaviour
     {
         if (gameObject.name == "North Star Army AH (Boss)")
         {
-            GetComponent<BossSpecial>().enabled = false;
+            mainGun.SetActive(true);
         }
         else
         {
             FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = true;
+            GetComponent<turretScript>().enabled = false;
         }
         hitBoxAppear = true;
-        GetComponent<turretScript>().enabled = false;
         beginMoving = false;
     }
 
@@ -233,6 +234,8 @@ public class BossVehicle : MonoBehaviour
             GetComponent<AudioSource>().enabled = false;
             GetComponent<Rigidbody2D>().gravityScale = 0.03f;
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            GetComponent<BossSpecial>().enabled = false;
+            gameObject.transform.GetChild(3).GetComponent<BossSpecial>().enabled = false;
         }
         isDead = true;
         ExplosionEffect();
