@@ -551,8 +551,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1674128193}
   dialogues:
-  - '"John Smith": We have saved the Korean Peninsula from another war breaking out
-    but don''t think we are out of the woods yet. We '
+  - '''John Smith'': We have saved the Korean Peninsula from another war breaking
+    out but don''t think we are out of the woods yet. We '
   - 'recieved a message from an Afghan mujahideen rebel who encountered "Soldiers
     of the Unknown". We believe the mujahideen '
   - 'have met the North Star Army. We have intel about a supply truck containing
@@ -1313,8 +1313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: will meet up with them at their base camp. Find where the truck is and
-    get out ASAP! Good luck, N.I.N.J.A!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2ceef391e574384bb981e0e4be4a113, type: 2}
   m_sharedMaterial: {fileID: 4911027770897331920, guid: a2ceef391e574384bb981e0e4be4a113, type: 2}

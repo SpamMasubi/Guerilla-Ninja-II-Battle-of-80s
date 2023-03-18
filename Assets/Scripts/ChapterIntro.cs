@@ -30,11 +30,23 @@ public class ChapterIntro : MonoBehaviour
                 break;
             case 3:
                 chapterIntro.text = "Mission 3";
-                chapterText.text = "Beginning of the End";
+                chapterText.text = "A Weapon to Surpass" + "\n\n" + "-MPLA Territory, Angola-South West Africa Border-";
                 break;
             case 4:
+                chapterIntro.text = "Mission 4";
+                chapterText.text = "Wounds That Never Heal" + "\n\n" + "-Reichstag, West Germany-";
+                break;
+            case 5:
+                chapterIntro.text = "Mission 5";
+                chapterText.text = "A Better Future" + "\n\n" + "-Miami (Florida), USA-";
+                break;
+            case 6:
+                chapterIntro.text = "Mission 6";
+                chapterText.text = "The Unclassified" + "\n\n" + "-Nicaraguan Jungle, Nicaragua-";
+                break;
+            case 7:
                 chapterIntro.text = "Final Mission";
-                chapterText.text = "The Truth";
+                chapterText.text = "The North Star of Heaven" + "\n\n" + "Hokuto Island, South Pacific";
                 break;
             default:
                 break;

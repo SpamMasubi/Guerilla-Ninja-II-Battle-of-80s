@@ -29,10 +29,16 @@ public class Cutscene : MonoBehaviour
 
     void Start()
     {
-        StartDialogue();
         switch (ChapterIntro.chapters)
         {
             case 3:
+                dialogues = new List<string>() { "'John Smith': Great job, team! The Afghan Mujahideen can continue on their fight for their country. Our NINJAs can do the clean up",
+                "the mess the syndicate made. Our work isn't done yet. We got another mission in the Angolan-South West African border zone.",
+                "The MPLA have asked for our help. Apparently, the syndicate have given aid to their rival, UNITA. We have intel that in return",
+                "for their help in the civil war, UNITA will hand over discarded nuclear weapons from South Africa to the synidcate. If they get those",
+                "nuclear weapons, they will be armed with them in ready to create World War 3. We cannot allow them to possess such dangerous",
+                "weapon that will end humanity. You will be in MPLA territory near the border. Our scouts have found North Star Army presence in the",
+                "area. Do whatever it takes to make sure the syndicate won't make the deal for nuclear weapons with UNITA! Good luck, team!"};
                 cutsceneImage[0].SetActive(false);
                 cutsceneImage[1].SetActive(true);
                 break;
@@ -40,7 +46,7 @@ public class Cutscene : MonoBehaviour
                 cutsceneImage[1].SetActive(false);
                 cutsceneImage[2].SetActive(true);
                 break;
-            case 5:
+            case 8:
                 GetComponent<AudioSource>().clip = lastCutscene;
                 GetComponent<AudioSource>().Play();
                 cutsceneImage[2].SetActive(false);
@@ -51,6 +57,7 @@ public class Cutscene : MonoBehaviour
             default:
                 break;
         }
+        StartDialogue();
     }
 
     //Start Dialogue

@@ -16,6 +16,8 @@ public class CameraFollow : MonoBehaviour
     [HideInInspector]
     public Vector3 minValue, maxValue;
 
+    private Vector3 velocity;
+
     //Editor Fields
     [HideInInspector]
     public bool setupComplete;
@@ -78,7 +80,7 @@ public class CameraFollow : MonoBehaviour
             Mathf.Clamp(targetPos.y, minValue.y, maxValue.y), 
             Mathf.Clamp(targetPos.z, minValue.z, maxValue.z));
 
-        Vector3 smoothPos = Vector3.Lerp(transform.position, boundPosition, smoothFactor*Time.fixedDeltaTime);
+        Vector3 smoothPos = Vector3.SmoothDamp(boundPosition, target.transform.position, ref velocity, smoothFactor);
         transform.position = smoothPos;
     }
 

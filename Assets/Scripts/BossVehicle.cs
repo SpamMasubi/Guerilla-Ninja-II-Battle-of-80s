@@ -192,6 +192,7 @@ public class BossVehicle : MonoBehaviour
         {
             mainGun.SetActive(false);
         }
+        GetComponentInChildren<BossAttack>().enabled = false;
     }
 
     void startPhaseTwo()
@@ -207,7 +208,6 @@ public class BossVehicle : MonoBehaviour
             GetComponent<turretScript>().enabled = true;
         }
         isInvincible = false;
-        FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = false;
         beginMoving = true;
         hitBoxAppear = false;
     }
@@ -229,6 +229,9 @@ public class BossVehicle : MonoBehaviour
 
     public void BossDead()
     {
+        isDead = true;
+        ExplosionEffect();
+        anim.SetTrigger("Defeated");
         if (gameObject.name == "North Star Army AH (Boss)")
         {
             GetComponent<AudioSource>().enabled = false;
@@ -237,18 +240,17 @@ public class BossVehicle : MonoBehaviour
             GetComponent<BossSpecial>().enabled = false;
             gameObject.transform.GetChild(3).GetComponent<BossSpecial>().enabled = false;
         }
-        isDead = true;
-        ExplosionEffect();
+        else
+        {
+            FindObjectOfType<BossVehicle>().GetComponentInChildren<BossSpecial>().enabled = false;
+        }
         Destroy(FindObjectOfType<PlayMusic>().gameObject);
         AudioManager.instance.SoundObjectCreation(deadsfx);
         GetComponent<BossVehicle>().enabled = false;
-        FindObjectOfType<BossVehicle>().GetComponentInChildren<BossSpecial>().enabled = false;
         if (mainGun != null)
         {
             Destroy(mainGun);
         }
-        anim.SetTrigger("Defeated");
-        anim.SetBool("Second Phase", false);
     }
 
     //Function to instantiate explosion
@@ -268,6 +270,7 @@ public class BossVehicle : MonoBehaviour
 
     public void StageClear()
     {
+        anim.SetBool("Second Phase", false);
         ChapterIntro.chapters += 1;
         stageClear = true;
         switch (MainMenu.characterNum)
