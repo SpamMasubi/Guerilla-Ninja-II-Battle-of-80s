@@ -11,7 +11,8 @@ public class ChapterIntro : MonoBehaviour
     public Text chapterText;
     private bool canStartGame;
     private AudioSource selection;
-    public static int chapters = 1;
+    private int chapterIncr = 2;
+    public static int chapters = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -66,22 +67,14 @@ public class ChapterIntro : MonoBehaviour
 
     private void LoadScene()
     {
-        switch (chapters)
+        if(chapters <= 7)
         {
-            case 1:   
-                SceneManager.LoadScene(3);
-                break;
-            case 2:
-                SceneManager.LoadScene(5);
-                break;
-            case 3:
-                SceneManager.LoadScene(7);
-                break;
-            case 4:
-                SceneManager.LoadScene(9);
-                break;
-            default:
-                break;
+            SceneManager.LoadScene(chapters + 2 + chapterIncr);
+            chapterIncr += 1;
+        }
+        else
+        {
+            chapterIncr = 0;
         }
         canStartGame = false;
     }
