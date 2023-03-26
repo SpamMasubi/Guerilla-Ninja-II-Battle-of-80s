@@ -51,14 +51,7 @@ public class turretScript : MonoBehaviour
                 {
                     if (FindObjectOfType<BossVehicle>().name == "North Star Army Tank (Boss)" || FindObjectOfType<BossVehicle>().name == "Cuban BTR (Third Boss)")
                     {
-                        if (gun.GetComponent<Transform>().localScale.y == -1)
-                        {
-                            gun.transform.right = Direction;
-                        }
-                        else
-                        {
-                            gun.transform.right = -Direction;
-                        }
+                        gun.transform.right = Direction;
                     }
                     else
                     {

@@ -197,13 +197,19 @@ public class BossVehicle : MonoBehaviour
 
     void startPhaseTwo()
     {
-        if (gameObject.name == "North Star Army AH (Boss)") { 
+        if (gameObject.name == "North Star Army AH (Boss)")
+        {
             FindObjectOfType<BossVehicle>().GetComponentInChildren<BossSpecial>().enabled = true;
             GetComponent<BossSpecial>().enabled = true;
             gameObject.transform.GetChild(3).GetComponent<BossSpecial>().enabled = true;
             GetComponent<AudioSource>().enabled = true;
-        } 
-        else 
+        }
+        else if (gameObject.name == "Cuban BTR (Third Boss)")
+        {
+            GetComponent<BossSpecial>().enabled = true;
+            GetComponent<turretScript>().enabled = true;
+        }
+        else
         {
             GetComponent<turretScript>().enabled = true;
         }
@@ -221,7 +227,14 @@ public class BossVehicle : MonoBehaviour
         else
         {
             FindObjectOfType<BossVehicle>().GetComponentInChildren<BossAttack>().enabled = true;
-            GetComponent<turretScript>().enabled = false;
+            if (gameObject.name == "Cuban BTR (Third Boss)")
+            {
+                GetComponent<BossSpecial>().enabled = false;
+            }
+            else
+            {
+                GetComponent<turretScript>().enabled = false;
+            }
         }
         hitBoxAppear = true;
         beginMoving = false;

@@ -43,6 +43,13 @@ public class Cutscene : MonoBehaviour
                 cutsceneImage[1].SetActive(true);
                 break;
             case 4:
+                dialogues = new List<string>() { "'John Smith': Once again, another victory for N.I.N.J.A! It has seem that UNITA has not agree with giving away the nuclear weapon",
+                "to the syndicate. The MPLA can fight UNITA without their help. Though our task in Africa is done, we have another by the United Nation.",
+                "A militant group known as the United Liberation Army have taken hostages of Japanese officials in West Germany during the",
+                "G7 Summit. We learned that the ULA is part of the Japanese Red Army, but their only goal is to create violent revolution and eliminate the",
+                "current Japanese government. The ULA have full support from the syndicate. We must rescue the Japanese officials before they",
+                "kill them. You will sneak into the Reichstag. I'll have Yumi decrypt the ULA's conversation. Remember! We cannot let any of the Japanese",
+                "officials be harmed. Good luck, team!"};
                 cutsceneImage[1].SetActive(false);
                 cutsceneImage[2].SetActive(true);
                 break;

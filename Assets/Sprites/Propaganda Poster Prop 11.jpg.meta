@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bba79f400a439474d9866337ce620ca9
+guid: 7d0503b884a5ead4fad3857861e1395d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -126,91 +126,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Cuban BTR (Third Boss)_0
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 145
-        width: 161
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c803aec6e9696d42b4412773f785ac9
-      internalID: 1071619264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cuban BTR (Third Boss)_1
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 72
-        width: 161
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5024aaf57bc599742b2cf8a9a65ffa7f
-      internalID: 1994255286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cuban BTR (Third Boss)_2
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 54
-        width: 36
-        height: 15
-      alignment: 9
-      pivot: {x: 0.8, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8db22e86fa86b7438d928dc83121cf2
-      internalID: 702253141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cuban BTR (Third Boss)_3
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 138
-        height: 53
-      alignment: 9
-      pivot: {x: 0.415, y: 0.65}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 986fe6c9eaae0d842ae493d2404d2d80
-      internalID: 1220586397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -221,11 +137,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Cuban BTR (Third Boss)_0: 1071619264
-      Cuban BTR (Third Boss)_2: 702253141
-      Cuban BTR (Third Boss)_3: 1220586397
-      Cuban BTR (Third Boss)_1: 1994255286
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

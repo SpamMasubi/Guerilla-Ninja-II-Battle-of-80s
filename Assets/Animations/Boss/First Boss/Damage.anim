@@ -72,7 +72,7 @@ AnimationClip:
   - time: 0
     functionName: damageEnemySFX
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: cd5bc2934bb851d4189b4bed83a23313, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: dd8dff8d2cdbded48a14a0f90214870a, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
