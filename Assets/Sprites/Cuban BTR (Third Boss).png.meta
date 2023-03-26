@@ -1,31 +1,7 @@
 fileFormatVersion: 2
-guid: f2baaadc00139a24294a02bbd2b779de
+guid: bba79f400a439474d9866337ce620ca9
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 6189299637787404348
-    second: More Misc + Boss_0
-  - first:
-      213: 1786578006365690769
-    second: More Misc + Boss_1
-  - first:
-      213: -6006845927675663810
-    second: More Misc + Boss_2
-  - first:
-      213: -8213454714230053178
-    second: More Misc + Boss_3
-  - first:
-      213: -3646672591794944855
-    second: More Misc + Boss_4
-  - first:
-      213: 5123985860578098938
-    second: More Misc + Boss_5
-  - first:
-      213: -8816895040082994263
-    second: More Misc + Boss_6
-  - first:
-      213: 6950391833011823122
-    second: More Misc + Boss_7
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,46 +78,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 256
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 256
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 256
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -150,10 +90,34 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -164,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: More Misc + Boss_0
+      name: Cuban BTR (Third Boss)_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 31
-        height: 40
+        x: 10
+        y: 145
+        width: 161
+        height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c38a5ce6a3fc4e550800000000000000
-      internalID: 6189299637787404348
+      spriteID: 3c803aec6e9696d42b4412773f785ac9
+      internalID: 1071619264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: More Misc + Boss_1
+      name: Cuban BTR (Third Boss)_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 25
-        width: 15
-        height: 16
+        x: 10
+        y: 72
+        width: 161
+        height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,71 +163,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19bd3f82b333bc810800000000000000
-      internalID: 1786578006365690769
+      spriteID: 5024aaf57bc599742b2cf8a9a65ffa7f
+      internalID: 1994255286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: More Misc + Boss_2
+      name: Cuban BTR (Third Boss)_2
       rect:
         serializedVersion: 2
-        x: 77
-        y: 39
-        width: 53
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1
+        y: 54
+        width: 36
+        height: 15
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3ae364547563aca0800000000000000
-      internalID: -6006845927675663810
+      spriteID: c8db22e86fa86b7438d928dc83121cf2
+      internalID: 702253141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: More Misc + Boss_3
+      name: Cuban BTR (Third Boss)_3
       rect:
         serializedVersion: 2
-        x: 62
-        y: 26
-        width: 4
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 35
+        y: 0
+        width: 138
+        height: 53
+      alignment: 9
+      pivot: {x: 0.415, y: 0.41}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c66f834472f30e80800000000000000
-      internalID: -8213454714230053178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: More Misc + Boss_4
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 28
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a4c8e1499a646dc0800000000000000
-      internalID: -3646672591794944855
+      spriteID: 986fe6c9eaae0d842ae493d2404d2d80
+      internalID: 1220586397
       vertices: []
       indices: 
       edges: []
@@ -279,11 +222,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      More Misc + Boss_0: 6189299637787404348
-      More Misc + Boss_2: -6006845927675663810
-      More Misc + Boss_1: 1786578006365690769
-      More Misc + Boss_3: -8213454714230053178
-      More Misc + Boss_4: -3646672591794944855
+      Cuban BTR (Third Boss)_0: 1071619264
+      Cuban BTR (Third Boss)_2: 702253141
+      Cuban BTR (Third Boss)_3: 1220586397
+      Cuban BTR (Third Boss)_1: 1994255286
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

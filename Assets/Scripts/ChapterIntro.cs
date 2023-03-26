@@ -31,7 +31,7 @@ public class ChapterIntro : MonoBehaviour
                 break;
             case 3:
                 chapterIntro.text = "Mission 3";
-                chapterText.text = "A Weapon to Surpass" + "\n\n" + "-MPLA Territory, Angola-South West Africa Border-";
+                chapterText.text = "A Weapon to Surpass" + "\n\n" + "-MPLA Zone, Angola-S.W. Africa Border-";
                 break;
             case 4:
                 chapterIntro.text = "Mission 4";
