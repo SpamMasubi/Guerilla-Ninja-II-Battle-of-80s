@@ -159,27 +159,24 @@ public class BossVehicle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!isDead)
+        if (collision.tag == "playerProjectiles" || collision.tag == "playerAttack")
         {
-            if (collision.tag == "playerProjectiles" || collision.tag == "playerAttack")
+            if (!isInvincible && hitBoxAppear)
             {
-                if (!isInvincible && hitBoxAppear && collision.tag == "playerProjectiles")
+                if (collision.tag == "playerAttack")
                 {
-                    StartCoroutine(InvincibilityFlash());
-                    AudioManager.instance.PlaySFX("bossDamage");
-                    anim.SetTrigger("Hurt");
-                }
-                else if (!isInvincible && hitBoxAppear && collision.tag == "playerAttack")
-                {
-                    StartCoroutine(InvincibilityFlash());
                     FindObjectOfType<BossHealthBar>().LoseHealth(1);
+                }
+                if (bossHealth > 0)
+                {
+                    StartCoroutine(InvincibilityFlash());
                     AudioManager.instance.PlaySFX("bossDamage");
                     anim.SetTrigger("Hurt");
                 }
-                else
-                {
-                    AudioManager.instance.PlaySFX("bossHit");
-                }
+            }
+            else
+            {
+                AudioManager.instance.PlaySFX("bossHit");
             }
         }
     }

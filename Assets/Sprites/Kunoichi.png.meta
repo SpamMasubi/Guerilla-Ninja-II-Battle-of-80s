@@ -471,8 +471,8 @@ TextureImporter:
         y: 121
         width: 36
         height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -705,7 +705,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kunoichi_13: 1157097834
+      Kunoichi_1: -190621755
       Kunoichi_2: 610940835
       Kunoichi_9: 411729162
       Kunoichi_5: -1205202062
@@ -731,7 +731,7 @@ TextureImporter:
       Kunoichi_14: 1439939285
       Kunoichi_16: -2088006548
       Kunoichi_18: -34440677
-      Kunoichi_1: -190621755
+      Kunoichi_13: 1157097834
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

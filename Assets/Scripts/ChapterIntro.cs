@@ -11,8 +11,8 @@ public class ChapterIntro : MonoBehaviour
     public Text chapterText;
     private bool canStartGame;
     private AudioSource selection;
-    private int chapterIncr = 2;
-    public static int chapters = 3;
+    private static int chapterIncr;
+    public static int chapters = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -48,8 +48,6 @@ public class ChapterIntro : MonoBehaviour
             case 7:
                 chapterIntro.text = "Final Mission";
                 chapterText.text = "The North Star of Heaven" + "\n\n" + "Hokuto Island, South Pacific";
-                break;
-            default:
                 break;
         }
     }

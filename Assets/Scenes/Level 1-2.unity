@@ -1780,13 +1780,6 @@ MonoBehaviour:
   bulletLauncher: {fileID: 1231912527}
   agroRange: 15
   player: {fileID: 0}
-  Explosion: {fileID: 0}
-  untilDisabled: 10
-  flashColor: {r: 0, g: 0, b: 0, a: 0}
-  regularColor: {r: 0, g: 0, b: 0, a: 0}
-  flashDuration: 0
-  numberOfFlashes: 0
-  bossSprite: {fileID: 0}
   fireRate: 3
   attackSFX: shootAssaultRifle
 --- !u!1001 &439069822

@@ -68623,7 +68623,7 @@ MonoBehaviour:
   offset: {x: 0, y: 11.5, z: 0}
   gun: {fileID: 841141456}
   bullet: {fileID: 7442443214663513810, guid: 68d7dbbb26fb18d439a4da3aafdfb40c, type: 3}
-  FireRate: 0.75
+  FireRate: 1
   shootPoint: {fileID: 1373022327}
 --- !u!212 &841141459
 SpriteRenderer:
