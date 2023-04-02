@@ -97,7 +97,7 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: -1624105308, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      value: {fileID: 307875583672630547, guid: bc9ec8a984391674197641f441523b70, type: 3}
     attribute: m_Sprite
     path: North Star Army BTR Driver
     classID: 212
@@ -153,7 +153,7 @@ AnimationClip:
       isPPtrCurve: 0
     pptrCurveMapping:
     - {fileID: 1220586397, guid: bba79f400a439474d9866337ce620ca9, type: 3}
-    - {fileID: -1624105308, guid: bc9ec8a984391674197641f441523b70, type: 3}
+    - {fileID: 307875583672630547, guid: bc9ec8a984391674197641f441523b70, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
