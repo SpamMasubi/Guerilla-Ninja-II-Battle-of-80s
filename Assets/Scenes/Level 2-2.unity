@@ -68623,7 +68623,7 @@ MonoBehaviour:
   offset: {x: 0, y: 11.5, z: 0}
   gun: {fileID: 841141456}
   bullet: {fileID: 7442443214663513810, guid: 68d7dbbb26fb18d439a4da3aafdfb40c, type: 3}
-  FireRate: 1
+  FireRate: 1.75
   shootPoint: {fileID: 1373022327}
 --- !u!212 &841141459
 SpriteRenderer:
@@ -138842,7 +138842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8583042072999724713, guid: 24220f2251578e446a390a2e0552ede3, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8583042072999724718, guid: 24220f2251578e446a390a2e0552ede3, type: 3}
       propertyPath: m_RootOrder

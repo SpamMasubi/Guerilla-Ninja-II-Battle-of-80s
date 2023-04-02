@@ -167,6 +167,11 @@ public class BossVehicle : MonoBehaviour
                 {
                     FindObjectOfType<BossHealthBar>().LoseHealth(1);
                 }
+                else
+                {
+                    FindObjectOfType<ShootingItem>().takeDamage();
+                }
+
                 if (bossHealth > 0)
                 {
                     StartCoroutine(InvincibilityFlash());

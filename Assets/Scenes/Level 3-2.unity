@@ -57058,14 +57058,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893483605}
-  m_LocalRotation: {x: 0.29237175, y: 0, z: 0, w: 0.9563048}
-  m_LocalPosition: {x: -0.11, y: -0.056, z: 0}
+  m_LocalRotation: {x: 0.34930807, y: 0, z: 0, w: 0.93700796}
+  m_LocalPosition: {x: 0.612, y: 0.154, z: 0.28}
   m_LocalScale: {x: 0.04, y: 0.04, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1835525352}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 34, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40.89, y: 0, z: 0}
 --- !u!212 &893483607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77198,7 +77198,7 @@ MonoBehaviour:
   offset: {x: -20, y: 0, z: 0}
   gun: {fileID: 1363976844}
   bullet: {fileID: 7442443214663513810, guid: 68d7dbbb26fb18d439a4da3aafdfb40c, type: 3}
-  FireRate: 1.25
+  FireRate: 1.75
   shootPoint: {fileID: 1716714736}
 --- !u!95 &1835525356
 Animator:
@@ -77252,7 +77252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specialGun: {fileID: 394039787}
   specialBullet: {fileID: 2817087901950466349, guid: bf1bb2a88e96d164f8708bbf83ee832d, type: 3}
-  timeOfAttack: 1.5
+  timeOfAttack: 2
 --- !u!50 &1835525359
 Rigidbody2D:
   serializedVersion: 4

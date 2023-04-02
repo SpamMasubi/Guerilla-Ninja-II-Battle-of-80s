@@ -40,22 +40,18 @@ public class ShootingItem : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.tag == "Player")
         {
             return;
-        }
-        //Destroy
-        if (collision.tag == "Enemy" || collision.tag == "Boss")
-        {
-            if (BossStart.startBoss && BossVehicle.hitBoxAppear && !BossVehicle.isInvincible)
-            {
-                FindObjectOfType<BossHealthBar>().LoseHealth(damage);
-            }
-            Destroy(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    public void takeDamage()
+    {
+        FindObjectOfType<BossHealthBar>().LoseHealth(damage);
     }
 }
