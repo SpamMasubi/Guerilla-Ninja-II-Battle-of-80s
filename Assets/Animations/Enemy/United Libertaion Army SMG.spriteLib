@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Walk
+    m_Hash: 765711723
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: North Star Army_20
+      m_Hash: 177403483
+      m_Sprite: {fileID: -3146763447530509879, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -2020519080, guid: ed1bd7d18104bb846ab67861c6437d70, type: 3}
+    - m_Name: North Star Army_21
+      m_Hash: 1033225933
+      m_Sprite: {fileID: -6753633389230144137, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -2137662575, guid: ed1bd7d18104bb846ab67861c6437d70, type: 3}
+    - m_Name: North Star Army_22
+      m_Hash: 614242167
+      m_Sprite: {fileID: -1442742051576757688, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 912852353, guid: ed1bd7d18104bb846ab67861c6437d70, type: 3}
+    - m_Name: North Star Army_23
+      m_Hash: 328968161
+      m_Sprite: {fileID: -2508610644075695554, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1488587858, guid: ed1bd7d18104bb846ab67861c6437d70, type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 4
+  - m_Name: Shoot
+    m_Hash: 830854074
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: North Star Army_29
+      m_Hash: 860770047
+      m_Sprite: {fileID: -4032544577816592317, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 980006511, guid: ed1bd7d18104bb846ab67861c6437d70, type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 1
+  - m_Name: Dead
+    m_Hash: 219670042
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: North Star Army_25
+      m_Hash: 989332180
+      m_Sprite: {fileID: 6179718172221975354, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -1775533252, guid: ed1bd7d18104bb846ab67861c6437d70, type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 1
+  m_PrimaryLibraryGUID: ee274846add5b084e9f086e0594ee5dc

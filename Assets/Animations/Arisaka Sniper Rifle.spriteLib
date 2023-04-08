@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Enemy Down
+    m_Hash: 230157898
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: North Star Army_34
+      m_Hash: 350487299
+      m_Sprite: {fileID: -8862498621304340518, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1736902958, guid: ed1bd7d18104bb846ab67861c6437d70, type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 1
+  - m_Name: Shoot
+    m_Hash: 830854074
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: North Star Army_33
+      m_Hash: 176199328
+      m_Sprite: {fileID: -8425637861237120864, guid: bc9ec8a984391674197641f441523b70, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -817940589, guid: ed1bd7d18104bb846ab67861c6437d70, type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 1
+  m_PrimaryLibraryGUID: 4b7c22070437d514eba5f542b5976888

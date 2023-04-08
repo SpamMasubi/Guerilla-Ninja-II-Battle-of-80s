@@ -131,9 +131,9 @@ TextureImporter:
       name: United Liberation Army_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 45
         y: 179
-        width: 67
+        width: 25
         height: 51
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -387,8 +387,8 @@ TextureImporter:
         y: 92
         width: 27
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -568,6 +568,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: United Liberation Army_21
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 168
+        width: 51
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee00ca427cfd904458017b9fb2a5bfc8
+      internalID: -817940589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: United Liberation Army_22
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 145
+        width: 51
+        height: 18
+      alignment: 9
+      pivot: {x: 0.62, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bcd9ea61209824e889f51343cfc016
+      internalID: -914361065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -580,6 +622,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       United Liberation Army_4: -1959818945
+      United Liberation Army_21: -817940589
       United Liberation Army_11: 980006511
       United Liberation Army_5: -320364234
       United Liberation Army_13: -1775533252
@@ -600,6 +643,7 @@ TextureImporter:
       United Liberation Army_8: -2137662575
       United Liberation Army_9: 912852353
       United Liberation Army_20: 1382329211
+      United Liberation Army_22: -914361065
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

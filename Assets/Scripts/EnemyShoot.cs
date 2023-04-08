@@ -23,7 +23,7 @@ public class EnemyShoot : MonoBehaviour
 
     public Transform launchPoint;
 
-    float fireRate = 2f;
+    public float fireRate = 2f;
     float nextShot;
     private float distToPlayer;
 
