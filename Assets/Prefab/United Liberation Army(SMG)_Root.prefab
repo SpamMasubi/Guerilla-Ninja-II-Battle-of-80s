@@ -274,7 +274,7 @@ MonoBehaviour:
   points:
   - {fileID: 9070160074837174046}
   - {fileID: 9070160075067472086}
-  maxSpeed: 4
+  maxSpeed: 2
 --- !u!114 &2207619932731949342
 MonoBehaviour:
   m_ObjectHideFlags: 0
