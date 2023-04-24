@@ -61937,7 +61937,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -77106,7 +77106,7 @@ MonoBehaviour:
   - {fileID: 921802164}
   - {fileID: 493843316}
   speed: 8
-  bossName: Chonma-Ho Type 84
+  bossName: BTR-84 Lazer Variant
   bossHealth: 50
   startPhase2: {fileID: 8300000, guid: 835d1404fece81b4a9fc4f07c282a4de, type: 3}
   deadsfx: {fileID: 8300000, guid: 817b1ee1f2940fe4fb0b01968637e706, type: 3}

@@ -27,7 +27,10 @@ public class BossStart : MonoBehaviour
                 }
             }
             startBoss = true;
-            exitClosed.SetActive(true);
+            if (exitClosed != null)
+            {
+                exitClosed.SetActive(true);
+            }
             FindObjectOfType<Canvas>().gameObject.transform.GetChild(4).gameObject.SetActive(true);
             FindObjectOfType<PlayMusic>().PlaySong(FindObjectOfType<PlayMusic>().bossSong);
             AudioManager.instance.SoundObjectCreation(startBossSFX);
