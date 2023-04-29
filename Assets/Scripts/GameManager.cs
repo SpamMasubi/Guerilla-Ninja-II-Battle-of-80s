@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private static GameManager gm;
+    public static GameManager instance;
     public int lives = 3;
     public float health = 100;
 
@@ -24,5 +25,12 @@ public class GameManager : MonoBehaviour
         }
 
         
+    }
+
+    public void ResetAmmo()
+    {
+        scores = 0;
+        shurikenCount = 3;
+        SpecialAmmo = 10;
     }
 }

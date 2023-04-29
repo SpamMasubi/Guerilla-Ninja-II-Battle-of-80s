@@ -386,6 +386,7 @@ public class Player : MonoBehaviour
             FindObjectOfType<Healthbar>().UpdateHealth(playerHealth);
             StartCoroutine(InvincibilityFlash());
             animator.Rebind();
+            GameManager.instance.ResetAmmo();
             if (!BossStart.startBoss)
             {
                 transform.position = new Vector2(respawn.transform.position.x,respawn.transform.position.y);

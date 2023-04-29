@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 3052202704162799022}
   - component: {fileID: 3052202704162799017}
   - component: {fileID: 3052202704162799016}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: attackEffect
   m_TagString: playerAttack
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 3052202704427465645}
   - component: {fileID: 3052202704427465644}
   - component: {fileID: 3052202704427465647}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: AttackPoint
   m_TagString: playerAttack
   m_Icon: {fileID: 0}

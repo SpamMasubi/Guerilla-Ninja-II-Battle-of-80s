@@ -21,11 +21,11 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 1727834185, guid: e594d11820a45f741a5f12625d191b5c, type: 3}
-    - time: 0.083333336
+    - time: 0.05
       value: {fileID: 1693522834, guid: e594d11820a45f741a5f12625d191b5c, type: 3}
-    - time: 0.16666667
+    - time: 0.1
       value: {fileID: -1741362034, guid: e594d11820a45f741a5f12625d191b5c, type: 3}
-    - time: 0.25
+    - time: 0.15
       value: {fileID: 2072604272, guid: e594d11820a45f741a5f12625d191b5c, type: 3}
     attribute: m_Sprite
     path: Tank Dome
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.41666666
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -82,7 +82,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.41666666
+  - time: 0.25
     functionName: startPhaseTwo
     data: 
     objectReferenceParameter: {fileID: 0}

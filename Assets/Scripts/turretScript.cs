@@ -14,6 +14,7 @@ public class turretScript : MonoBehaviour
     public float FireRate;
     float nextTimeToFire = 0;
     public Transform shootPoint;
+    public bool GroundBossType;
 
     private void Start()
     {
@@ -49,7 +50,7 @@ public class turretScript : MonoBehaviour
             {
                 if (FindObjectOfType<BossVehicle>() != null)
                 {
-                    if (FindObjectOfType<BossVehicle>().name == "North Star Army Tank (Boss)" || FindObjectOfType<BossVehicle>().name == "Cuban BTR (Third Boss)")
+                    if (GroundBossType)
                     {
                         if (offset.x < 0)
                         {

@@ -36332,6 +36332,7 @@ MonoBehaviour:
   bullet: {fileID: 4358097357185255859, guid: 85ac8e79634764547a5e4fd6c338670e, type: 3}
   FireRate: 0.75
   shootPoint: {fileID: 1546479277}
+  GroundBossType: 1
 --- !u!1 &1189165807
 GameObject:
   m_ObjectHideFlags: 0
