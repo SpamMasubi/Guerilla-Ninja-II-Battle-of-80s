@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager gm;
     public static GameManager instance;
     public int lives = 3;
     public float health = 100;
@@ -15,9 +14,9 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
 
-        if (gm == null)
+        if (instance == null)
         {
-            gm = this;
+            instance = this;
         }
         else
         {

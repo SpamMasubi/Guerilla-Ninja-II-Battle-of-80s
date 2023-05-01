@@ -1326,7 +1326,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2024985621
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -3264080329720040365, guid: 5ae76eca823aac34ab68c7d9b0691714, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -65678,7 +65678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554c78aa676874a4eb8a0ae7e418e1da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 519420028}
   parallaxEffect: 0.6
 --- !u!212 &1089677172
 SpriteRenderer:
@@ -66680,7 +66680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a2047a7c154c34e8319c44ba7aeb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameofNextStage: Level 3-2
+  nameofNextStage: Level 5-2
 --- !u!1 &1237191117
 GameObject:
   m_ObjectHideFlags: 0
@@ -75439,7 +75439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554c78aa676874a4eb8a0ae7e418e1da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 519420028}
   parallaxEffect: 0.3
 --- !u!212 &1811219046
 SpriteRenderer:
@@ -78846,8 +78846,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8583042072999724719, guid: 24220f2251578e446a390a2e0552ede3, type: 3}
+      propertyPath: Range
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583042072999724719, guid: 24220f2251578e446a390a2e0552ede3, type: 3}
       propertyPath: offset.y
-      value: 4
+      value: 5.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24220f2251578e446a390a2e0552ede3, type: 3}
