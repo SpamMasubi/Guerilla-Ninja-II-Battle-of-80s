@@ -53,6 +53,16 @@ public class Cutscene : MonoBehaviour
                 cutsceneImage[1].SetActive(false);
                 cutsceneImage[2].SetActive(true);
                 break;
+            case 5:
+                dialogues = new List<string>() { "'John Smith': Haha, nice job team. The G7 Leaders can continue to bring world peace with their meetings. We are still not done with",
+                "our works yet. The US is getting ready for their presidential election. It seems that one of the candidate will put an end to this Cold",
+                "War. The syndicate isn't to happy with this and we have intels that they are about to sabotage the presidential election. They want",
+                "to put one of their's as another candidate for the opposing side. We can't allow them to destroy the elections! If the syndicate",
+                "tampers the election and they win, this Cold War will turn into worse and the syndicate will achieve their goal for world domination. Get to",
+                "it, team! Good luck, all!"};
+                cutsceneImage[1].SetActive(false);
+                cutsceneImage[2].SetActive(true);
+                break;
             case 8:
                 GetComponent<AudioSource>().clip = lastCutscene;
                 GetComponent<AudioSource>().Play();

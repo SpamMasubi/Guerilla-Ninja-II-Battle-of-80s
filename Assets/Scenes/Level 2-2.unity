@@ -68625,6 +68625,7 @@ MonoBehaviour:
   bullet: {fileID: 7442443214663513810, guid: 68d7dbbb26fb18d439a4da3aafdfb40c, type: 3}
   FireRate: 1.75
   shootPoint: {fileID: 1373022327}
+  GroundBossType: 0
 --- !u!212 &841141459
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76287,8 +76288,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544776968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 130.63, y: 4.1, z: 21.768837}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0}
+  m_LocalPosition: {x: 130.63, y: 4.29, z: 21.768837}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1963773568}
