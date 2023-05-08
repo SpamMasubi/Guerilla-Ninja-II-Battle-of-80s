@@ -18,6 +18,7 @@ public class BossVehicle : MonoBehaviour
     public GameObject hitBox;
     public float hitBoxAppearTime = 0f;
     public GameObject mainGun;
+    public bool aerialBoss;
 
     float hitBoxAppearTimer = 0f;
     public static bool hitBoxAppear = true;
@@ -190,7 +191,7 @@ public class BossVehicle : MonoBehaviour
     {
         hitBoxAppear = false;
         isInvincible = true;
-        if (gameObject.name == "North Star Army AH (Boss)")
+        if (aerialBoss)
         {
             mainGun.SetActive(false);
         }
@@ -199,7 +200,7 @@ public class BossVehicle : MonoBehaviour
 
     void startPhaseTwo()
     {
-        if (gameObject.name == "North Star Army AH (Boss)")
+        if (aerialBoss)
         {
             FindObjectOfType<BossVehicle>().GetComponentInChildren<BossSpecial>().enabled = true;
             GetComponent<BossSpecial>().enabled = true;
@@ -222,7 +223,7 @@ public class BossVehicle : MonoBehaviour
 
     public void enableHitBox()
     {
-        if (gameObject.name == "North Star Army AH (Boss)")
+        if (aerialBoss)
         {
             mainGun.SetActive(true);
         }
@@ -247,7 +248,7 @@ public class BossVehicle : MonoBehaviour
         isDead = true;
         ExplosionEffect();
         anim.SetTrigger("Defeated");
-        if (gameObject.name == "North Star Army AH (Boss)")
+        if (aerialBoss)
         {
             GetComponent<AudioSource>().enabled = false;
             GetComponent<Rigidbody2D>().gravityScale = 0.03f;

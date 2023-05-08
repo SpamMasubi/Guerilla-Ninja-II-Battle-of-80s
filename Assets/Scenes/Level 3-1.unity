@@ -60224,7 +60224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSong: {fileID: 8300000, guid: 27f19b51eb3472f459c5fd862f2b0234, type: 3}
-  bossSong: {fileID: 8300000, guid: e2290fa7f9391414fab0634bd4be9f8a, type: 3}
+  bossSong: {fileID: 8300000, guid: ed3b1866ff8c53645a58cf4b36d8ef3e, type: 3}
 --- !u!82 &997046843
 AudioSource:
   m_ObjectHideFlags: 0

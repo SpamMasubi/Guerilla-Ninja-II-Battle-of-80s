@@ -71627,6 +71627,7 @@ MonoBehaviour:
   hitBox: {fileID: 1177831979}
   hitBoxAppearTime: 5
   mainGun: {fileID: 841141456}
+  aerialBoss: 1
   Explosion: {fileID: 8637432563442968295, guid: 6249dc5f01a657d4c96e685f7bc42023, type: 3}
   flashColor: {r: 1, g: 0.3019608, b: 0, a: 1}
   regularColor: {r: 1, g: 1, b: 1, a: 1}
