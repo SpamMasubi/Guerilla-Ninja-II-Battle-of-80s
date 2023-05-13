@@ -45,6 +45,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 5-2.unity
     guid: 7b4d209f43471394b8cadd7826ec8604
   - enabled: 1
+    path: Assets/Scenes/Level 6-1.unity
+    guid: b311959dfaef3574bbfcde3a7c9f66bd
+  - enabled: 1
+    path: Assets/Scenes/Level 6-2.unity
+    guid: dd96426edd8d8df47a935ad55c115e89
+  - enabled: 1
     path: Assets/Scenes/Cutscene.unity
     guid: 5306f6de502be1a4693fd5866efd0615
   - enabled: 1

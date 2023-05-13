@@ -494,8 +494,8 @@ TextureImporter:
       name: Guerilla Ninja 2 Misc(Transparency)_13
       rect:
         serializedVersion: 2
-        x: 769
-        y: 880
+        x: 564
+        y: 332
         width: 128
         height: 139
       alignment: 0
@@ -515,8 +515,8 @@ TextureImporter:
       name: Guerilla Ninja 2 Misc(Transparency)_14
       rect:
         serializedVersion: 2
-        x: 911
-        y: 879
+        x: 601
+        y: 98
         width: 72
         height: 141
       alignment: 0
@@ -2074,7 +2074,7 @@ TextureImporter:
         width: 25
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2095,7 +2095,7 @@ TextureImporter:
         width: 21
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2116,7 +2116,7 @@ TextureImporter:
         width: 17
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2137,7 +2137,7 @@ TextureImporter:
         width: 3
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2158,7 +2158,7 @@ TextureImporter:
         width: 3
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2179,7 +2179,7 @@ TextureImporter:
         width: 15
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2200,7 +2200,7 @@ TextureImporter:
         width: 4
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2221,7 +2221,7 @@ TextureImporter:
         width: 15
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2242,7 +2242,7 @@ TextureImporter:
         width: 34
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2263,7 +2263,7 @@ TextureImporter:
         width: 13
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2284,7 +2284,7 @@ TextureImporter:
         width: 4
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2305,7 +2305,7 @@ TextureImporter:
         width: 13
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2326,7 +2326,7 @@ TextureImporter:
         width: 34
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2334,6 +2334,69 @@ TextureImporter:
       bones: []
       spriteID: a964ce87f5ce78f4187a1a1e9709438d
       internalID: -84838543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerilla Ninja 2 Misc(Transparency)_101
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 8
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f12cfc1ed58e1a4f8a516ea7bafba9f
+      internalID: -602534709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerilla Ninja 2 Misc(Transparency)_102
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 8
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7d4da0c0577fe4db975d9b19cccba9
+      internalID: 1666617361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerilla Ninja 2 Misc(Transparency)_103
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 8
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02db9726ee4a86948836e9aa6db120f6
+      internalID: -1146923088
       vertices: []
       indices: 
       edges: []
@@ -2386,12 +2449,14 @@ TextureImporter:
       Guerilla Ninja 2 Misc(Transparency)_22: -7490024306303935422
       Guerilla Ninja 2 Misc(Transparency)_2: 5617356812025739822
       Guerilla Ninja 2 Misc(Transparency)_100: -84838543
+      Guerilla Ninja 2 Misc(Transparency)_102: 1666617361
       Guerilla Ninja 2 Misc(Transparency)_47: -780599047
       Guerilla Ninja 2 Misc(Transparency)_74: -1787161114
       Guerilla Ninja 2 Misc(Transparency)_98: -1791968102
       Guerilla Ninja 2 Misc(Transparency)_35: 897351804
       Guerilla Ninja 2 Misc(Transparency)_56: 882802797
       Guerilla Ninja 2 Misc(Transparency)_52: -404990206
+      Guerilla Ninja 2 Misc(Transparency)_103: -1146923088
       Guerilla Ninja 2 Misc(Transparency)_69: -86977392
       Guerilla Ninja 2 Misc(Transparency)_61: 1710422693
       Guerilla Ninja 2 Misc(Transparency)_96: 1607455303
@@ -2432,6 +2497,7 @@ TextureImporter:
       Guerilla Ninja 2 Misc(Transparency)_70: -962057200
       Guerilla Ninja 2 Misc(Transparency)_12: -5394346628573323173
       Guerilla Ninja 2 Misc(Transparency)_41: -447831975
+      Guerilla Ninja 2 Misc(Transparency)_101: -602534709
       Guerilla Ninja 2 Misc(Transparency)_30: -1268730293
       Guerilla Ninja 2 Misc(Transparency)_50: 279323797
       Guerilla Ninja 2 Misc(Transparency)_42: -859338146
