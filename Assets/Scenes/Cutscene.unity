@@ -574,6 +574,7 @@ MonoBehaviour:
   - {fileID: 2088353979}
   loadScene: {fileID: 483449686}
   lastCutscene: {fileID: 8300000, guid: c9a9f5007eff7cb48be96dd646af0274, type: 3}
+  finalMissionCutscene: {fileID: 8300000, guid: b1c1f6f6deadf72408de1563c7c12220, type: 3}
 --- !u!82 &469471145
 AudioSource:
   m_ObjectHideFlags: 0

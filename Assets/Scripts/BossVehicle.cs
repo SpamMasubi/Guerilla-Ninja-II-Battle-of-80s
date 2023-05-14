@@ -281,6 +281,10 @@ public class BossVehicle : MonoBehaviour
 
     public void damageEnemySFX(AudioClip sfx)
     {
+        if (aerialBoss)
+        {
+            mainGun.SetActive(false);
+        }
         AudioManager.instance.SoundObjectCreation(sfx);
     }
 

@@ -25,7 +25,7 @@ public class Cutscene : MonoBehaviour
     public AudioSource dialogueSFX;
     public GameObject[] cutsceneImage;
     public GameObject loadScene;
-    public AudioClip lastCutscene;
+    public AudioClip lastCutscene, finalMissionCutscene;
 
     void Start()
     {
@@ -74,12 +74,17 @@ public class Cutscene : MonoBehaviour
                 cutsceneImage[4].SetActive(true);
                 break;
             case 7:
-                dialogues = new List<string>() { "'John Smith': Haha, nice job team. The G7 Leaders can continue to bring world peace with their meetings. We are still not done with",
-                "our works yet. The US is getting ready for their presidential election. It seems that one of the candidate will put an end to this Cold",
-                "War. The syndicate isn't to happy with this and we have intels that they are about to sabotage the presidential election. They want",
-                "to put one of their's as another candidate for the opposing side. We can't allow them to destroy the elections! If the syndicate",
-                "tampers the election and they win, this Cold War will turn into worse and the syndicate will achieve their goal for world domination. Get to",
-                "it, team! Good luck, all!"};
+                GetComponent<AudioSource>().clip = finalMissionCutscene;
+                GetComponent<AudioSource>().Play();
+                dialogues = new List<string>() { "'John Smith': Team, we have urgent issue in our hand. Our ninjas reported Yumi has been kidnapped by North Star Army disguised as",
+                "civilians while she was on her days off in Japan. The syndicate have her as their prisoner in exchange for prisoners we",
+                "captured along with a huge ransom. They said if we don't comply, they will kill Yumi. Hung, I know this is a difficult situation seeing your",
+                "fiance in danger. We will get her back. I promise you, my friend. However, we must carefully execute a plan that not only to save",
+                "Yumi, but to eradicate the syndicate forever. We must not let Yumi be harmed. I have already sent some of the NINJA units to their home",
+                "base in the South Pacific. Hokuto Island is where she is held at according to our scouts. You and the team will rendevous with our units",
+                "on the island. Once Yumi is rescued, our units will launch an assault on the North Star Army and allow the UN Forces to clean up the rest.",
+                "This is it! The final battle against the North Star of Heaven! We shall not let them achieve the goal of creating WWIII from this Cold War!",
+                "Now, off you go! Good luck, N.I.N.J.As!"};
                 cutsceneImage[4].SetActive(false);
                 cutsceneImage[5].SetActive(true);
                 break;
