@@ -11,8 +11,8 @@ public class ChapterIntro : MonoBehaviour
     public Text chapterText;
     private bool canStartGame;
     private AudioSource selection;
-    private static int chapterIncr = 5;
-    public static int chapters = 6;
+    private static int chapterIncr = 6;
+    public static int chapters = 7;
 
     // Start is called before the first frame update
     void Start()
