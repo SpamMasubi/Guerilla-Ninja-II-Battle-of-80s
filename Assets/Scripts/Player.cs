@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
         isInvincible = false;
         isHurt = false;
 
-        respawn = FindObjectOfType<Respawn>().transform;
+        //respawn = FindObjectOfType<Respawn>().transform;
 
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -111,7 +111,6 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-
         GroundCheck();
         if (!isDead && !isHurt)
         {
@@ -124,6 +123,7 @@ public class Player : MonoBehaviour
         }
         
     }
+
 
     bool canMove()
     {

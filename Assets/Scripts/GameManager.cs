@@ -7,13 +7,14 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int lives = 3;
     public float health = 100;
+    public bool unlockReplay = false;
 
     [HideInInspector]public int scores = 0, shurikenCount = 3, SpecialAmmo = 10;
 
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-
+        gameWin();
         if (instance == null)
         {
             instance = this;
@@ -22,13 +23,46 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
         
+    }
+
+    public void HighScore()
+    {
+        PlayerPrefs.SetInt("HighScore", scores);
+    }
+
+    public void setHighScore()
+    {
+        int HS = PlayerPrefs.GetInt("HighScore");
+        if (scores <= HS)
+        {
+            return;
+        }
+        PlayerPrefs.SetInt("HighScore", scores);
+    }
+
+    public void yourScore()
+    {
+        PlayerPrefs.SetInt("Your Score", FindObjectOfType<GameManager>().scores);
+    }
+
+    public bool gameWin()
+    {
+        int isGameWin = PlayerPrefs.GetInt("GameWin");
+        if(isGameWin == 1)
+        {
+            unlockReplay = true;
+            return true;
+        }
+        else
+        {
+            unlockReplay = false;
+            return false;
+        }
     }
 
     public void ResetAmmo()
     {
-        scores = 0;
         shurikenCount = 3;
         SpecialAmmo = 10;
     }

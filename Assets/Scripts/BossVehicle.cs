@@ -248,6 +248,7 @@ public class BossVehicle : MonoBehaviour
         isDead = true;
         ExplosionEffect();
         anim.SetTrigger("Defeated");
+        FindObjectOfType<GameManager>().scores += Random.Range(100, 1000);
         if (aerialBoss)
         {
             GetComponent<AudioSource>().enabled = false;
