@@ -17,16 +17,12 @@ public class BossStart : MonoBehaviour
             if (FindObjectOfType<BossVehicle>() != null)
             {
                 FindObjectOfType<BossVehicle>().GetComponent<Animator>().enabled = true;
+                startBoss = true;
             }
             else if (FindObjectOfType<FinalBoss>() != null)
             {
-                if (FindObjectOfType<FinalBoss>().name == "Final Boss")
-                {
-                    FindObjectOfType<FinalBoss>().GetComponent<Animator>().enabled = true;
-                    FindObjectOfType<FinalBoss>().GetComponent<AudioSource>().Play();
-                }
+                FindObjectOfType<FinalBoss>().GetComponent<Animator>().enabled = true;
             }
-            startBoss = true;
             if (exitClosed != null)
             {
                 exitClosed.SetActive(true);

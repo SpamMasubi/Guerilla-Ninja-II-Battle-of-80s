@@ -304,7 +304,7 @@ TextureImporter:
         width: 48
         height: 51
       alignment: 9
-      pivot: {x: 0.5, y: 0.52}
+      pivot: {x: 0.7, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,7 +325,7 @@ TextureImporter:
         width: 34
         height: 53
       alignment: 9
-      pivot: {x: 0.4, y: 0.53}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,7 +346,7 @@ TextureImporter:
         width: 41
         height: 51
       alignment: 9
-      pivot: {x: 0.4, y: 0.52}
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,12 +446,12 @@ TextureImporter:
       name: North Star of Heaven Leader_15
       rect:
         serializedVersion: 2
-        x: 153
-        y: 16
+        x: 118
+        y: 14
         width: 32
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 54
+      alignment: 9
+      pivot: {x: 0.55, y: 0.48}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,9 +467,9 @@ TextureImporter:
       name: North Star of Heaven Leader_16
       rect:
         serializedVersion: 2
-        x: 197
-        y: 17
-        width: 30
+        x: 157
+        y: 15
+        width: 41
         height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -480,6 +480,48 @@ TextureImporter:
       bones: []
       spriteID: 19fa3d33aee811440a5def8ee6a3cf45
       internalID: 379314433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Star of Heaven Leader_17
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 14
+        width: 27
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21aa692e81e92a499854ab6fc469693
+      internalID: 1196821304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Star of Heaven Leader_18
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 14
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af75f1b9b2d4af4fa7bda23099f5a25
+      internalID: -388009358
       vertices: []
       indices: 
       edges: []
@@ -503,8 +545,10 @@ TextureImporter:
       North Star of Heaven Leader_4: -1267267957
       North Star of Heaven Leader_2: 877280664
       North Star of Heaven Leader_14: 583225194
+      North Star of Heaven Leader_18: -388009358
       North Star of Heaven Leader_1: -699474294
       North Star of Heaven Leader_10: 905444136
+      North Star of Heaven Leader_17: 1196821304
       North Star of Heaven Leader_9: 1287652681
       North Star of Heaven Leader_0: -1891622521
       North Star of Heaven Leader_3: 247508456

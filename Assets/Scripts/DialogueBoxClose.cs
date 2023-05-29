@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueBoxClose : MonoBehaviour
 {
@@ -24,7 +25,10 @@ public class DialogueBoxClose : MonoBehaviour
     //Wait for next boolean
     private bool waitForNext;
 
-    public AudioSource dialogueSFX;
+    public Image im;
+    public Sprite finalBossImage;
+
+    AudioSource dialogueSFX;
     public Animator DialogueAnimation;
 
     public void Start()
@@ -114,8 +118,24 @@ public class DialogueBoxClose : MonoBehaviour
             }
             else
             {
+                if (FindObjectOfType<FinalBoss>().gameObject)
+                {
+                    BossStart.startBoss = true;
+                }
                 DialogueAnimation.SetTrigger("CloseDialogue");
             }
         }
+    }
+
+    public void FinalBossDialogue()
+    {
+        im.sprite = finalBossImage;
+        dialogues = new List<string>() { "Son Ngo Khong: Well well. It seems you have defeated my men to make your way through this island to rescue your precious friends. I",
+                "will show you that on Hokuto Island, no one leaves here alive. The North Star of Heaven shows no mercy to any enemies we encounter.",
+                "Our ultimate goal of boosting a Third World War from this 'Cold War' shall come to fruition! No longer will the Western World and Eastern",
+                "Bloc will fight amongst each other. Instead, we shall help them end it with their own destructions. Soon, the world shall bow down to us",
+                "to us. But...before that can happen...you N.I.N.J.As are in the way of our plan. I will make sure your death will be slow and",
+                "painless as I will make your friends here watch you die! I have always acquired the arts of Ninjutsu as well. Taste the power of the",
+                "North Star Ninjutsu! YOU'RE FINISH!!!!"};
     }
 }

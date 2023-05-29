@@ -8,6 +8,13 @@ public class NPC : MonoBehaviour
     public DialogueBoxClose dialogueScript;
     private bool playerDetected;
 
+    void Start()
+    {
+        if (FindObjectOfType<DialogueBoxClose>() != null) 
+        {
+            dialogueScript = FindObjectOfType<DialogueBoxClose>();
+        }
+    }
     //Detect trigger with player
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +29,10 @@ public class NPC : MonoBehaviour
     {
         if (playerDetected)
         {
+            if (FindObjectOfType<FinalBoss>())
+            {
+                dialogueScript.FinalBossDialogue();
+            }
             dialogueScript.StartDialogue();
             playerDetected = false;
             GetComponent<Collider2D>().enabled = false;

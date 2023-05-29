@@ -9,6 +9,7 @@ public class HomingMissile : MonoBehaviour
     public float speed = 3f;
     public float rotateSpeed = 200f;
     public int damage;
+    public int facing = 1;
     public GameObject explosionEffect;
 
     private Rigidbody2D rb;
@@ -18,6 +19,12 @@ public class HomingMissile : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
+        if (facing == 1 && !BossStart.startBoss)
+        {
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+        }
 
         Destroy(gameObject, 3f);
     }
@@ -31,8 +38,8 @@ public class HomingMissile : MonoBehaviour
 
         float rotateAmount = Vector3.Cross(direction, -transform.right).z;
 
-        rb.angularVelocity = -rotateAmount * rotateSpeed;
-        rb.velocity = -transform.right * speed;
+        rb.angularVelocity = -rotateAmount * rotateSpeed * facing;
+        rb.velocity = -transform.right * speed * facing;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

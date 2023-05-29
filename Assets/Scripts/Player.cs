@@ -112,7 +112,7 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         GroundCheck();
-        if (!isDead && !isHurt)
+        if (!isDead && !isHurt && !PauseMenu.isPause && !DialogueBoxClose.started)
         {
             PlayerMove(horizontalValue); //calls function
         }

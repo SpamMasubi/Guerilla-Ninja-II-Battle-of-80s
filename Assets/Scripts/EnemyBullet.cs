@@ -19,17 +19,6 @@ public class EnemyBullet : MonoBehaviour
             scale.x *= -1;
             transform.localScale = scale;
         }
-        /*
-        else if(FindObjectOfType<FinalBoss>() != null)
-        {
-            if (direction == 1)
-            {
-                Vector3 scale = transform.localScale;
-                scale.x *= -1;
-                transform.localScale = scale;
-            }
-        }
-        */
     }
 
     void FixedUpdate()

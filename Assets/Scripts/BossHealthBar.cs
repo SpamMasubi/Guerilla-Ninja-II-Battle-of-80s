@@ -56,7 +56,7 @@ public class BossHealthBar : MonoBehaviour
             //Check if your health is zero or less => Dead
             if (FindObjectOfType<FinalBoss>().bossHealth <= 0)
             {
-                //FindObjectOfType<FinalBoss>().BossDead();
+                FindObjectOfType<FinalBoss>().BossDead();
             }
         }
     }

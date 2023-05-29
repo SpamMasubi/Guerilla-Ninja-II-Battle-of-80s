@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int lives = 3;
     public float health = 100;
-    public bool unlockReplay = false;
+    public static bool unlockReplay = false;
 
     [HideInInspector]public int scores = 0, shurikenCount = 3, SpecialAmmo = 10;
 

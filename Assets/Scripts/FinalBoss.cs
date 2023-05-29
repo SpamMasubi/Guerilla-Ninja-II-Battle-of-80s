@@ -36,7 +36,6 @@ public class FinalBoss : MonoBehaviour
     [Header("Final Boss Attributes")]
     public static bool isDead = false; //check if player is Dead
     public static bool stageClear = false;
-    public GameObject bullet;
     public Transform bulletLauncher;
     public GameObject superPowers;
 
@@ -54,12 +53,16 @@ public class FinalBoss : MonoBehaviour
     public int bossHealth = 50;
     float maxHealth;
     public static bool gameComplete;
-    public AudioClip startPhase2, deadsfx, secondPhaseMusic;
+    public AudioClip startPhase2, deadsfx, invincible, secondPhaseMusic;
     public float attackTime = 0f;
     float attackTimer = 0f;
     bool beginPhase2;
     bool faceDirection;
+    bool dontMove;
+    bool hasStarted;
 
+    public AudioClip[] ninjaCharVictory;
+    private AudioClip victorySFX;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,14 +77,17 @@ public class FinalBoss : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(TargetInDistance() && followEnabled && !isAttack && !isHurt)
+        GroundCheck();
+        if (BossStart.startBoss && BossStart.startBoss && !isDead && !dontMove)
         {
-            GroundCheck();
-            PathFollow();
-        }
-        else
-        {
-            enemyRB.velocity = new Vector2(0, enemyRB.velocity.y);
+            if (TargetInDistance() && followEnabled && !isAttack && !isHurt)
+            {
+                PathFollow();
+            }
+            else
+            {
+                enemyRB.velocity = new Vector2(0, enemyRB.velocity.y);
+            }
         }
     }
 
@@ -187,12 +193,14 @@ public class FinalBoss : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundChecker.position, groundCheckRadius, jumpableGround);
         if (colliders.Length > 0)
         {
-            return isGrounded = true;
+            isGrounded = true;
         }
         else
         {
-            return isGrounded = false;
+            isGrounded = false;
         }
+
+        return isGrounded;
     }
 
     // Update is called once per frame
@@ -202,10 +210,17 @@ public class FinalBoss : MonoBehaviour
         {
             isInvincible = true;
             beginPhase2 = true;
-            attackTime = 3;
+            dontMove = true;
+            FindObjectOfType<PlayMusic>().StopSong();
             AudioManager.instance.SoundObjectCreation(startPhase2);
             superPowers.SetActive(true);
             enemyAnim.SetTrigger("Second Phase");
+        }
+
+        if(BossStart.startBoss && !hasStarted)
+        {
+            enemyAnim.SetTrigger("BeginBoss");
+            hasStarted = true;
         }
 
         if (BossStart.startBoss && !isDead)
@@ -222,14 +237,18 @@ public class FinalBoss : MonoBehaviour
                     isAttack = true;
                     if (beginPhase2)
                     {
-                        int chosenAttack = Random.Range(0, 2);
+                        int chosenAttack = Random.Range(0, 3);
                         if (chosenAttack == 0)
                         {
                             enemyAnim.SetTrigger("Attack 1");
                         }
-                        else
+                        else if(chosenAttack == 1)
                         {
                             enemyAnim.SetTrigger("Attack 2");
+                        }
+                        else
+                        {
+                            enemyAnim.SetTrigger("Attack 3");
                         }
                     }
                     else
@@ -241,23 +260,33 @@ public class FinalBoss : MonoBehaviour
         }
     }
 
-    public void Shoot()
+    public void Shoot(GameObject bullet)
     {
-        AudioManager.instance.PlaySFX("shootHandgun");
         GameObject projectile = Instantiate(bullet, bulletLauncher.position, bulletLauncher.rotation);
-        if (!faceDirection)
+        if (!faceDirection && bullet.name == "Final Boss Bullet")
         {
             projectile.GetComponent<EnemyBullet>().direction = 1;
         }
-        else
+        else if (faceDirection && bullet.name == "Final Boss Bullet")
         {
             projectile.GetComponent<EnemyBullet>().direction = -1;
+        }
+        if (!faceDirection && bullet.name == "FireBall")
+        {
+            projectile.GetComponent<HomingMissile>().facing = 1;
+        }
+        else if (faceDirection && bullet.name == "FireBall")
+        {
+            projectile.GetComponent<HomingMissile>().facing = -1;
         }
     }
 
     void disableSecondPhase()
     {
         isInvincible = false;
+        attackTime = 3;
+        dontMove = false;
+        FindObjectOfType<PlayMusic>().PlaySong(secondPhaseMusic);
     }
 
     public void FinalBossSFX(AudioClip sfx)
@@ -287,11 +316,11 @@ public class FinalBoss : MonoBehaviour
             {
                 if (collision.tag == "playerAttack")
                 {
-                    //FindObjectOfType<BossHealthBar>().LoseHealth(1);
+                    FindObjectOfType<BossHealthBar>().LoseHealth(1);
                 }
                 else
                 {
-                    //FindObjectOfType<ShootingItem>().takeDamage();
+                    FindObjectOfType<ShootingItem>().takeDamage();
                 }
 
                 if (bossHealth > 0)
@@ -304,14 +333,14 @@ public class FinalBoss : MonoBehaviour
             }
             else
             {
-                AudioManager.instance.PlaySFX("bossHit");
+                AudioManager.instance.SoundObjectCreation(invincible);
             }
         }
     }
 
     public void BossDead()
     {
-        PlayerPrefs.SetInt("GameWin", 1);
+        
         superPowers.SetActive(false);
         FindObjectOfType<GameManager>().scores += Random.Range(100, 1000);
         AudioManager.instance.SoundObjectCreation(deadsfx);
@@ -327,33 +356,26 @@ public class FinalBoss : MonoBehaviour
         isHurt = false;
     }
 
-    /*
-    void firePistol()
-    {
-        AudioManager.instance.PlaySFX("shootHandgun");
-        GameObject projectile = Instantiate(bullet, bulletLauncher.position, bulletLauncher.rotation);
-        if ()
-        {
-            projectile.GetComponent<EnemyBullet>().direction = 1;
-        }
-        else
-        {
-            projectile.GetComponent<EnemyBullet>().direction = -1;
-        }
-    }
-    */
-
     public void StageClear()
     {
+        PlayerPrefs.SetInt("GameWin", 1);
         ChapterIntro.chapters += 1;
         stageClear = true;
-        AudioManager.instance.PlaySFX("Win");
+        switch (MainMenu.characterNum)
+        {
+            case 1:
+                victorySFX = ninjaCharVictory[0];
+                break;
+            case 2:
+                victorySFX = ninjaCharVictory[1];
+                break;
+            case 3:
+                victorySFX = ninjaCharVictory[2];
+                break;
+        }
         gameComplete = true;
         beginPhase2 = false;
-    }
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.cyan;
+        hasStarted = false;
     }
    
 }
