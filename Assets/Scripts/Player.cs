@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
         isInvincible = false;
         isHurt = false;
 
-        //respawn = FindObjectOfType<Respawn>().transform;
+        respawn = FindObjectOfType<Respawn>().transform;
 
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -112,7 +112,7 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         GroundCheck();
-        if (!isDead && !isHurt && !PauseMenu.isPause && !DialogueBoxClose.started)
+        if (!isDead && !isHurt)
         {
             PlayerMove(horizontalValue); //calls function
         }
@@ -237,7 +237,7 @@ public class Player : MonoBehaviour
         {
             xVal *= runSpeedModifier;
         }
-        else if (BossVehicle.isDead || FinalBoss.isDead)
+        else if (BossVehicle.isDead || FinalBoss.isDead || DialogueBoxClose.started)
         {
             xVal = 0;
         }

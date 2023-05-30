@@ -91,12 +91,21 @@ public class Cutscene : MonoBehaviour
             case 8:
                 GetComponent<AudioSource>().clip = lastCutscene;
                 GetComponent<AudioSource>().Play();
-                cutsceneImage[2].SetActive(false);
-                cutsceneImage[3].SetActive(true);
+                dialogues = new List<string>() { "'John Smith': Excellent job, team. The UN Task Force has just arrived on time to clean up the mess. The North Star of Heaven syndicate is",
+                "no more. Though the Cold War still rages on, we can assure that it will not lead to another World War. I have sent some of our NINJAs to",
+                "help with the UN Task Force to dismantle any nukes or weapons that was going to be used by the syndicate to start the war. Once again,",
+                "the world is at peace for the time being. We have rescued Yumi and our NINJAs back from the grasp the syndicate. However, I fear that ",
+                "a new threat will rise from the legacy left by the syndicate. Fortunate enough, we will still take them head on when the time comes. For ",
+                "now, you all deserve a nice vacation after this. I have provided all necessities needed for your vacation. My treat to you all. Until",
+                "next time, my friends. Be at the ready for the unexpected."};
+                cutsceneImage[5].SetActive(false);
+                cutsceneImage[6].SetActive(true);
                 ChapterIntro.chapters = 1;
                 Destroy(FindObjectOfType<GameManager>());
                 break;
             default:
+                cutsceneImage[6].SetActive(false);
+                cutsceneImage[0].SetActive(true);
                 break;
         }
         StartDialogue();

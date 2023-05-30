@@ -118,7 +118,7 @@ public class DialogueBoxClose : MonoBehaviour
             }
             else
             {
-                if (FindObjectOfType<FinalBoss>().gameObject)
+                if (FindObjectOfType<FinalBoss>() != null)
                 {
                     BossStart.startBoss = true;
                 }

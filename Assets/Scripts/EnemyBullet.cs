@@ -13,7 +13,7 @@ public class EnemyBullet : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        if (direction == 1 && !BossStart.startBoss)
+        if (direction == 1)
         {
             Vector3 scale = transform.localScale;
             scale.x *= -1;

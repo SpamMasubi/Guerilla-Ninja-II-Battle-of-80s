@@ -19,13 +19,12 @@ public class HomingMissile : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
-        if (facing == 1 && !BossStart.startBoss)
+        if (facing == -1)
         {
             Vector3 scale = transform.localScale;
             scale.x *= -1;
             transform.localScale = scale;
         }
-
         Destroy(gameObject, 3f);
     }
 

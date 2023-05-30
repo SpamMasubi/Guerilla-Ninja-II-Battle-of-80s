@@ -78,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -136,6 +136,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -144,11 +156,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 280
+        y: 414
         width: 227
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,11 +177,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 238
-        y: 280
+        y: 414
         width: 227
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,11 +198,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 142
+        y: 276
         width: 227
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,11 +219,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 238
-        y: 142
+        y: 276
         width: 227
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,11 +240,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 2
+        y: 136
         width: 227
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,6 +261,27 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 238
+        y: 136
+        width: 227
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff33d89b9c8d2d4c9047fdf27aa6ddf
+      internalID: 129808511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cutscenes_6
+      rect:
+        serializedVersion: 2
+        x: 118
         y: 2
         width: 227
         height: 130
@@ -259,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff33d89b9c8d2d4c9047fdf27aa6ddf
-      internalID: 129808511
+      spriteID: 0c3379829cbdb3b469be00f132ccae7f
+      internalID: 1588279460
       vertices: []
       indices: 
       edges: []
@@ -277,6 +310,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Cutscenes_2: -4558835020104728522
+      Cutscenes_6: 1588279460
       Cutscenes_1: 1766875767320046125
       Cutscenes_3: 992357180953250592
       Cutscenes_5: 129808511

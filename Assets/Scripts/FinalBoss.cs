@@ -23,7 +23,7 @@ public class FinalBoss : MonoBehaviour
 
     [SerializeField] LayerMask jumpableGround;
     [SerializeField] Transform groundChecker;
-    const float groundCheckRadius = 0.2f;
+    const float groundCheckRadius = 0.25f;
 
     bool isGrounded; //ground checker
 
@@ -58,7 +58,6 @@ public class FinalBoss : MonoBehaviour
     float attackTimer = 0f;
     bool beginPhase2;
     bool faceDirection;
-    bool dontMove;
     bool hasStarted;
 
     public AudioClip[] ninjaCharVictory;
@@ -78,7 +77,7 @@ public class FinalBoss : MonoBehaviour
     private void FixedUpdate()
     {
         GroundCheck();
-        if (BossStart.startBoss && BossStart.startBoss && !isDead && !dontMove)
+        if (BossStart.startBoss && !isDead)
         {
             if (TargetInDistance() && followEnabled && !isAttack && !isHurt)
             {
@@ -143,12 +142,10 @@ public class FinalBoss : MonoBehaviour
 
         if (enemyRB.velocity.x > speed)
         {
-            faceDirection = false;
             enemyRB.velocity = new Vector2(speed, enemyRB.velocity.y);
         }
         else if (enemyRB.velocity.x < speed * (-1))
         {
-            faceDirection = true;
             enemyRB.velocity = new Vector2(speed * (-1), enemyRB.velocity.y);
         }
 
@@ -164,10 +161,12 @@ public class FinalBoss : MonoBehaviour
         {
             if (enemyRB.velocity.x > 0.05f)
             {
+                faceDirection = true;
                 transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             else if (enemyRB.velocity.x < -0.05f)
             {
+                faceDirection = false;
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
         }
@@ -206,14 +205,12 @@ public class FinalBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isDead && bossHealth <= (maxHealth/2) && !beginPhase2)
+        if (!isDead && bossHealth <= 45 && !beginPhase2)
         {
             isInvincible = true;
             beginPhase2 = true;
-            dontMove = true;
             FindObjectOfType<PlayMusic>().StopSong();
             AudioManager.instance.SoundObjectCreation(startPhase2);
-            superPowers.SetActive(true);
             enemyAnim.SetTrigger("Second Phase");
         }
 
@@ -263,29 +260,40 @@ public class FinalBoss : MonoBehaviour
     public void Shoot(GameObject bullet)
     {
         GameObject projectile = Instantiate(bullet, bulletLauncher.position, bulletLauncher.rotation);
-        if (!faceDirection && bullet.name == "Final Boss Bullet")
+
+        if (FindObjectOfType<EnemyBullet>())
         {
-            projectile.GetComponent<EnemyBullet>().direction = 1;
+            if (!faceDirection)
+            {
+                projectile.GetComponent<EnemyBullet>().direction = -1;
+            }
+            else
+            {
+                projectile.GetComponent<EnemyBullet>().direction = 1;
+            }
         }
-        else if (faceDirection && bullet.name == "Final Boss Bullet")
+        else
         {
-            projectile.GetComponent<EnemyBullet>().direction = -1;
-        }
-        if (!faceDirection && bullet.name == "FireBall")
-        {
-            projectile.GetComponent<HomingMissile>().facing = 1;
-        }
-        else if (faceDirection && bullet.name == "FireBall")
-        {
-            projectile.GetComponent<HomingMissile>().facing = -1;
+            if (!faceDirection)
+            {
+                projectile.GetComponent<HomingMissile>().facing = 1;
+            }
+            else
+            {
+                projectile.GetComponent<HomingMissile>().facing = -1;
+            }
         }
     }
 
     void disableSecondPhase()
     {
+        superPowers.SetActive(true);
         isInvincible = false;
+        isAttack = false;
+        isHurt = false;
         attackTime = 3;
-        dontMove = false;
+        speed = 10;
+        jumpModifier = 50;
         FindObjectOfType<PlayMusic>().PlaySong(secondPhaseMusic);
     }
 
@@ -333,6 +341,7 @@ public class FinalBoss : MonoBehaviour
             }
             else
             {
+                AudioManager.instance.PlaySFX("bossHit");
                 AudioManager.instance.SoundObjectCreation(invincible);
             }
         }
