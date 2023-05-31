@@ -205,7 +205,7 @@ public class FinalBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isDead && bossHealth <= 45 && !beginPhase2)
+        if (!isDead && bossHealth <= (maxHealth/2) && !beginPhase2)
         {
             isInvincible = true;
             beginPhase2 = true;
@@ -382,6 +382,7 @@ public class FinalBoss : MonoBehaviour
                 victorySFX = ninjaCharVictory[2];
                 break;
         }
+        AudioManager.instance.SoundObjectCreation(victorySFX);
         gameComplete = true;
         beginPhase2 = false;
         hasStarted = false;
