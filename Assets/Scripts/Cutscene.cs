@@ -101,7 +101,7 @@ public class Cutscene : MonoBehaviour
                 cutsceneImage[5].SetActive(false);
                 cutsceneImage[6].SetActive(true);
                 ChapterIntro.chapters = 1;
-                Destroy(FindObjectOfType<GameManager>());
+                Destroy(FindObjectOfType<GameManager>().gameObject);
                 break;
             default:
                 cutsceneImage[6].SetActive(false);

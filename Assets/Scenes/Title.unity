@@ -1085,6 +1085,7 @@ GameObject:
   - component: {fileID: 355200341}
   - component: {fileID: 355200340}
   - component: {fileID: 355200339}
+  - component: {fileID: 355200342}
   m_Layer: 5
   m_Name: Shinobi
   m_TagString: Untagged
@@ -1207,6 +1208,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355200337}
   m_CullTransparentMesh: 1
+--- !u!114 &355200342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355200337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1450039730}
+          m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+          m_MethodName: highLightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &451967256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2312,6 +2342,7 @@ GameObject:
   - component: {fileID: 617487286}
   - component: {fileID: 617487285}
   - component: {fileID: 617487284}
+  - component: {fileID: 617487287}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -2458,6 +2489,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617487282}
   m_CullTransparentMesh: 1
+--- !u!114 &617487287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617487282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1450039730}
+          m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+          m_MethodName: highLightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &679289837
 GameObject:
   m_ObjectHideFlags: 0
@@ -3724,6 +3784,7 @@ GameObject:
   - component: {fileID: 925538530}
   - component: {fileID: 925538529}
   - component: {fileID: 925538528}
+  - component: {fileID: 925538531}
   m_Layer: 5
   m_Name: Replay
   m_TagString: Untagged
@@ -3796,9 +3857,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1450039730}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: ToStageSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3846,6 +3907,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925538526}
   m_CullTransparentMesh: 1
+--- !u!114 &925538531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925538526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1450039730}
+          m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+          m_MethodName: highLightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &958989051
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,6 +4082,7 @@ GameObject:
   - component: {fileID: 968907539}
   - component: {fileID: 968907538}
   - component: {fileID: 968907537}
+  - component: {fileID: 968907540}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -4114,6 +4205,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968907535}
   m_CullTransparentMesh: 1
+--- !u!114 &968907540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968907535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1450039730}
+          m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+          m_MethodName: highLightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &984585564
 GameObject:
   m_ObjectHideFlags: 0
@@ -6280,6 +6400,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playGame: {fileID: 514337521}
   titleSong: {fileID: 1369524648}
+  selectionHighlight: {fileID: 8300000, guid: 35d6b61bfced0a14bbc0cbc160df2ffd, type: 3}
+  selected: {fileID: 8300000, guid: 99b9756c7cc801d4da7e91dcb0d35a91, type: 3}
   ninjaStartVoice:
   - {fileID: 8300000, guid: b560f4711d6c7ff48b1dafbbfc45e00f, type: 3}
   - {fileID: 8300000, guid: b241fa9f5009923438ddd4ec74f0d6f5, type: 3}
@@ -7482,6 +7604,7 @@ GameObject:
   - component: {fileID: 1745646963}
   - component: {fileID: 1745646962}
   - component: {fileID: 1745646961}
+  - component: {fileID: 1745646964}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -7628,6 +7751,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745646959}
   m_CullTransparentMesh: 1
+--- !u!114 &1745646964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745646959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1450039730}
+          m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+          m_MethodName: highLightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1767876526
 GameObject:
   m_ObjectHideFlags: 0
@@ -7806,6 +7958,7 @@ GameObject:
   - component: {fileID: 1808531507}
   - component: {fileID: 1808531506}
   - component: {fileID: 1808531508}
+  - component: {fileID: 1808531509}
   m_Layer: 5
   m_Name: Kunoichi
   m_TagString: Untagged
@@ -7928,6 +8081,35 @@ MonoBehaviour:
           m_StringArgument: Kunoichi
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1808531509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808531504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1450039730}
+          m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+          m_MethodName: highLightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1816277135
 GameObject:
   m_ObjectHideFlags: 0
@@ -8764,6 +8946,7 @@ GameObject:
   - component: {fileID: 2131531266}
   - component: {fileID: 2131531265}
   - component: {fileID: 2131531264}
+  - component: {fileID: 2131531268}
   m_Layer: 5
   m_Name: Guerilla Ninja
   m_TagString: Untagged
@@ -8886,6 +9069,35 @@ RectTransform:
   m_AnchoredPosition: {x: -66, y: 83}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2131531268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131531263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1450039730}
+          m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+          m_MethodName: highLightSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2145937954
 GameObject:
   m_ObjectHideFlags: 0

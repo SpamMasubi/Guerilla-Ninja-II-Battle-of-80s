@@ -18,7 +18,14 @@ public class StageClear : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene("Cutscene");
+        if (StageSelection.replayMode) 
+        {
+            SceneManager.LoadScene("Selection Stage");
+        }
+        else
+        {
+            SceneManager.LoadScene("Cutscene");
+        }
         BossVehicle.isDead = false;
         BossVehicle.stageClear = false;
         BossStart.startBoss = false;

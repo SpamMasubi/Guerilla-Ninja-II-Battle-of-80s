@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class MainMenu : MonoBehaviour
 {
     public AudioSource playGame, titleSong;
+    public AudioClip selectionHighlight, selected;
     private bool hasStarted;
     public static int characterNum = 0;
     public AudioClip[] ninjaStartVoice;
@@ -74,6 +75,7 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        GetComponent<AudioSource>().PlayOneShot(selected);
         Application.Quit();
     }
 
@@ -83,8 +85,25 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void ToStageSelection()
+    {
+        if (!hasStarted)
+        {
+            GetComponent<AudioSource>().PlayOneShot(selected);
+            hasStarted = true;
+            Invoke("LoadtoStageSelection", 3f);
+        }
+    }
+
+    void LoadtoStageSelection()
+    {
+        hasStarted = false;
+        SceneManager.LoadScene("Selection Stage");
+    }
+
     public void characterSelectionOpen()
     {
+        GetComponent<AudioSource>().PlayOneShot(selected);
 #if UNITY_WEBGL
         WebGLStoryMenu.SetActive(true);
         WebGLMenu.SetActive(false);
@@ -108,6 +127,7 @@ public class MainMenu : MonoBehaviour
 
     public void characterSelectionClose()
     {
+        GetComponent<AudioSource>().PlayOneShot(selected);
 #if UNITY_WEBGL
         WebGLStoryMenu.SetActive(false);
         WebGLMenu.SetActive(true);
@@ -125,5 +145,10 @@ public class MainMenu : MonoBehaviour
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(characterSelectionMenuButton);
 #endif
+    }
+
+    public void highLightSound()
+    {
+        GetComponent<AudioSource>().PlayOneShot(selectionHighlight);
     }
 }
