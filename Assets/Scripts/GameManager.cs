@@ -26,11 +26,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void HighScore()
-    {
-        PlayerPrefs.SetInt("HighScore", scores);
-    }
-
     public void setHighScore()
     {
         int HS = PlayerPrefs.GetInt("HighScore");
