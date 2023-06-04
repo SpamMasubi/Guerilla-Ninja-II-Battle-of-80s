@@ -5135,7 +5135,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fd491df433cee3a418afd55c9a7f664c, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6428,7 +6428,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4174468f0ad8168499e496cbad03b7db, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -63254,7 +63254,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4174468f0ad8168499e496cbad03b7db, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77113,6 +77113,7 @@ MonoBehaviour:
   hitBox: {fileID: 1580813325}
   hitBoxAppearTime: 5
   mainGun: {fileID: 1363976844}
+  aerialBoss: 0
   Explosion: {fileID: 8637432563442968295, guid: 6249dc5f01a657d4c96e685f7bc42023, type: 3}
   flashColor: {r: 1, g: 0.3019608, b: 0, a: 1}
   regularColor: {r: 1, g: 1, b: 1, a: 1}

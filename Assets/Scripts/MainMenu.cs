@@ -16,11 +16,10 @@ public class MainMenu : MonoBehaviour
 
     public Text highScoreText, yourScoreText;
 
-    public GameObject characterSelection, mainMenu, HighScoreMenu, DeleteDataOption, WebGLCharacterSelection, DeleteDataText;
+    public GameObject characterSelection, mainMenu, HighScoreMenu, DeleteDataOption, DeleteDataText;
     public GameObject WebGLMenu, StandAloneMenu; //StandAlone and WebGLMenu
 
-    public GameObject firstCharacterButton, characterSelectionMenuButton, HighScoreCloseButton, closeOption;
-    public GameObject WebGLCharacterSelectionBackButton, WebGLFirstCharacterButton, WebGLHighScoreCloseButton, WebGLCloseOption; //WebGL
+    public GameObject firstCharacterButton, characterSelectionMenuButton, HighScoreCloseButton, closeOption, WebGLCharacterSelectionButton;
 
     void Start()
     {
@@ -30,7 +29,7 @@ public class MainMenu : MonoBehaviour
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
-        EventSystem.current.SetSelectedGameObject(WebGLstartGameButton);
+        EventSystem.current.SetSelectedGameObject(WebGLCharacterSelectionButton);
 
 #endif
 
@@ -121,86 +120,65 @@ public class MainMenu : MonoBehaviour
     {
         GetComponent<AudioSource>().PlayOneShot(selected);
 #if UNITY_WEBGL
-        WebGLStoryMenu.SetActive(true);
         WebGLMenu.SetActive(false);
-        StandAloneMenu.SetActive(false);
-        //Clear selected object
-        EventSystem.current.SetSelectedGameObject(null);
-        //set a new selected object
-        EventSystem.current.SetSelectedGameObject(WebGLCharacterSelectionBackButton));
-#endif
-
+#endif  
 #if UNITY_STANDALONE
-        characterSelection.SetActive(true);
         mainMenu.SetActive(false);
-        //Clear selected object
+#endif
+        characterSelection.SetActive(true);//Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(firstCharacterButton);
-#endif
-
     }
 
     public void characterSelectionClose()
     {
         GetComponent<AudioSource>().PlayOneShot(selected);
 #if UNITY_WEBGL
-        WebGLStoryMenu.SetActive(false);
         WebGLMenu.SetActive(true);
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
-        EventSystem.current.SetSelectedGameObject(WebGLFirstCharacterButton);
+        EventSystem.current.SetSelectedGameObject(WebGLCharacterSelectionButton);
 #endif
-
 #if UNITY_STANDALONE
-        characterSelection.SetActive(false);
         mainMenu.SetActive(true);
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(characterSelectionMenuButton);
-#endif
+#endif        
+        characterSelection.SetActive(false);
     }
 
     public void HighScoreOpen()
     {
         GetComponent<AudioSource>().PlayOneShot(selected);
 #if UNITY_WEBGL
-        WebGLStoryMenu.SetActive(true);
         WebGLMenu.SetActive(false);
-        StandAloneMenu.SetActive(false);
-        //Clear selected object
-        EventSystem.current.SetSelectedGameObject(null);
-        //set a new selected object
-        EventSystem.current.SetSelectedGameObject(WebGLHighScoreCloseButton);
 #endif
-
 #if UNITY_STANDALONE
-        HighScoreMenu.SetActive(true);
         mainMenu.SetActive(false);
+#endif
+        HighScoreMenu.SetActive(true);
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(HighScoreCloseButton);
-#endif
-
     }
 
     public void HighScoreClose()
     {
         GetComponent<AudioSource>().PlayOneShot(selected);
 #if UNITY_WEBGL
-        WebGLStoryMenu.SetActive(false);
         WebGLMenu.SetActive(true);
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
-        EventSystem.current.SetSelectedGameObject(WebGLFirstCharacterButton);
+        EventSystem.current.SetSelectedGameObject(WebGLCharacterSelectionButton);
 #endif
-
-#if UNITY_STANDALONE
         HighScoreMenu.SetActive(false);
+#if UNITY_STANDALONE
         mainMenu.SetActive(true);
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
@@ -213,34 +191,36 @@ public class MainMenu : MonoBehaviour
     {
         GetComponent<AudioSource>().PlayOneShot(selected);
 #if UNITY_WEBGL
-        WebGLDeleteDataOption.SetActive(true);
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(closeOption);
 #endif
         DeleteDataOption.SetActive(true);
+#if UNITY_STANDALONE
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(closeOption);
-    }    
-    
+#endif
+    }
+
     public void CloseDeleteDataOption()
     {
         GetComponent<AudioSource>().PlayOneShot(selected);
 #if UNITY_WEBGL
-        WebGLDeleteDataOption.SetActive(true);
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(closeOption);
 #endif
         DeleteDataOption.SetActive(false);
+#if UNITY_STANDALONE
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(HighScoreCloseButton);
+#endif
     }
 
     public void DataDeleted()

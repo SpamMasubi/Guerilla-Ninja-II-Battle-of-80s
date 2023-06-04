@@ -250,7 +250,7 @@ public class StageSelection : MonoBehaviour
                 dialogues = new List<string>() { "'John Smith': This is the finale. Our members, including Yumi, have been captured by the syndicate. We must rescue them at all cost." };
                 break;
             case 8:
-                dialogues = new List<string>() { "Yumi: Remenants of the North Star Army have taken advantage of the conflict in Cambodia for their ressurection of the syndicate." };
+                dialogues = new List<string>() { "Yumi: Remenants of the North Star Army have gone rouge and taken advantage of post-war Cambodia for the next in power." };
                 break;
             default:
                 dialogues = new List<string>() {"Yumi: The North Star are planning to reignite the war in the Korean Penisula. Many innocent on both side will die if the war starts again."};

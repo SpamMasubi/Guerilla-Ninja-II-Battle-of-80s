@@ -85,7 +85,18 @@ public class PauseMenu : MonoBehaviour
         isPause = false;
         BossVehicle.isDead = false;
         BossVehicle.stageClear = false;
+        BossVehicle.isInvincible = false;
         BossStart.startBoss = false;
-        SceneManager.LoadScene("Title");
+        FinalBoss.isDead = false;
+        FinalBoss.stageClear = false;
+        FinalBoss.isInvincible = false;
+        if (StageSelection.replayMode)
+        {
+            SceneManager.LoadScene("Selection Stage");
+        }
+        else
+        {
+            SceneManager.LoadScene("Title");
+        }
     }
 }
