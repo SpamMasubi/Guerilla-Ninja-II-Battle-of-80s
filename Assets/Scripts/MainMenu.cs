@@ -20,12 +20,14 @@ public class MainMenu : MonoBehaviour
     public GameObject WebGLMenu, StandAloneMenu; //StandAlone and WebGLMenu
 
     public GameObject firstCharacterButton, characterSelectionMenuButton, HighScoreCloseButton, closeOption, WebGLCharacterSelectionButton;
+    public Button replayButton, WebGLreplayButton;
 
     void Start()
     {
 #if UNITY_WEBGL
         WebGLMenu.SetActive(true);
         StandAloneMenu.SetActive(false);
+        WebGLreplayButton.interactable = (PlayerPrefs.GetInt("GameWin") == 1) ? true : false;
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
@@ -34,14 +36,12 @@ public class MainMenu : MonoBehaviour
 #endif
 
 #if UNITY_STANDALONE
-
+        replayButton.interactable = (PlayerPrefs.GetInt("GameWin") == 1) ? true : false;
         //Clear selected object
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(characterSelectionMenuButton);
-
 #endif
-
     }
 
     private void Update()
@@ -104,6 +104,7 @@ public class MainMenu : MonoBehaviour
     {
         if (!hasStarted)
         {
+            StageSelection.replayMode = true;
             GetComponent<AudioSource>().PlayOneShot(selected);
             hasStarted = true;
             Invoke("LoadtoStageSelection", 3f);

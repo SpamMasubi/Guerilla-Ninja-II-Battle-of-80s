@@ -42359,7 +42359,8 @@ MonoBehaviour:
     Be careful to not get the US and Soviet Union
   - involve. We must stop the syndicate no matter what!
   writingSpeed: 0.015
-  dialogueSFX: {fileID: 0}
+  im: {fileID: 0}
+  finalBossImage: {fileID: 0}
   DialogueAnimation: {fileID: 917969186}
 --- !u!95 &917969186
 Animator:
@@ -63002,8 +63003,8 @@ Tilemap:
   - first: {x: 270, y: 7, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 44
-      m_TileSpriteIndex: 44
+      m_TileIndex: 6
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -63012,8 +63013,8 @@ Tilemap:
   - first: {x: 271, y: 7, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 45
-      m_TileSpriteIndex: 45
+      m_TileIndex: 5
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -63022,8 +63023,8 @@ Tilemap:
   - first: {x: 272, y: 7, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 46
-      m_TileSpriteIndex: 46
+      m_TileIndex: 5
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -63591,9 +63592,9 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: 27a7ceb056581694fb37d4fce72c7726, type: 2}
-  - m_RefCount: 85
+  - m_RefCount: 87
     m_Data: {fileID: 11400000, guid: e1fd2598d3a2b52408721b1c09894529, type: 2}
-  - m_RefCount: 236
+  - m_RefCount: 237
     m_Data: {fileID: 11400000, guid: 32dd5b026b0a93446baacf0a27aa1fe6, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -63669,11 +63670,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: cccfe4edcc4f8744b876951d777846bc, type: 2}
   - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: 5a83725223d101040b2ef4c85d287331, type: 2}
-  - m_RefCount: 13
+  - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: a474bcbcf8ff9c04d8c37f58442cd83f, type: 2}
-  - m_RefCount: 13
+  - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: ceba2fdf925c8614495c4e9e79363970, type: 2}
-  - m_RefCount: 13
+  - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: ee38e57464028f3459d233766274084c, type: 2}
   - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: 5c50151c339d6ce4394af23f12f064c6, type: 2}
@@ -63692,9 +63693,9 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 85
+  - m_RefCount: 87
     m_Data: {fileID: -4497677732145206628, guid: 60b34b1fe5d04f642a4c651f77be61fe, type: 3}
-  - m_RefCount: 236
+  - m_RefCount: 237
     m_Data: {fileID: -7685855039457444813, guid: 60b34b1fe5d04f642a4c651f77be61fe, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -63772,11 +63773,11 @@ Tilemap:
     m_Data: {fileID: -2569334019402829443, guid: 60b34b1fe5d04f642a4c651f77be61fe, type: 3}
   - m_RefCount: 13
     m_Data: {fileID: -6362307738241297749, guid: 60b34b1fe5d04f642a4c651f77be61fe, type: 3}
-  - m_RefCount: 13
+  - m_RefCount: 12
     m_Data: {fileID: -7010614428220986361, guid: 60b34b1fe5d04f642a4c651f77be61fe, type: 3}
-  - m_RefCount: 13
+  - m_RefCount: 12
     m_Data: {fileID: 7250969338371714112, guid: 60b34b1fe5d04f642a4c651f77be61fe, type: 3}
-  - m_RefCount: 13
+  - m_RefCount: 12
     m_Data: {fileID: -912285953592701858, guid: 60b34b1fe5d04f642a4c651f77be61fe, type: 3}
   - m_RefCount: 13
     m_Data: {fileID: 8145294719457550322, guid: 60b34b1fe5d04f642a4c651f77be61fe, type: 3}

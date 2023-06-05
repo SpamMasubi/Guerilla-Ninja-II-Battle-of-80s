@@ -6390,6 +6390,8 @@ MonoBehaviour:
   HighScoreCloseButton: {fileID: 69902270}
   closeOption: {fileID: 874869691}
   WebGLCharacterSelectionButton: {fileID: 958989051}
+  replayButton: {fileID: 925538528}
+  WebGLreplayButton: {fileID: 1541671253}
 --- !u!82 &1450039731
 AudioSource:
   m_ObjectHideFlags: 0

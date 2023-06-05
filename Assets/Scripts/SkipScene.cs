@@ -7,7 +7,7 @@ public class SkipScene : MonoBehaviour
 {
 
     public string sceneSkipName;
-    public AudioSource skipConfirm;
+    AudioSource skipConfirm;
     private bool skip;
 
     // Start is called before the first frame update

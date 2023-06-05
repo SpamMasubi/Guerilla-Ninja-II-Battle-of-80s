@@ -40,7 +40,7 @@ public class StageSelection : MonoBehaviour
     public Animator DialogueAnimation;
 
     private bool hasStarted;
-    public static bool replayMode = true;
+    public static bool replayMode;
 
     // Start is called before the first frame update
     void Start()
