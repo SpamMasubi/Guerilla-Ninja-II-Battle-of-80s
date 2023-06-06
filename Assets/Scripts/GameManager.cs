@@ -28,12 +28,12 @@ public class GameManager : MonoBehaviour
 
     public void setHighScore()
     {
-        int HS = PlayerPrefs.GetInt("HighScore");
+        int HS = PlayerPrefs.GetInt("High Score");
         if (scores <= HS)
         {
             return;
         }
-        PlayerPrefs.SetInt("HighScore", scores);
+        PlayerPrefs.SetInt("High Score", scores);
     }
 
     public void yourScore()

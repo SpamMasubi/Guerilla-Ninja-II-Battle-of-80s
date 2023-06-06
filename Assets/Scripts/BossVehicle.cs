@@ -206,6 +206,7 @@ public class BossVehicle : MonoBehaviour
             GetComponent<BossSpecial>().enabled = true;
             gameObject.transform.GetChild(3).GetComponent<BossSpecial>().enabled = true;
             GetComponent<AudioSource>().enabled = true;
+            GetComponent<Animator>().ResetTrigger("Hurt");
         }
         else if (gameObject.name == "Cuban BTR (Third Boss)")
         {

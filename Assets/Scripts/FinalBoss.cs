@@ -316,6 +316,11 @@ public class FinalBoss : MonoBehaviour
         isInvincible = false;
     }
 
+    public void replayMusicifPlayerDeadInSecondPhase()
+    {
+        FindObjectOfType<PlayMusic>().PlaySong(secondPhaseMusic);
+    }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "playerProjectiles" || collision.tag == "playerAttack")

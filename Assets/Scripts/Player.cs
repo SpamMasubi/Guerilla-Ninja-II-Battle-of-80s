@@ -379,6 +379,10 @@ public class Player : MonoBehaviour
     {
         if (FindObjectOfType<GameManager>().lives > 0)
         {
+            if(FindObjectOfType<FinalBoss>() != null)
+            {
+                FindObjectOfType<FinalBoss>().replayMusicifPlayerDeadInSecondPhase();
+            }
             yield return new WaitForSeconds(spawnDelay);
             FindObjectOfType<PlayMusic>().ResumeMusic();
             ResetPlayer();
@@ -402,6 +406,10 @@ public class Player : MonoBehaviour
 
     public void Retry()
     {
+        if (FindObjectOfType<FinalBoss>() != null)
+        {
+            FindObjectOfType<FinalBoss>().replayMusicifPlayerDeadInSecondPhase();
+        }
         StartCoroutine(InvincibilityFlash());
         gameOver = false;
         ResetPlayer();

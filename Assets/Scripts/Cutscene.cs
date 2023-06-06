@@ -67,7 +67,7 @@ public class Cutscene : MonoBehaviour
                 dialogues = new List<string>() { "'John Smith': Another job well done, team. The US can have a president that can bring world peace and end this Cold War. Still, we are not",
                 "done with our work. There is another problem in Latin America. A civil war in Nicaragua has broken out amidst the Cold War. Contra",
                 "forces are fighting against the communist Sandinistas for power of their countries. Our scouts have infiltrated the Contra's camp.",
-                "Not only is the Contra backed by the US and the West, but the syndicate is helping to oust the Sandinistas our of the game for power of",
+                "Not only is the Contra backed by the US and the West, but the syndicate is helping to oust the Sandinistas out of the game for power of",
                 "Nicaragua. We must stop them at all cost. You will assist the Sandinistas as necesary in the jungles. The North Star Army must not win",
                 "this fight. Good luck, my friends."};
                 cutsceneImage[3].SetActive(false);
