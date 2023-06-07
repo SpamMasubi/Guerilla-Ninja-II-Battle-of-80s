@@ -51,7 +51,6 @@ public class GameOverUI : MonoBehaviour
 
     public void Retry()
     {
-        FindObjectOfType<PlayMusic>().ResumeMusic();
         retry = true;
         FindObjectOfType<Player>().Retry();
     }

@@ -56,7 +56,7 @@ public class FinalBoss : MonoBehaviour
     public AudioClip startPhase2, deadsfx, invincible, secondPhaseMusic;
     public float attackTime = 0f;
     float attackTimer = 0f;
-    bool beginPhase2;
+    public static bool beginPhase2;
     bool faceDirection;
     bool hasStarted;
 

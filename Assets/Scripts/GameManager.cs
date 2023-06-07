@@ -61,4 +61,11 @@ public class GameManager : MonoBehaviour
         shurikenCount = 3;
         SpecialAmmo = 10;
     }
+
+    public void ResetGameManager()
+    {
+        health = 100;
+        lives = 3;
+        ResetAmmo();
+    }
 }

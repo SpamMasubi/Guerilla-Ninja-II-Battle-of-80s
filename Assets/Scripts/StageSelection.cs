@@ -49,6 +49,7 @@ public class StageSelection : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         //set a new selected object
         EventSystem.current.SetSelectedGameObject(firstStageButton);
+        FindObjectOfType<GameManager>().ResetGameManager();
     }
 
     // Update is called once per frame

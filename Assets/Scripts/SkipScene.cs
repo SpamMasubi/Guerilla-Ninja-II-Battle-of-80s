@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SkipScene : MonoBehaviour
 {
-
     public string sceneSkipName;
     AudioSource skipConfirm;
     private bool skip;
@@ -16,6 +15,7 @@ public class SkipScene : MonoBehaviour
         if (FinalBoss.gameComplete)
         {
             sceneSkipName = "Credit Scene";
+            FinalBoss.gameComplete = false;
         }
         skipConfirm = GetComponent<AudioSource>();
         skip = false;
