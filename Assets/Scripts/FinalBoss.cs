@@ -356,8 +356,11 @@ public class FinalBoss : MonoBehaviour
     {
         superPowers.SetActive(false);
         FindObjectOfType<GameManager>().scores += Random.Range(100, 1000);
-        FindObjectOfType<GameManager>().yourScore();
-        FindObjectOfType<GameManager>().setHighScore();
+        if (!StageSelection.replayMode)
+        {
+            FindObjectOfType<GameManager>().yourScore();
+            FindObjectOfType<GameManager>().setHighScore();
+        }
         AudioManager.instance.SoundObjectCreation(deadsfx);
         isDead = true;
         Destroy(FindObjectOfType<PlayMusic>().gameObject);
