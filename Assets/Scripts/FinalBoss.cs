@@ -62,6 +62,7 @@ public class FinalBoss : MonoBehaviour
 
     public AudioClip[] ninjaCharVictory;
     private AudioClip victorySFX;
+    float nextTimeToSearch = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,7 +71,7 @@ public class FinalBoss : MonoBehaviour
         maxHealth = bossHealth;
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
         enemyAnim = GetComponent<Animator>();
-        player = FindObjectOfType<Player>().transform;
+        FindPlayer();
         bossSprite = GetComponent<SpriteRenderer>();
     }
 
@@ -205,6 +206,7 @@ public class FinalBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        FindPlayer();
         if (!isDead && bossHealth <= (maxHealth/2) && !beginPhase2)
         {
             isInvincible = true;
@@ -396,5 +398,16 @@ public class FinalBoss : MonoBehaviour
         beginPhase2 = false;
         hasStarted = false;
     }
-   
+
+    void FindPlayer()
+    {
+        if (nextTimeToSearch <= Time.time)
+        {
+            GameObject searchPlayer = GameObject.FindGameObjectWithTag("Player");
+            if (searchPlayer != null)
+                player = searchPlayer.transform;
+            nextTimeToSearch = Time.time + 0.2f;
+        }
+    }
+
 }

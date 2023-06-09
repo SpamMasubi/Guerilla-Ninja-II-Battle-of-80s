@@ -83365,11 +83365,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3097507928546141796, guid: 7de8a407507f21a48ab120be1513ece8, type: 3}
       propertyPath: agroRange
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3097507928546141796, guid: 7de8a407507f21a48ab120be1513ece8, type: 3}
       propertyPath: maxDistToAttack
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3097507929028925800, guid: 7de8a407507f21a48ab120be1513ece8, type: 3}
       propertyPath: m_RootOrder

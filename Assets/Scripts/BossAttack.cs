@@ -6,9 +6,10 @@ public class BossAttack : MonoBehaviour
 {
     public GameObject bullet;
     public Transform bulletLauncher;
+    float nextTimeToSearch = 0;
 
     public float agroRange;
-    public GameObject player;
+    Transform player;
 
     public float fireRate;
     public string attackSFX;
@@ -17,12 +18,13 @@ public class BossAttack : MonoBehaviour
     void Start()
     {
         nextFire = 0;
-        player = FindObjectOfType<Player>().gameObject;
+        FindPlayer();
     }
 
     // Update is called once per frame
     void Update()
     {
+        FindPlayer();
         if (BossStart.startBoss && !BossVehicle.isDead)
         {
             float distToPlayer = Vector2.Distance(transform.position, player.transform.position);
@@ -40,6 +42,17 @@ public class BossAttack : MonoBehaviour
             AudioManager.instance.PlaySFX(attackSFX);
             Instantiate(bullet, bulletLauncher.position, bulletLauncher.rotation);
             nextFire = Time.time + fireRate;
+        }
+    }
+
+    void FindPlayer()
+    {
+        if (nextTimeToSearch <= Time.time)
+        {
+            GameObject searchPlayer = GameObject.FindGameObjectWithTag("Player");
+            if (searchPlayer != null)
+                player = searchPlayer.transform;
+            nextTimeToSearch = Time.time + 0.2f;
         }
     }
 }
