@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     public string sceneName;
-
-    public void OnEnable()
+    
+    void Start()
     {
         if (FinalBoss.gameComplete)
         {
             sceneName = "Credit Scene";
             FinalBoss.gameComplete = false;
         }
+    }
+    public void OnEnable()
+    {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
 }

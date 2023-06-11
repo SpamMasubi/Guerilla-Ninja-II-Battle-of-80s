@@ -3053,7 +3053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394039786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8, y: 0.88, z: 0}
+  m_LocalPosition: {x: -9, y: 0.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -77231,7 +77231,6 @@ MonoBehaviour:
   bullet: {fileID: 7033129341547615649, guid: cf61287c013ce7546a3ea4857522d3ad, type: 3}
   bulletLauncher: {fileID: 358696484}
   agroRange: 15
-  player: {fileID: 0}
   fireRate: 2
   attackSFX: 
 --- !u!114 &1835525358
