@@ -768,7 +768,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSkipName: Chapter Intro
-  skipConfirm: {fileID: 0}
 --- !u!82 &795715770
 AudioSource:
   m_ObjectHideFlags: 0

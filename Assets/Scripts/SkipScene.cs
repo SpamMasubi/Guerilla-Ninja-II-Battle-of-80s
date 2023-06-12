@@ -15,7 +15,6 @@ public class SkipScene : MonoBehaviour
         if (FinalBoss.gameComplete)
         {
             sceneSkipName = "Credit Scene";
-            FinalBoss.gameComplete = false;
         }
         skipConfirm = GetComponent<AudioSource>();
         skip = false;
@@ -28,13 +27,14 @@ public class SkipScene : MonoBehaviour
         {
             skip = true;
             skipConfirm.Play();
-            Invoke("LoadScene", 1f);
+            Invoke("loadScene", 1f);
         }
     }
 
-    private void LoadScene()
+    private void loadScene()
     {
         SceneManager.LoadScene(sceneSkipName, LoadSceneMode.Single);
         skip = false;
+        FinalBoss.gameComplete = false;
     }
 }

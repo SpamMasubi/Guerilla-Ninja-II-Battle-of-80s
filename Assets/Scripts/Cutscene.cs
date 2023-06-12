@@ -100,8 +100,6 @@ public class Cutscene : MonoBehaviour
                 "next time, my friends. Be at the ready for the unexpected."};
                 cutsceneImage[5].SetActive(false);
                 cutsceneImage[6].SetActive(true);
-                ChapterIntro.chapters = 1;
-                ChapterIntro.chapterIncr = 0;
                 Destroy(FindObjectOfType<GameManager>().gameObject);
                 break;
             default:

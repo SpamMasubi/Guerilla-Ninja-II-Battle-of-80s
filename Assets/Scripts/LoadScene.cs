@@ -7,16 +7,17 @@ public class LoadScene : MonoBehaviour
 {
     public string sceneName;
     
-    void Start()
+    public void OnEnable()
     {
         if (FinalBoss.gameComplete)
         {
             sceneName = "Credit Scene";
             FinalBoss.gameComplete = false;
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         }
-    }
-    public void OnEnable()
-    {
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        else
+        {
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        }
     }
 }

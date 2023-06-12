@@ -52,7 +52,7 @@ public class FinalBoss : MonoBehaviour
     public string bossName;
     public int bossHealth = 50;
     float maxHealth;
-    public static bool gameComplete = false;
+    public static bool gameComplete;
     public AudioClip startPhase2, deadsfx, invincible, secondPhaseMusic;
     public float attackTime = 0f;
     float attackTimer = 0f;

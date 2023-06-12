@@ -72,6 +72,7 @@ public class ChapterIntro : MonoBehaviour
         }
         else
         {
+            chapters = 1;
             chapterIncr = 0;
         }
         canStartGame = false;
